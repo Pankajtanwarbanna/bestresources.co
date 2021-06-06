@@ -1,0 +1,14 @@
+# node modules
+node_modules/
+
+# package lock files
+yarn.lock
+package-lock.json
+
+# unwanted files
+.idea/
+.env
+
+# config files
+app/config/config.development.json
+app/config/config.production.json

@@ -1,0 +1,17 @@
+{
+    "name": "bestresources.co",
+    "version": "1.0.0",
+    "description": "Explore curated directory of tech leaders!",
+    "main": "server.js",
+    "scripts": {
+        "start": "export NODE_ENV=development && nodemon build/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Pankaj Tanwar",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-validator": "^5.3.1",
+        "morgan": "^1.10.0"
+    }
+}
