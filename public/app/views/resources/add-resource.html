@@ -1,0 +1,121 @@
+<div class="content-wrapper">
+    <div class="content-header row">
+        <div class="content-header-left col-12 mb-2 mt-1">
+          <div class="breadcrumbs-top">
+            <h5 class="content-header-title float-left pr-1 mb-0">Add Resource</h5>
+            <div class="breadcrumb-wrapper d-none d-sm-block">
+              <ol class="breadcrumb p-0 mb-0 pl-1">
+                <li class="breadcrumb-item">
+                    <a href="#">Seems something amazing is cooking up..</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="content-body">
+        <!--/ Search result section -->
+        <section class="faq-bottom">
+            <div class="row">
+                <!-- Resource Info -->
+                <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="card-title">Resource Info</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <fieldset class="form-group">
+                              <label>Title</label>
+                              <input type="text" class="form-control" placeholder="Enter resource title">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>Description</label>
+                                <textarea type="text" class="form-control" placeholder="Enter resource description" rows="3"></textarea>
+                                <p><small class="text-muted">Write something related to resource which helps readers.</small></p>
+                              </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Resource Block -->
+                <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="card-title">Resource Block Info</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <fieldset class="form-group">
+                              <label>Title</label>
+                              <input type="text" class="form-control" placeholder="Enter resource block title">
+                            </fieldset>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <select name="delivery" class="form-control">
+                                    <option value="">-- Select a block type --</option>
+                                    <option value="links">Links</option>
+                                    <option value="text">Text</option>
+                                </select>
+                            </div>
+                            <label>Link</label>
+                            <fieldset class="form-group position-relative has-icon-left">
+                              <input type="text" class="form-control" placeholder="Enter link">
+                              <div class="form-control-position">
+                                <i class="bx bx-link"></i>
+                              </div>
+                            </fieldset>              
+                            <button class="btn btn-light-primary btn-block rounded" type="button">
+                                <span><i class="bx bx-link"></i> Add Link</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Add Block -->
+                <div class="col-md-12 mb-1">
+                    <button class="btn btn-primary btn-block rounded" type="button">
+                        <span><i class="bx bx-book-reader"></i> Add Resource Block</span>
+                    </button>
+                </div>
+                <!-- Tags Info -->
+                <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="card-title">Tags Info</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                              <div class="mb-1">
+                                <button class="btn btn-danger search-btn rounded" type="button">
+                                    <span>JavaScript &nbsp;&nbsp;&nbsp; x</span>
+                                </button>
+                              </div>
+                            <fieldset>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Enter tag here" aria-describedby="button-addon2">
+                                  <div class="input-group-append" id="button-addon2">
+                                    <button class="btn btn-primary" type="button"><i class="bx bx-purchase-tag"></i> &nbsp;Add Tag</button>
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-success glow mr-1 mb-1">
+                        <i class="bx bx-check"></i>
+                        <span class="align-middle ml-25">Publish Now</span>
+                    </button>        
+                </div>
+            </div>
+          </section>
+    </div>
+</div>

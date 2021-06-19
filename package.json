@@ -2,10 +2,11 @@
     "name": "bestresources.co",
     "version": "1.0.0",
     "description": "Explore curated directory of tech leaders!",
-    "main": "server.js",
+    "main": "build/index.js",
     "scripts": {
-        "start": "export NODE_ENV=development && nodemon build/index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start" : "export NODE_ENV=production && nodemon build/index.js",
+        "dev"   : "export NODE_ENV=development && nodemon build/index.js",
+        "test"  : "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Pankaj Tanwar",
     "license": "ISC",

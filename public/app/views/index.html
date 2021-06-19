@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="A hand-picked curated directory of best resources for beginners from people, great in career!">
+    <meta name="keywords" content="hand-picked curated resources, tech, web development resources, community">
+    <meta name="author" content="Pankaj Tanwar">
+    <title>Best Resoures - Explore, learn, create and share hand picked resources with community!</title>
+    <link rel="apple-touch-icon" href="/assets/images/logo/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/logo/logo.png">
+    <link href="/assets/fonts/cssc203.css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/components.min.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/explore.min.css">
+    <!-- END: Page CSS-->
+
+	<!-- Angular Libs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    <!-- App config -->
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+
+    <!-- Angular Controller files -->
+    <script src="app/controllers/userCtrl.js"></script>
+    <script src="app/controllers/mainCtrl.js"></script>
+
+    <!-- Angular Services -->
+    <script src="app/services/userService.js"></script>
+    <script src="app/services/authService.js"></script>
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns" ng-app="bestResourcesApp" ng-controller="mainCtrl as main"></body>>
+
+	<!-- BEGIN: Header-->
+	<div class="header-navbar-shadow"></div>
+	<nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top ">
+		<div class="navbar-wrapper">
+		<div class="navbar-container content">
+			<div class="navbar-collapse" id="navbar-mobile">
+			<div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+				<ul class="nav navbar-nav">
+				<li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="javascript:void(0);"><i class="ficon bx bx-menu"></i></a></li>
+				</ul>
+			</div>
+			<ul class="nav navbar-nav float-right">
+				<!-- <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="javascript:void(0);" data-toggle="dropdown"><i class="ficon bx bx-bell bx-tada bx-flip-horizontal"></i><span class="badge badge-pill badge-danger badge-up">1</span></a>
+				<ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+					<li class="dropdown-menu-header">
+					<div class="dropdown-header px-1 py-75 d-flex justify-content-between"><span class="notification-title">7 new Notification</span><span class="text-bold-400 cursor-pointer">Mark all as read</span></div>
+					</li>
+					<li class="scrollable-container media-list"><a class="d-flex justify-content-between" href="javascript:void(0);">
+						<div class="media d-flex align-items-center border-0">
+						<div class="media-left pr-0">
+							<div class="avatar mr-1 m-0"><img src="/assets/images/portrait/small/avatar-s-16.jpg" alt="avatar" height="39" width="39"></div>
+						</div>
+						<div class="media-body">
+							<h6 class="media-heading"><span class="text-bold-500">New customer</span> comment recieved</h6><small class="notification-text">2 days ago</small>
+						</div>
+						</div></a></li>
+					<li class="dropdown-menu-footer"><a class="dropdown-item p-50 text-primary justify-content-center" href="javascript:void(0)">Read all notifications</a></li>
+				</ul>
+				</li> -->
+				<li class="nav-item">
+					<a class="dropdown-toggle nav-link dropdown-user-link" href="/profile">
+						<div class="user-nav d-sm-flex d-none">
+							<span class="user-name">Pankaj Tanwar</span>
+							<span class="user-status text-muted">Available</span>
+						</div>
+						<span>
+							<img class="round" src="/assets/images/icon/default-user.webp" alt="avatar" height="40" width="40">
+						</span>
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		</div>
+	</nav>
+	<!-- END: Header-->
+
+	<!-- BEGIN: Main Menu-->
+	<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+		<div class="navbar-header">
+			<ul class="nav navbar-nav flex-row">
+				<li class="nav-item mr-auto">
+					<a class="navbar-brand" href="/">
+						<div class="brand-logo">
+							<img src="/assets/images/logo/logo.png" class="logo" width="26px" height="26px"/>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item nav-toggle">
+					<a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+						<i class="bx bx-x d-block d-xl-none font-medium-4 primary"></i>
+						<i class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block primary" data-ticon="bx-disc"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="shadow-bottom"></div>
+		<div class="main-menu-content">
+			<ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="lines">
+				<li class="nav-item active">
+					<a href="/add-resource">
+						<i class="bx bx-plus"></i>
+						<span class="menu-title text-truncate">Add Resource</span>
+					</a>
+				</li>
+				<li class="navigation-header text-truncate">
+					<span>Home</span>
+				</li>
+				<li>
+					<a href="/">
+						<i class="bx bx-compass" data-icon="desktop"></i>
+						<span class="menu-title text-truncate">Explore</span>
+					</a>
+				</li>
+				<li>
+					<a href="/tags">
+						<i class="bx bx-purchase-tag" data-icon="desktop"></i>
+						<span class="menu-title text-truncate">Tags</span>
+					</a>
+				</li>
+				<li>
+					<a href="/bookmarks">
+						<i class="bx bx-book-reader" data-icon="desktop"></i>
+						<span class="menu-title text-truncate">My Bookmarks</span>
+					</a>
+				</li>
+				<li class="navigation-header text-truncate">
+					<span>User Profile</span>
+				</li>
+				<li>
+					<a href="/join">
+						<i class="bx bx-user"></i>
+						<span class="menu-title text-truncate">Join the Community</span>
+					</a>
+				</li>
+				<li>
+					<a href="/profile">
+						<i class="bx bx-user"></i>
+						<span class="menu-title text-truncate">My Profile</span>
+					</a>
+				</li>
+				<li class="">
+					<a href="/notifications">
+						<i class="bx bx-bell"></i>
+						<span class="menu-title text-truncate">Notifications</span>
+					</a>
+				</li>
+				<li class="navigation-header text-truncate">
+					<span>More</span>
+				</li>
+				<li>
+					<a href="/profile">
+						<i class="bx bx-brightness-half"></i>
+						<span class="menu-title text-truncate">Dark Mode</span>
+					</a>
+				</li>
+				<li>
+					<a href="/team">
+						<i class="bx bx-cool" data-icon="desktop"></i>
+						<span class="menu-title text-truncate">Team</span>
+					</a>
+				</li>
+
+					<!-- <a href="/daily-dose">
+						<i class="bx bx-droplet" data-icon="desktop"></i>
+						<span class="menu-title text-truncate">Daily Dose</span>
+						<span class="badge badge-light-danger badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+					<a href="/rfrs">
+						<i class="bx bx-mask" data-icon="desktop"></i>
+						<span class="menu-title text-truncate">RFRs</span>
+						<span class="badge badge-light-danger badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a> -->
+			</ul>
+		</div>
+	</div>
+	<!-- END: Main Menu-->
+
+	<!-- BEGIN: Content-->
+	<div class="app-content content">
+		<div class="content-overlay"></div>
+		<div class="content-wrapper" ng-show="main.home">
+			<div class="content-body">
+				<section class="search-bar-wrapper">
+					<!-- Search Bar -->
+					<div class="search-bar">
+					<!-- input search -->
+					<form>
+						<fieldset class="page-search-input form-group position-relative">
+						<input type="search" class="form-control rounded-right form-control-lg shadow pl-2" id="searchbar"
+							placeholder="What would you like to learn?">
+						<button class="btn btn-primary search-btn rounded" type="button">
+							<span class="d-none d-sm-block">Search</span>
+							<i class="bx bx-search d-block d-sm-none"></i>
+						</button>
+						</fieldset>
+					</form>
+					<!--/ input search -->
+					</div>
+					<div class="row search-menu">
+						<div class="col-12">
+							<!-- search menu tab -->
+							<ul class="nav nav-pills py-1 mb-1" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="intresting-tab" data-toggle="tab" href="#intresting" role="tab" aria-selected="true">
+									<i class="bx bx-happy-heart-eyes"></i>
+									<span class="d-none d-sm-block">Intresting</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="trending-tab" data-toggle="tab" href="#trending" role="tab" aria-selected="false">
+									<i class="bx bxs-hot"></i>
+									<span class="d-none d-sm-block">Trending</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="recent-tab" data-toggle="tab" href="#recent" role="tab" aria-selected="false">
+									<i class="bx bx-time"></i>
+									<span class="d-none d-sm-block">Recent</span>
+									</a>
+								</li>
+							</ul>
+							<!--/ search menu tab -->
+						</div>
+					</div>
+					<!-- Search Bar end -->
+
+					<!-- seach result section -->
+					<div class="row">
+						<!-- Search content area -->
+						<div class="col-lg-8 col-md-7 col-12 order-2 order-md-1">
+							<div id="searchResults" class="py-0 search-results">
+								<!-- Web results -->
+								<div class="web-result">
+									<ul class="list-unstyled">
+									<li>
+										<div class="card">
+										<div class="card-header pb-0">
+											<div class="media align-items-center">
+												<a href="/profile" class="pr-1" target="_blank">
+													<img src="/assets/images/icon/default-user.webp" alt="Pankaj Tanwar" class="rounded-circle" height="40" width="40">
+												</a>
+												<div class="media-body d-sm-flex justify-content-between align-items-center">
+													<div class="media-text ">
+														<p class="mt-50 mb-0 card-text">
+															<a class="mb-0" href="/profile">Pankaj Tanwar</a>
+														</p>
+														<p>Senior Software Engineer at Uber (5+ YOE)</p>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-title cursor-pointer">
+												<a href="/resource">
+													My resources to learn system design to advance level.
+												</a>
+											</h4>
+										</div>
+										<div class="card-body" style="padding-bottom: 10px;">
+											<div class="d-lg-flex align-items-center mb-50">
+												<div class=" font-small-2">
+													Posted 2 hours ago - 1.2K views
+												</div>
+											</div>
+											<p class="card-text">
+												<b>Feb 22, 2021</b> - Hey everyone, I am sharing my resources, which I used while preparing for system design interviews. It helped me grab offers from Uber... 
+											</p>
+											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">Free</span>
+											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">Begineer</span>
+											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">System Design</span>
+										</div>
+										<div class="card-footer border-top d-flex justify-content-between">
+											<div>
+												<i class="bx bx-donate-heart"></i>
+												<small class="mb-50">54 Thanks</small>	
+											</div>
+											<div>
+												<i class="bx bx-share-alt"></i>
+												<small>Share</small>	
+											</div>
+											<div>
+												<i class="bx bx-bookmark-heart"></i>
+												<small>Save</small>	
+											</div>
+											<i class="bx bx-dots-vertical-rounded font-medium-2 cursor-pointer"></i>
+										</div>
+										</div>
+									</li>
+									</ul>
+								</div>
+								<!-- Video results -->
+								<!-- Image results -->
+								<div class="image-result">
+									<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">
+											All-Time popular tags
+										</h4>
+									</div>
+									<div class="card-body">
+										<div class="row text-center">
+										<div class="col-lg-2 col-sm-4 col-6">
+											<div class="suggestion mb-lg-0 mb-1">
+												<a href="/tag/javascript">
+													<img src="/assets/images/home-page/topics/javascript.png" alt="JavaScript" height="40" width="40">
+													<span class="font-small-2 mt-50 d-block">JavaScript</span>
+												</a>
+											</div>
+										</div>
+										<div class="col-lg-2 col-sm-4 col-6">
+											<div class="suggestion mb-lg-0 mb-1">
+												<a href="/tag/system-design">
+													<img src="/assets/images/home-page/topics/system-design.png" alt="System Design" height="40" width="40">
+													<span class="font-small-2 mt-50 d-block">System Design</span>
+												</a>
+											</div>
+										</div>
+										<div class="col-lg-2 col-sm-4 col-6">
+											<div class="suggestion mb-lg-0 mb-1">
+												<a href="/tag/cold-email-tips">
+													<img src="/assets/images/home-page/topics/cold-email.png" alt="Cold Email Tips" height="40" width="40">
+												<span class="font-small-2 mt-50 d-block">Cold Email Tips</span>
+											</a>
+											</div>
+										</div>
+										<div class="col-lg-2 col-sm-4 col-6">
+											<div class="suggestion mb-lg-0 mb-1">
+												<a href="/tag/web-development">
+													<img src="/assets/images/home-page/topics/web-dev.jpg" alt="Web Development" height="40" width="40">
+												<span class="font-small-2 mt-50 d-block">Web Dev</span>
+											</a>
+											</div>
+										</div>
+										<div class="col-lg-2 col-sm-4 col-6">
+											<div class="suggestion mb-lg-0 mb-1">
+												<a href="/tag/programming">
+													<img src="/assets/images/home-page/topics/programming.jpeg" alt="Programming" height="40" width="40">
+												<span class="font-small-2 mt-50 d-block">General Coding</span>
+											</a>
+											</div>
+										</div>
+										<div class="col-lg-2 col-sm-4 col-6">
+											<div class="suggestion mb-lg-0 mb-1">
+												<a href="/tag/nodejs">
+													<img src="/assets/images/home-page/topics/nodejs.jpeg" alt="NodeJs" height="40" width="40">
+												<span class="font-small-2 mt-50 d-block">NodeJs</span>
+											</a>
+											</div>
+										</div>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/ Search content area -->
+						<!-- Search Sidebar area -->
+						<div class="col-lg-4 col-md-5 col-12 order-1 order-md-2">
+							<div class="card box-search">
+							<div class="card-body">
+								<div class="text-sm-left">
+									<h6 class="media-heading mb-0 text-success">Featured ✨</h6>
+								</div>
+								<h5 class="mt-1">
+									<a href="/resource">
+										My resources to learn system design to advance level.
+									</a>
+								</h5>
+								<small>Posted 2 Hours ago - 1.2K views</small>
+								<p class="mt-1">
+								</p>
+								<p class="card-text">
+									<b>Feb 22, 2021</b> - Hey everyone, I am sharing my resources, which I used while preparing for system design interviews. It helped me grab offers from Uber. I have curated all of my resources out here, If it adds a value, consider hitting up a thumbsup to cheer me up!
+								</p>
+								<div class="row knowledge-panel text-center py-1">
+								<div class="col border-right">
+									<p class="mb-0">1,367</p>
+									<small>Thanks</small>
+								</div>
+								<div class="col border-right">
+									<p class="mb-0">74</p>
+									<small>Share</small>
+								</div>
+								<div class="col d-inline-block">
+									<p class="mb-0">5</p>
+									<small>Views</small>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						<!--/ Search Sidebar area -->
+					</div>
+				</section>
+				<!--/ Search result section -->
+			</div>
+		</div>
+		<div class="ng-view"></div>
+	</div>
+	<!-- END: Content-->
+
+	<!-- BEGIN: Vendor JS-->
+	<script src="/assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="/assets/js/app-menu.min.js"></script>
+    <script src="/assets/js/app.min.js"></script>
+    <!-- END: Theme JS-->
+</body>
+<!-- END: Body-->
+</html>
