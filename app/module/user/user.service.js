@@ -3,6 +3,7 @@ const database          = require(constant.path.app + 'core/database');
 const config            = require(constant.path.app + 'core/configuration')
 const Utility           = require(constant.path.app + 'util/utility');
 const jwtService        = require(constant.path.app + 'service/jwt.service');
+
 const SCHEMA            = config.DATABASE.INSTANCE_SCHEMA;
 const TABLE             = 'users';
 
@@ -21,7 +22,7 @@ exports.findUser        = (payload, callback) => {
         if(error) {
             return callback(error);
         }
-        callback(null, response.data);
+        return callback(null, response.data);
     })
 }
 
@@ -36,7 +37,7 @@ exports.createUser      = (payload, callback) => {
                 firstName       : payload.firstName || 'Guest',
                 lastName        : payload.lastName  || 'User',
                 about           : payload.about,
-                avatar          : 'http://localhost:8080/assets/images/icon/default-user.webp',
+                avatar          : config.DEFAULT_AVATAR_LINK,
                 twitter         : payload.twitter,
                 linkedin        : payload.linkedin,
                 website         : payload.website,
@@ -48,8 +49,24 @@ exports.createUser      = (payload, callback) => {
         if(error) {
             return callback(error);
         }
-        callback(null, result)
+        return callback(null, result)
     })
+}
+
+exports.updateUser      = (payload, callback) => {
+
+    database.update({
+        table       : TABLE,
+        records     : [
+            payload
+        ]
+    }, function(error, result) {
+        if(error) {
+            return callback(error);
+        }
+        return callback(null, result)
+    })
+
 }
 
 exports.generateAuth    = (userInfo, callback) => {

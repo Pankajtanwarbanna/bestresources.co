@@ -1,18 +1,51 @@
 /*
     Controller written by - Pankaj tanwar
 */
-angular.module('userCtrl',['userServices'])
+angular.module('userCtrl', ['userServices'])
 
-.controller('usersCtrl', function (user) {
+.controller('joinController', function (user) {
     var app = this;
 
-    user.getUsers().then(function (data) {
+    // Send Magic Link
+    app.sendMagicLink       = (joinData) => {
 
-        if(data.data.success) {
-            console.log(app.users);
-            app.users = data.data.users;
-        } else {
-            app.errorMsg = data.data.message;
-        }
-    });
+        app.loading         = true;
+
+        user.join(app.joinData).then(function(data) {
+            let response        = data.data.response;
+            app.successMsg      = response.message;
+            app.loading         = false;
+        }).catch(error => {
+            let response        = error.data.response;
+            app.errorMsg        = response.message;
+            app.loading         = false;
+        })
+    }
+})
+
+.controller('verifyController', function (user, $routeParams) {
+    var app             = this;
+
+    app.verified        = false;
+    app.saparator       = '_$_';
+
+    app.magicToken      = $routeParams.token;
+    app.data            = decodeURIComponent(escape(window.atob(app.magicToken)));
+    
+    app.data            = app.data ? app.data.split(app.saparator) : null;
+
+    if(app.data && app.data.length == 2) {
+        app.email       = app.data[0];
+        user.verifyToken(app.magicToken).then(function(data) {
+            let response        = data.data.response;
+            app.successMsg      = response.message;
+            app.verified        = true;
+        }).catch(error => {
+            let response        = error.data.response;
+            app.errorMsg        = response.message;
+        })
+    } else {
+        app.errorMsg    = 'Link does not seem to be correct. Would you mind checking it again?'
+    }
 });
+

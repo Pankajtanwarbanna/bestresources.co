@@ -14,6 +14,7 @@
     "MAGIC_LINK_EXPIRY"         : "15m",
     "MAGIC_LINK_SEPARATOR"      : "_$_",
     "ROUTES"                    : {
-        "ACCOUNT_PAGE"          : "/account"
-    }
+        "ACCOUNT_VERIFY_PAGE"   : "/account"
+    },
+    "DEFAULT_AVATAR_LINK"       : "http://localhost:8080/assets/images/icon/default-user.webp"
 }

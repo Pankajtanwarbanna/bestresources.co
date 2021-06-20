@@ -1,0 +1,43 @@
+<div class="content-wrapper">
+    <div class="content-body">
+        
+        <section id="auth-login" class="row flexbox-container">
+            <div class="col-12">
+                <div class="card bg-transparent shadow-none kb-header">
+                    <!-- Verifying -->
+                  <div class="card-body text-center" ng-if="!verify.verified && !verify.errorMsg">
+                    <div class="spinner-border text-success mb-1" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <h1 class="mb-2 text-primary kb-title">Verifying your identity....</h1>
+                    <p class="mb-3">
+                      Hey 👋, {{ verify.email}}. please wait while we verify your identity
+                    </p>
+                  </div>
+                  <!-- Verified -->
+                  <div class="card-body text-center" ng-if="verify.verified">
+                    <div class="mb-1" >
+                        <img src="/assets/images/icon/verified.png" width="294px" height="253px;">
+                    </div>
+                    <h1 class="mb-2 text-success kb-title">Welcome to the party 🎉</h1>
+                    <p class="mb-3">
+                      redirecting you to the explore page.... {{ verify.email}}.
+                    </p>
+                  </div>
+                  <!-- Failed -->
+                  <div class="card-body text-center" ng-if="verify.errorMsg">
+                    <div class="mb-1" >
+                        <img src="/assets/images/icon/failure.png" width="294px" height="253px;">
+                    </div>
+                    <h1 class="mb-2 text-danger kb-title">It's broken 😔</h1>
+                    <p class="mb-3">
+                      Hey 👋, {{ verify.errorMsg }}
+                    </p>
+                    <hr>
+                    <div class="text-center"><small class="mr-25">Would like to get a new one?</small><a href="/"><small>Click here</small></a></div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </div>
+</div>

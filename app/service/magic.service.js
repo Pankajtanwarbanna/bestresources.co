@@ -12,7 +12,7 @@ exports.createLink      = (payload, callback) => {
 
     const email         = payload.email;
     const emailToken    = Utility.base64encode(email + config.MAGIC_LINK_SEPARATOR + token);
-    const emailLink     = config.server.url + config.ROUTES.ACCOUNT_PAGE + '?token=' + emailToken;
+    const emailLink     = config.server.url + config.ROUTES.ACCOUNT_VERIFY_PAGE + '?token=' + emailToken;
 
     return callback(null, emailLink);
 }
@@ -25,7 +25,7 @@ exports.verifyLink      = (token, callback) => {
         const jwtToken  = data[1]; 
         const payload   = jwtService.decode(jwtToken);
 
-        return callback(null, payload);
+        if(payload) return callback(null, payload);
     }
-    return callback('Invalid magic link.')
+    return callback('Link does not seem to be correct. Would you mind checking it again?')
 }

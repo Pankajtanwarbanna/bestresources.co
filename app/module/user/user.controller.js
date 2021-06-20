@@ -47,10 +47,18 @@ exports.join                = (req, res) => {
         })
     }
 
+    const sendEmail         = function(linkInfo, sendEmailCallback) {
+        console.log(linkInfo);
+        return sendEmailCallback(null, {
+            'message'       : 'We have sent the magic link to your email, and we need your help to open it.'
+        })
+    }
+
     async.waterfall([
         getUser,
         createUser,
-        generateMagicLink
+        generateMagicLink,
+        sendEmail
     ], function (error, result) {
         if (error) {
             return res.status(400).json(Response.build('ERROR', 
@@ -74,6 +82,20 @@ exports.verify          = (req, res) => {
         });
     }
 
+    const updateUser    = function(userInfo, updateUserCallback) {
+        const payload   = {
+            'userId'    : userInfo.userId,
+            'verified'  : true
+        }
+
+        userService.updateUser(payload, function(error, result) {
+            if(error) {
+                return updateUserCallback(error);
+            }
+            return updateUserCallback(null, userInfo);
+        })
+    }
+
     const generateAuth  = function(userInfo, generateAuthCallback) {
         userService.generateAuth(userInfo, function(error, auth) {
             if(error) {
@@ -85,6 +107,7 @@ exports.verify          = (req, res) => {
 
     async.waterfall([
         verifyToken,
+        updateUser,
         generateAuth
     ], function (error, result) {
         if (error) {

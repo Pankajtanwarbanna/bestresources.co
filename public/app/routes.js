@@ -5,7 +5,16 @@ let app = angular.module('userRoutes', ['ngRoute'])
 
             .when('/join', {
                 templateUrl     : '/app/views/join/join.html',
-                authenticated   : false
+                authenticated   : false,
+                controller      : 'joinController',
+                controllerAs    : 'join'
+            })
+
+            .when('/verify', {
+                templateUrl     : '/app/views/join/verify.html',
+                authenticated   : false,
+                controller      : 'verifyController',
+                controllerAs    : 'verify'
             })
 
             .when('/resource', {
