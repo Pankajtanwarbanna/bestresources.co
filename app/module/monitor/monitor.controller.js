@@ -1,4 +1,4 @@
-const constant  = require(__basePath + '/app/core/constant');
+const constant  = require(__basePath + '/app/config/constant');
 const response  = require(constant.path.app + 'util/response');
 
 exports.ping    = function (req, res) {

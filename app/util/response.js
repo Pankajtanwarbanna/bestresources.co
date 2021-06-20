@@ -1,5 +1,5 @@
-const constant  = require(__basePath + 'app/core/constant');
-const response  = require(constant.path.app + 'core/response');
+const constant  = require(__basePath + 'app/config/constant');
+const response  = require(constant.path.app + 'config/response');
 
 response.build  = function (key, data) {
     const responseObj = response["RESPONSES"][key];

@@ -4,15 +4,18 @@
     "description": "Explore curated directory of tech leaders!",
     "main": "build/index.js",
     "scripts": {
-        "start" : "export NODE_ENV=production && nodemon build/index.js",
-        "dev"   : "export NODE_ENV=development && nodemon build/index.js",
-        "test"  : "echo \"Error: no test specified\" && exit 1"
+        "start": "export NODE_ENV=production && nodemon build/index.js",
+        "dev": "export NODE_ENV=development && nodemon build/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Pankaj Tanwar",
     "license": "ISC",
     "dependencies": {
+        "async": "^3.2.0",
         "express": "^4.17.1",
         "express-validator": "^5.3.1",
+        "harperive": "^2.0.1",
+        "jsonwebtoken": "^8.5.1",
         "morgan": "^1.10.0"
     }
 }

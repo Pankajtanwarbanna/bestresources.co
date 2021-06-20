@@ -1,6 +1,19 @@
 {
-    "server"    : {
-        "url"   : "localhost",
-        "port"  : 8080
+    "server"                    : {
+        "url"                   : "localhost:8080",
+        "port"                  : 8080
+    },
+    "DATABASE"                  : {
+        "INSTANCE_URL"          : "",
+        "INSTANCE_USERNAME"     : "",
+        "INSTANCE_PASSWORD"     : "",
+        "INSTANCE_SCHEMA"       : ""
+    },
+    "SECRET"                    : "BEST-RESOURCES",
+    "AUTH_TOKEN_EXPIRY"         : "30d",
+    "MAGIC_LINK_EXPIRY"         : "15m",
+    "MAGIC_LINK_SEPARATOR"      : "_$_",
+    "ROUTES"                    : {
+        "ACCOUNT_PAGE"          : "/account"
     }
 }

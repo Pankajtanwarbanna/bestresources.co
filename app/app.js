@@ -4,7 +4,7 @@ const morgan        = require('morgan');
 const validator     = require('express-validator');
 const bodyParser    = require('body-parser')
 
-const constant      = require(__basePath + 'app/core/constant.js');
+const constant      = require(__basePath + 'app/config/constant.js');
 
 app.use(morgan('dev'));
 app.use(validator({}));
