@@ -34,17 +34,17 @@ let app = angular.module('userRoutes', ['ngRoute'])
 
             .when('/profile', {
                 templateUrl     : '/app/views/profile/profile.html',
-                authenticated   : false
+                authenticated   : true
             })
 
             .when('/notifications', {
                 templateUrl     : '/app/views/profile/notifications.html',
-                authenticated   : false
+                authenticated   : true
             })
 
             .when('/bookmarks', {
                 templateUrl     : '/app/views/bookshelf/my-bookshelf.html',
-                authenticated   : false
+                authenticated   : true
             })
 
             .when('/team', {
@@ -84,7 +84,6 @@ app.run(['$rootScope','auth','$location', 'user', function ($rootScope,auth,$loc
                 }
 
             } else if(next.$$route.authenticated === false) {
-
                 if(auth.isLoggedIn()) {
                     event.preventDefault();
                     $location.path('/profile');

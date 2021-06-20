@@ -1,7 +1,7 @@
 /*
     Controller written by - Pankaj tanwar
 */
-angular.module('userCtrl', ['userServices'])
+angular.module('userCtrl', ['userServices', 'authServices'])
 
 .controller('joinController', function (user) {
     var app = this;
@@ -23,7 +23,7 @@ angular.module('userCtrl', ['userServices'])
     }
 })
 
-.controller('verifyController', function (user, $routeParams) {
+.controller('verifyController', function (user, authToken, $routeParams, $location, $timeout) {
     var app             = this;
 
     app.verified        = false;
@@ -40,6 +40,10 @@ angular.module('userCtrl', ['userServices'])
             let response        = data.data.response;
             app.successMsg      = response.message;
             app.verified        = true;
+            authToken.setToken(response.auth);
+            $timeout(function() {
+                $location.path('/')
+            }, 2000);
         }).catch(error => {
             let response        = error.data.response;
             app.errorMsg        = response.message;

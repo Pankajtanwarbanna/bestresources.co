@@ -24,7 +24,7 @@ angular.module('authServices',[])
     // auth.getUser();
     authFactory.getUser = function () {
         if(authToken.getToken()) {
-            return $http.post('/api/me');
+            return $http.get('/api/user/me');
         } else {
             $q.reject({ message : 'User has no token.'});
         }
@@ -64,7 +64,6 @@ angular.module('authServices',[])
 
     authInterceptorsFactory.request = function (config) {
         var token = authToken.getToken();
-        //console.log(token);
         if(token) config.headers['x-access-token'] = token;
 
         return config;

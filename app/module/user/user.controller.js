@@ -118,3 +118,7 @@ exports.verify          = (req, res) => {
         return res.status(200).json(Response.build('SUCCESS', result ));
     });
 }
+
+exports.me          = (req, res) => {
+    return res.status(200).json(Response.build('SUCCESS', req.user ));
+}

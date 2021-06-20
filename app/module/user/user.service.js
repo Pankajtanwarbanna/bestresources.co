@@ -9,14 +9,16 @@ const TABLE             = 'users';
 
 exports.findUser        = (payload, callback) => {
 
-    const email         = payload.email;
-
-    const QUERY         = `
+    let QUERY           = `
         SELECT * 
         FROM ${SCHEMA}.${TABLE}
         WHERE
-        email = "${email}"
     `;
+
+    Object.keys(payload).forEach((fieldName, fieldIndex) => {
+        if(fieldIndex !== 0) QUERY += ' AND ';
+        QUERY           += `${fieldName} == "${payload[fieldName]}"`
+    })
 
     database.query(QUERY, function(error, response) {
         if(error) {
