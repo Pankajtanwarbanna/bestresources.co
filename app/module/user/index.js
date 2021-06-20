@@ -28,6 +28,13 @@ router.get(
     userController.me
 );
 
+router.put(
+    '/update',
+    jwtMiddleware.verify,
+    authMiddleware.ensureUser,
+    userController.update
+);
+
 module.exports = {
     router: router
 };

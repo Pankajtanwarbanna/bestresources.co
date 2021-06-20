@@ -34,7 +34,9 @@ let app = angular.module('userRoutes', ['ngRoute'])
 
             .when('/profile', {
                 templateUrl     : '/app/views/profile/profile.html',
-                authenticated   : true
+                authenticated   : true,
+                controller      : 'profileController',
+                controllerAs    : 'profile'
             })
 
             .when('/notifications', {

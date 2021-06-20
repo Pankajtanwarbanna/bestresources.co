@@ -16,5 +16,10 @@ angular.module('userServices',[])
         return $http.get('/api/user/verify?token=' + token);
     }
 
+    // user.updateProfile(profile)
+    userFactory.updateProfile     = function(profile) {
+        return $http.put('/api/user/update', profile);
+    }
+
     return userFactory;
 });

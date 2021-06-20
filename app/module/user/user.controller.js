@@ -119,6 +119,31 @@ exports.verify          = (req, res) => {
     });
 }
 
-exports.me          = (req, res) => {
+exports.me              = (req, res) => {
     return res.status(200).json(Response.build('SUCCESS', req.user ));
+}
+
+exports.update          = (req, res) => {
+
+    const payload       = {
+        'userId'        : req.decoded.userId,
+        'firstName'     : req.body.firstName,
+        'lastName'      : req.body.lastName,
+        'about'         : req.body.about,
+        'twitter'       : req.body.twitter,
+        'linkedin'      : req.body.linkedin,
+        'website'       : req.body.website,
+        'youtube'       : req.body.youtube
+    }
+
+    userService.updateUser(payload, function(error, result) {
+        if(error) {
+            return res.status(400).json(Response.build('ERROR', 
+                errorHelper.parseError(error) 
+            ));        
+        }
+        return res.status(200).json(Response.build('SUCCESS', {
+            'message'   : 'your profile is updated successfully.'
+        }));
+    })
 }

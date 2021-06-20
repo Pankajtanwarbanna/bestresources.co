@@ -4,7 +4,7 @@
 angular.module('userCtrl', ['userServices', 'authServices'])
 
 .controller('joinController', function (user) {
-    var app = this;
+    let app = this;
 
     // Send Magic Link
     app.sendMagicLink       = (joinData) => {
@@ -24,7 +24,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
 })
 
 .controller('verifyController', function (user, authToken, $routeParams, $location, $timeout) {
-    var app             = this;
+    let app             = this;
 
     app.verified        = false;
     app.saparator       = '_$_';
@@ -34,6 +34,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     
     app.data            = app.data ? app.data.split(app.saparator) : null;
 
+    // Verify token
     if(app.data && app.data.length == 2) {
         app.email       = app.data[0];
         user.verifyToken(app.magicToken).then(function(data) {
@@ -51,5 +52,27 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     } else {
         app.errorMsg    = 'Link does not seem to be correct. Would you mind checking it again?'
     }
-});
+})
 
+.controller('profileController', function(user, $timeout) {
+    let app             = this;
+
+    app.loading         = false;
+
+    app.updateProfile   = function(profile) {
+        app.loading     = true;
+
+        user.updateProfile(profile).then(function(data) {
+            let response        = data.data.response;
+            app.successMsg      = response.message;
+            app.loading         = false;
+            $timeout(function() {
+                app.successMsg  = '';
+            }, 2000)
+        }).catch(error => {
+            let response        = error.data.response;
+            app.errorMsg        = response.message;
+            app.loading         = false;
+        })
+    } 
+});

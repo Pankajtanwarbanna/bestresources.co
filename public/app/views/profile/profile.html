@@ -16,11 +16,11 @@
                             <!-- users edit media object start -->
                             <div class="media mb-2">
                                 <a class="mr-2" href="javascript:void(0);">
-                                    <img src="/assets/images/icon/default-user.webp" alt="Pankaj Tanwar"
+                                    <img src="{{ main.user.avatar }}" alt="Pankaj Tanwar"
                                         class="users-avatar-shadow rounded-circle" height="64" width="64">
                                 </a>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Pankaj Tanwar</h4>
+                                    <h4 class="media-heading">{{ main.user.firstName }} {{ main.user.lastName }}</h4>
                                     <div class="col-12 px-0 d-flex">
                                         <a href="javascript:void(0);" class="btn btn-sm btn-outline-primary mr-25">Upload a new photo</a>
                                     </div>
@@ -28,23 +28,29 @@
                             </div>
                             <!-- users edit media object ends -->
                             <!-- users edit account form start -->
-                            <form class="form-validate">
+                            <form class="form-validate" ng-submit="profile.updateProfile(main.user);">
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
                                         <div class="form-group">
                                             <div class="controls">
-                                                <label>Name</label>
-                                                <input type="text" class="form-control" placeholder="Enter Name" value="Pankaj Tanwar" name="username">
+                                                <label>First Name</label>
+                                                <input type="text" class="form-control" placeholder="Enter First Name" ng-model="main.user.firstName">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <div class="form-group">
                                             <div class="controls">
+                                                <label>Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Enter Last Name" ng-model="main.user.lastName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <div class="controls">
                                                 <label>E-mail</label>
-                                                <input type="email" class="form-control" placeholder="Email"
-                                                    value="pankajtanwar510@gmail.com"
-                                                    name="email">
+                                                <input type="email" class="form-control" placeholder="Email" ng-model="main.user.email" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -52,7 +58,7 @@
                                         <div class="form-group">
                                             <div class="controls">
                                                 <label>About</label>
-                                                <textarea type="text" class="form-control" placeholder="Write something about you." name="about" rows="3"></textarea>
+                                                <textarea type="text" class="form-control" placeholder="Write something about you." ng-model="main.user.about" rows="3"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -63,55 +69,73 @@
                                 </div>
 
                                 <div class="row">
-                                    <form class="form-validate">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5 class="mb-1"><i class="bx bx-link mr-25"></i>Social Links</h5>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="mb-1"><i class="bx bx-link mr-25"></i>Social Links</h5>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <label>Twitter</label>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" placeholder="Enter your twitter profile" ng-model="main.user.twitter">
+                                                <div class="form-control-position">
+                                                    <i class="bx bxl-twitter"></i>
+                                                </div>
+                                            </fieldset> 
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <label>LinkedIn</label>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" placeholder="Enter your LinkedIn profile" ng-model="main.user.linkedIn">
+                                                <div class="form-control-position">
+                                                    <i class="bx bxl-linkedin"></i>
+                                                </div>
+                                            </fieldset> 
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <label>Website</label>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" placeholder="Enter your website" ng-model="main.user.website">
+                                                <div class="form-control-position">
+                                                    <i class="bx bx-world"></i>
+                                                </div>
+                                            </fieldset> 
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <label>YouTube</label>
+                                            <fieldset class="form-group position-relative has-icon-left">
+                                                <input type="text" class="form-control" placeholder="Enter your YouTube profile" ng-model="main.user.youtube">
+                                                <div class="form-control-position">
+                                                    <i class="bx bxl-youtube"></i>
+                                                </div>
+                                            </fieldset> 
+                                        </div>
+                                        <div class="col-12">
+                                            <!-- Error Msg -->
+                                            <div class="alert bg-rgba-danger alert-dismissible mb-2" role="alert" ng-if="profile.errorMsg">
+                                                <p class="mb-0">
+                                                    <b>Oops!</b> {{ profile.errorMsg }}
+                                                </p>
                                             </div>
-                                            <div class="col-12 col-sm-6">
-                                                <label>Twitter</label>
-                                                <fieldset class="form-group position-relative has-icon-left">
-                                                    <input type="text" class="form-control" placeholder="Enter your twitter profile">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bxl-twitter"></i>
-                                                    </div>
-                                                </fieldset> 
-                                            </div>
-                                            <div class="col-12 col-sm-6">
-                                                <label>LinkedIn</label>
-                                                <fieldset class="form-group position-relative has-icon-left">
-                                                    <input type="text" class="form-control" placeholder="Enter your LinkedIn profile">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bxl-linkedin"></i>
-                                                    </div>
-                                                </fieldset> 
-                                            </div>
-                                            <div class="col-12 col-sm-6">
-                                                <label>Website</label>
-                                                <fieldset class="form-group position-relative has-icon-left">
-                                                    <input type="text" class="form-control" placeholder="Enter your website">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bx-link"></i>
-                                                    </div>
-                                                </fieldset> 
-                                            </div>
-                                            <div class="col-12 col-sm-6">
-                                                <label>YouTube</label>
-                                                <fieldset class="form-group position-relative has-icon-left">
-                                                    <input type="text" class="form-control" placeholder="Enter your YouTube profile">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bxl-youtube"></i>
-                                                    </div>
-                                                </fieldset> 
-                                            </div>
-                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1">
-                                                <button type="button" class="btn btn-success glow mr-1 mb-1">
-                                                    <i class="bx bx-check"></i>
-                                                    <span class="align-middle ml-25">Save Changes</span>
-                                                </button>                                      
+                                            <!-- Success Msg -->
+                                            <div class="alert bg-rgba-success alert-dismissible mb-2" role="alert" ng-if="profile.successMsg">
+                                                <p class="mb-0">
+                                                    <b>Yay!</b> {{ profile.successMsg }}
+                                                </p>
                                             </div>
                                         </div>
-                                    </form>
+                                        <!-- Bottom Part -->
+                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1">
+
+                                            <button type="submit" class="btn btn-success glow mr-1 mb-1" ng-if="!profile.loading">
+                                                <i class="bx bx-check"></i>
+                                                <span class="align-middle ml-25">Save Changes</span>
+                                            </button>    
+                                            <button type="submit" class="btn btn-success glow mr-1 mb-1" ng-if="profile.loading" disabled>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                <span class="align-middle ml-25">Save Changes</span>
+                                            </button>                                      
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                             <!-- users edit account form ends -->
