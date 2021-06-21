@@ -18,13 +18,14 @@ let app = angular.module('userRoutes', ['ngRoute'])
             })
 
             .when('/resource', {
-                templateUrl     : '/app/views/resources/resource.html',
-                authenticated   : false
+                templateUrl     : '/app/views/resources/resource.html'
             })
             
             .when('/add-resource', {
                 templateUrl     : '/app/views/resources/add-resource.html',
-                authenticated   : false
+                authenticated   : true,
+                controller      : 'addResourceController',
+                controllerAs    : 'addResource'
             })
 
             .when('/tags', {
@@ -72,7 +73,7 @@ app.run(['$rootScope','auth','$location', 'user', function ($rootScope,auth,$loc
 
                 if(!auth.isLoggedIn()) {
                     event.preventDefault();
-                    $location.path('/');
+                    $location.path('/join');
                 } else if(next.$$route.permission) {
 
                     user.getPermission().then(function (data) {

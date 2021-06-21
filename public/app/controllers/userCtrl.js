@@ -75,4 +75,62 @@ angular.module('userCtrl', ['userServices', 'authServices'])
             app.loading         = false;
         })
     } 
+})
+
+.controller('addResourceController' , function(user, $scope) {
+    let app                         = this;
+    app.resourceData                = {
+        "total_blocks"              : 1,
+        "blocks"                    : {
+            0                       : {
+                "total_links"       : 1
+            }
+        },
+        "tags"                      : []
+    };
+
+    function isValidURL(string) {
+        var res = string.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+        return (res !== null)
+    };
+
+    $scope.verifyLink               = (link, blockIndex, linkIndex) => {
+        app.resourceData.blocks[blockIndex].links[linkIndex].verified   = link && isValidURL(link);
+    }
+
+    $scope.addResourceBlock         = () => {
+        app.resourceData.total_blocks   += 1;
+        app.resourceData.blocks[app.resourceData.total_blocks - 1] = {
+            "total_links"       : 1
+        }
+    }
+
+    $scope.addResourceBlockLink     = (blockIndex) => {
+        if(!app.resourceData.blocks)                        app.resourceData.blocks = {};
+        if(!app.resourceData.blocks[blockIndex])            app.resourceData.blocks[blockIndex] = {};
+        app.resourceData.blocks[blockIndex].total_links   = app.resourceData.blocks[blockIndex].total_links ? app.resourceData.blocks[blockIndex].total_links + 1 : 1;
+    }
+
+    $scope.addResourceTag           = (tag) => {
+        app.resourceData.tags.push(tag);
+        $scope.tag                  = null;
+    }
+
+    $scope.removeResourceTag        = (tagIndex) => {
+        app.resourceData.tags.splice(tagIndex, 1);
+    }
+
+    app.postResource                = (resourceData) => {
+        app.loading                 = true;
+        console.log(app.resourceData)
+        user.postResource(app.resourceData).then(function(data) {
+            let response        = data.data.response;
+            app.successMsg      = response.message;
+            app.loading         = false;
+        }).catch(error => {
+            let response        = error.data.response;
+            app.errorMsg        = response.message;
+            app.loading         = false;
+        })
+    }
 });

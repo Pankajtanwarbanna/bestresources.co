@@ -1,121 +1,138 @@
 <div class="content-wrapper">
     <div class="content-header row">
-        <div class="content-header-left col-12 mb-2 mt-1">
+       <div class="content-header-left col-12 mb-2 mt-1">
           <div class="breadcrumbs-top">
-            <h5 class="content-header-title float-left pr-1 mb-0">Add Resource</h5>
-            <div class="breadcrumb-wrapper d-none d-sm-block">
-              <ol class="breadcrumb p-0 mb-0 pl-1">
-                <li class="breadcrumb-item">
-                    <a href="#">Seems something amazing is cooking up..</a>
-                </li>
-              </ol>
-            </div>
+             <h5 class="content-header-title float-left pr-1 mb-0">Add Resource</h5>
+             <div class="breadcrumb-wrapper d-none d-sm-block">
+                <ol class="breadcrumb p-0 mb-0 pl-1">
+                   <li class="breadcrumb-item">
+                      <a href="#">Seems something amazing is cooking up..</a>
+                   </li>
+                </ol>
+             </div>
           </div>
-        </div>
+       </div>
     </div>
     <div class="content-body">
-        <!--/ Search result section -->
-        <section class="faq-bottom">
+       <!--/ Search result section -->
+       <section class="faq-bottom">
+         <form ng-submit="addResource.postResource(resourceData);">
             <div class="row">
-                <!-- Resource Info -->
-                <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-header">
+               <!-- Resource Info -->
+               <div class="col-md-12">
+                  <div class="card">
+                     <div class="card-header">
                         <h4 class="card-title">Resource Info</h4>
-                      </div>
-                      <div class="card-body">
+                     </div>
+                     <div class="card-body">
                         <div class="row">
-                          <div class="col-md-12">
-                            <fieldset class="form-group">
-                              <label>Title</label>
-                              <input type="text" class="form-control" placeholder="Enter resource title">
-                            </fieldset>
-                            <fieldset class="form-group">
-                                <label>Description</label>
-                                <textarea type="text" class="form-control" placeholder="Enter resource description" rows="3"></textarea>
-                                <p><small class="text-muted">Write something related to resource which helps readers.</small></p>
+                           <div class="col-md-12">
+                              <fieldset class="form-group">
+                                 <label>Title</label>
+                                 <input type="text" class="form-control" placeholder="Enter resource title" ng-model="addResource.resourceData.title">
                               </fieldset>
-                          </div>
+                              <fieldset class="form-group">
+                                 <label>Description</label>
+                                 <textarea type="text" class="form-control" placeholder="Enter resource description" ng-model="addResource.resourceData.description" rows="3"></textarea>
+                                 <p><small class="text-muted">Write something related to resource which helps readers.</small></p>
+                              </fieldset>
+                           </div>
                         </div>
-                      </div>
-                    </div>
-                </div>
-                <!-- Resource Block -->
-                <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-header">
+                     </div>
+                  </div>
+               </div>
+               <!-- Resource Block -->
+               <div class="col-md-12">
+                  <div class="card"  ng-repeat="resourceBlock in [] | range: addResource.resourceData.total_blocks" ng-init="blockIndex = $index">
+                     <div class="card-header">
                         <h4 class="card-title">Resource Block Info</h4>
-                      </div>
-                      <div class="card-body">
+                     </div>
+                     <div class="card-body">
                         <div class="row">
-                          <div class="col-md-12">
-                            <fieldset class="form-group">
-                              <label>Title</label>
-                              <input type="text" class="form-control" placeholder="Enter resource block title">
-                            </fieldset>
-                            <div class="form-group">
-                                <label>Description</label>
-                                <select name="delivery" class="form-control">
-                                    <option value="">-- Select a block type --</option>
-                                    <option value="links">Links</option>
-                                    <option value="text">Text</option>
-                                </select>
-                            </div>
-                            <label>Link</label>
-                            <fieldset class="form-group position-relative has-icon-left">
-                              <input type="text" class="form-control" placeholder="Enter link">
-                              <div class="form-control-position">
-                                <i class="bx bx-link"></i>
-                              </div>
-                            </fieldset>              
-                            <button class="btn btn-light-primary btn-block rounded" type="button">
-                                <span><i class="bx bx-link"></i> Add Link</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <!-- Add Block -->
-                <div class="col-md-12 mb-1">
-                    <button class="btn btn-primary btn-block rounded" type="button">
-                        <span><i class="bx bx-book-reader"></i> Add Resource Block</span>
-                    </button>
-                </div>
-                <!-- Tags Info -->
-                <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-header">
-                        <h4 class="card-title">Tags Info</h4>
-                      </div>
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-12">
-                              <div class="mb-1">
-                                <button class="btn btn-danger search-btn rounded" type="button">
-                                    <span>JavaScript &nbsp;&nbsp;&nbsp; x</span>
-                                </button>
-                              </div>
-                            <fieldset>
-                                <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Enter tag here" aria-describedby="button-addon2">
-                                  <div class="input-group-append" id="button-addon2">
-                                    <button class="btn btn-primary" type="button"><i class="bx bx-purchase-tag"></i> &nbsp;Add Tag</button>
-                                  </div>
-                                </div>
+                           <div class="col-md-12">
+                              <fieldset class="form-group">
+                                 <label>Title</label>
+                                 <input type="text" class="form-control" placeholder="Enter resource block title" ng-model="addResource.resourceData.blocks[blockIndex].title">
                               </fieldset>
-                            </div>
+                              <div class="form-group d-flex flex-md-row flex-column justify-content-between align-items-center">
+                                  <div class="text-left">
+                                      <div class="checkbox checkbox-sm">
+                                          <input type="checkbox" class="form-check-input" id="{{ 'discriptionCheck' + blockIndex }}" ng-model="addResource.resourceData.blocks[blockIndex].isDescription">
+                                          <label class="checkboxsmall" for="{{ 'discriptionCheck' + blockIndex }}"><span>Add description?</span></label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <fieldset class="form-group" ng-if="addResource.resourceData.blocks[blockIndex].isDescription">
+                                 <label>Description</label>
+                                 <textarea type="text" class="form-control" placeholder="Enter resource block description" ng-model="addResource.resourceData.blocks[blockIndex].description" rows="3"></textarea>
+                                 <p><small class="text-muted"> Resource block information goes here.</small></p>
+                              </fieldset>
+                              <div class="divider">
+                                 <div class="divider-text text-uppercase text-muted"><small>Resource Links</small>
+                                 </div>
+                              </div>
+                              <label>Link</label>
+                              <fieldset class="form-group position-relative has-icon-left" ng-repeat="resourceBlock in [] | range: addResource.resourceData.blocks[blockIndex].total_links" ng-init="linkIndex = $index">
+                                 <input type="text" class="form-control" placeholder="Enter link" ng-model="addResource.resourceData.blocks[blockIndex].links[linkIndex].link" ng-change="verifyLink(addResource.resourceData.blocks[blockIndex].links[linkIndex].link, blockIndex, linkIndex)">
+                                 <div class="form-control-position">
+                                    <i class="bx bx-link" ng-if="!addResource.resourceData.blocks[blockIndex].links[linkIndex].link"></i>
+                                    <i class="bx bx-check-circle text-success" ng-if="addResource.resourceData.blocks[blockIndex].links[linkIndex].link && addResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
+                                    <i class="bx bx-x-circle text-danger" ng-if="addResource.resourceData.blocks[blockIndex].links[linkIndex].link && !addResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
+                                 </div>
+                              </fieldset>
+                              <button class="btn btn-light-primary btn-block rounded" type="button" ng-click="addResourceBlockLink(blockIndex)">
+                              <span><i class="bx bx-link"></i> Add Link</span>
+                              </button>
+                           </div>
                         </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <button type="button" class="btn btn-success glow mr-1 mb-1">
-                        <i class="bx bx-check"></i>
-                        <span class="align-middle ml-25">Publish Now</span>
-                    </button>        
-                </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Add Block -->
+               <div class="col-md-12 mb-1">
+                  <button class="btn btn-primary btn-block rounded" type="button" ng-click="addResourceBlock()">
+                  <span><i class="bx bx-book-reader"></i> Add Resource Block</span>
+                  </button>
+               </div>
+               <!-- Tags Info -->
+               <div class="col-md-12">
+                  <div class="card">
+                     <div class="card-header">
+                        <h4 class="card-title">Tags Info</h4>
+                     </div>
+                     <div class="card-body">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="mb-1">
+                                 <button class="btn btn-danger search-btn rounded mr-1" type="button" ng-repeat="tag in addResource.resourceData.tags" ng-init="$tagIndex = $index" ng-click="removeResourceTag($tagIndex)">
+                                    <span>{{ tag }} &nbsp;&nbsp;&nbsp; <i class="bx bx-x-circle"></i></span>
+                                 </button>
+                              </div>
+                              <fieldset>
+                                 <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter tag here" aria-describedby="button-addon2" ng-model="tag">
+                                    <div class="input-group-append" id="button-addon2">
+                                       <button class="btn btn-primary" type="button" ng-click="addResourceTag(tag);"><i class="bx bx-purchase-tag"></i> &nbsp;Add Tag</button>
+                                    </div>
+                                 </div>
+                              </fieldset>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <button type="submit" class="btn btn-success glow mr-1 mb-1" ng-if="!addResource.loading">
+                     <i class="bx bx-check"></i>
+                     <span class="align-middle ml-25">Publish Now</span>
+                  </button> 
+                  <button class="btn btn-success glow mr-1 mb-1" type="button" ng-if="addResource.loading" disabled>
+                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                     &nbsp;&nbsp;Publish Now
+                 </button>       
+               </div>
             </div>
-          </section>
+         </form>
+       </section>
     </div>
-</div>
+ </div>
