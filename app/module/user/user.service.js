@@ -17,7 +17,7 @@ exports.findUser        = (payload, callback) => {
 
     Object.keys(payload).forEach((fieldName, fieldIndex) => {
         if(fieldIndex !== 0) QUERY += ' AND ';
-        QUERY           += `${fieldName} == "${payload[fieldName]}"`
+        QUERY           += `${fieldName} = "${payload[fieldName]}"`
     })
 
     database.query(QUERY, function(error, response) {
@@ -38,12 +38,12 @@ exports.createUser      = (payload, callback) => {
                 email           : payload.email,
                 firstName       : payload.firstName || 'Guest',
                 lastName        : payload.lastName  || 'User',
-                about           : payload.about,
+                about           : payload.about || "",
                 avatar          : config.DEFAULT_AVATAR_LINK,
-                twitter         : payload.twitter,
-                linkedin        : payload.linkedin,
-                website         : payload.website,
-                youtube         : payload.youtube,
+                twitter         : payload.twitter || "",
+                linkedin        : payload.linkedin || "",
+                website         : payload.website || "",
+                youtube         : payload.youtube || "",
                 verified        : false
             }
         ]

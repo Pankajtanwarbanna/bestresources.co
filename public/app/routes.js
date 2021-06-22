@@ -29,8 +29,7 @@ let app = angular.module('userRoutes', ['ngRoute'])
             })
 
             .when('/tags', {
-                templateUrl     : '/app/views/tags/tags.html',
-                authenticated   : false
+                templateUrl     : '/app/views/tags/tags.html'
             })
 
             .when('/profile', {
@@ -51,8 +50,7 @@ let app = angular.module('userRoutes', ['ngRoute'])
             })
 
             .when('/team', {
-                templateUrl     : '/app/views/team/team.html',
-                authenticated   : false
+                templateUrl     : '/app/views/team/team.html'
             })
 
             .otherwise( { redirectTo : '/'});

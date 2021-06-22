@@ -20,6 +20,14 @@ exports.resourceValidator   = function (req, res, next) {
         'tags'              : {
             notEmpty        : true,
             errorMessage    : 'Tags cannot be empty!'
+        },
+        'resourceLevel'     : {
+            notEmpty        : true,
+            errorMessage    : 'Level of resource cannot be empty!'
+        },
+        'resourceType'      : {
+            notEmpty        : true,
+            errorMessage    : 'Type of resource cannot be empty!'
         }
     };
     
@@ -37,3 +45,25 @@ exports.resourceValidator   = function (req, res, next) {
     });
 };
 
+exports.getResourceValidator= function (req, res, next) {
+    
+    let validationSchema    = {
+        'resourceId'             : {
+            notEmpty        : true,
+            errorMessage    : 'resourceId cannot be empty!'
+        }
+    };
+    
+    req.checkParams(validationSchema);
+
+    req.getValidationResult().then(function (result) {
+        if(false == result.isEmpty()) {
+            return res.status(400).json(ResponseHelper.build(
+                'ERROR_VALIDATION',
+                errorHelper.parseValidationErrors(result.mapped())
+            )).end();
+        }
+        
+        next();
+    });
+};

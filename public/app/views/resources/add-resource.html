@@ -29,11 +29,11 @@
                            <div class="col-md-12">
                               <fieldset class="form-group">
                                  <label>Title</label>
-                                 <input type="text" class="form-control" placeholder="Enter resource title" ng-model="addResource.resourceData.title">
+                                 <input type="text" class="form-control" placeholder="Enter resource title" ng-model="addResource.resourceData.title" required>
                               </fieldset>
                               <fieldset class="form-group">
                                  <label>Description</label>
-                                 <textarea type="text" class="form-control" placeholder="Enter resource description" ng-model="addResource.resourceData.description" rows="3"></textarea>
+                                 <textarea type="text" class="form-control" placeholder="Enter resource description" ng-model="addResource.resourceData.description" rows="3" required></textarea>
                                  <p><small class="text-muted">Write something related to resource which helps readers.</small></p>
                               </fieldset>
                            </div>
@@ -52,19 +52,19 @@
                            <div class="col-md-12">
                               <fieldset class="form-group">
                                  <label>Title</label>
-                                 <input type="text" class="form-control" placeholder="Enter resource block title" ng-model="addResource.resourceData.blocks[blockIndex].title">
+                                 <input type="text" class="form-control" placeholder="Enter resource block title" ng-model="addResource.resourceData.blocks[blockIndex].title" required>
                               </fieldset>
                               <div class="form-group d-flex flex-md-row flex-column justify-content-between align-items-center">
                                   <div class="text-left">
                                       <div class="checkbox checkbox-sm">
                                           <input type="checkbox" class="form-check-input" id="{{ 'discriptionCheck' + blockIndex }}" ng-model="addResource.resourceData.blocks[blockIndex].isDescription">
-                                          <label class="checkboxsmall" for="{{ 'discriptionCheck' + blockIndex }}"><span>Add description?</span></label>
+                                          <label class="checkboxsmall" for="{{ 'discriptionCheck' + blockIndex }}"><span>Add some text?</span></label>
                                       </div>
                                   </div>
                               </div>
                               <fieldset class="form-group" ng-if="addResource.resourceData.blocks[blockIndex].isDescription">
                                  <label>Description</label>
-                                 <textarea type="text" class="form-control" placeholder="Enter resource block description" ng-model="addResource.resourceData.blocks[blockIndex].description" rows="3"></textarea>
+                                 <textarea type="text" class="form-control" placeholder="Enter resource block description" ng-model="addResource.resourceData.blocks[blockIndex].description" rows="3" required></textarea>
                                  <p><small class="text-muted"> Resource block information goes here.</small></p>
                               </fieldset>
                               <div class="divider">
@@ -73,7 +73,7 @@
                               </div>
                               <label>Link</label>
                               <fieldset class="form-group position-relative has-icon-left" ng-repeat="resourceBlock in [] | range: addResource.resourceData.blocks[blockIndex].total_links" ng-init="linkIndex = $index">
-                                 <input type="text" class="form-control" placeholder="Enter link" ng-model="addResource.resourceData.blocks[blockIndex].links[linkIndex].link" ng-change="verifyLink(addResource.resourceData.blocks[blockIndex].links[linkIndex].link, blockIndex, linkIndex)">
+                                 <input type="text" class="form-control" placeholder="Enter link" ng-model="addResource.resourceData.blocks[blockIndex].links[linkIndex].link" ng-change="verifyLink(addResource.resourceData.blocks[blockIndex].links[linkIndex].link, blockIndex, linkIndex)" required>
                                  <div class="form-control-position">
                                     <i class="bx bx-link" ng-if="!addResource.resourceData.blocks[blockIndex].links[linkIndex].link"></i>
                                     <i class="bx bx-check-circle text-success" ng-if="addResource.resourceData.blocks[blockIndex].links[linkIndex].link && addResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
@@ -116,6 +116,38 @@
                                     </div>
                                  </div>
                               </fieldset>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Some more info -->
+               <div class="col-md-12">
+                  <div class="card">
+                     <div class="card-header">
+                        <h4 class="card-title">Some more Info</h4>
+                     </div>
+                     <div class="card-body">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 <label>Resource Type</label>
+                                 <select class="form-control" id="accountSelect" ng-model="addResource.resourceData.resourceType" required>
+                                    <option value="">-- Select resource type --</option> 
+                                    <option value="FREE">FREE</option>
+                                     <option value="PAID">PAID</option>
+                                     <option value="FREE-PAID">FREE + PAID</option>
+                                 </select>
+                              </div>
+                             <div class="form-group">
+                                 <label>Resource Level</label>
+                                 <select class="form-control" id="accountSelect" ng-model="addResource.resourceData.resourceLevel" required>
+                                    <option value="">-- Select resource level --</option>
+                                    <option value="BEGINNER">Beginner Friendly</option>
+                                    <option value="INTERMEDIATE">Intermediate</option>
+                                    <option value="EXPERT">Expert</option>
+                                 </select>
+                              </div>
                            </div>
                         </div>
                      </div>

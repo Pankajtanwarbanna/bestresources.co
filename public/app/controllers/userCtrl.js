@@ -112,7 +112,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     }
 
     $scope.addResourceTag           = (tag) => {
-        app.resourceData.tags.push(tag);
+        app.resourceData.tags.push(tag.toLowerCase());
         $scope.tag                  = null;
     }
 
@@ -122,7 +122,6 @@ angular.module('userCtrl', ['userServices', 'authServices'])
 
     app.postResource                = (resourceData) => {
         app.loading                 = true;
-        console.log(app.resourceData)
         user.postResource(app.resourceData).then(function(data) {
             let response        = data.data.response;
             app.successMsg      = response.message;

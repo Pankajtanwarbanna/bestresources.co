@@ -23,7 +23,7 @@ angular.module('userServices',[])
     
     // user.postResource(resourseData)
     userFactory.postResource        = function(data) {
-        return $http.post('/api/resource', data)
+        return $http.post('/api/resources/new', data)
     }
 
     return userFactory;

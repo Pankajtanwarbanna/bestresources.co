@@ -9,13 +9,27 @@ const authMiddleware    = require(constant.path.middleware + '/auth.middleware')
 const resourceController    = require(constant.path.module + 'resource/resource.controller');
 const resourceValidator     = require(constant.path.module + 'resource/resource.validator');
 
-
 router.post(
-    '/',
+    '/new',
     jwtMiddleware.verify,
     authMiddleware.ensureUser,
     resourceValidator.resourceValidator,
     resourceController.new
+);
+
+router.get(
+    '/',
+    jwtMiddleware.verify,
+    authMiddleware.ensureUser,
+    resourceController.get
+);
+
+router.get(
+    '/:resourceId',
+    jwtMiddleware.verify,
+    authMiddleware.ensureUser,
+    resourceValidator.getResourceValidator,
+    resourceController.getResource
 );
 
 module.exports = {
