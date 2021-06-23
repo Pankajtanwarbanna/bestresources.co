@@ -34,7 +34,7 @@
                                         <div class="form-group">
                                             <div class="controls">
                                                 <label>First Name</label>
-                                                <input type="text" class="form-control" placeholder="Enter First Name" ng-model="main.user.firstName">
+                                                <input type="text" class="form-control" placeholder="Enter First Name" ng-model="main.user.firstName" required>
                                             </div>
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@
                                         <div class="form-group">
                                             <div class="controls">
                                                 <label>Last Name</label>
-                                                <input type="text" class="form-control" placeholder="Enter Last Name" ng-model="main.user.lastName">
+                                                <input type="text" class="form-control" placeholder="Enter Last Name" ng-model="main.user.lastName" required>
                                             </div>
                                         </div>
                                     </div>
@@ -58,7 +58,7 @@
                                         <div class="form-group">
                                             <div class="controls">
                                                 <label>About</label>
-                                                <textarea type="text" class="form-control" placeholder="Write something about you." ng-model="main.user.about" rows="3"></textarea>
+                                                <textarea type="text" class="form-control" placeholder="Write something about you." ng-model="main.user.about" rows="3" required></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                         <div class="col-12 col-sm-6">
                                             <label>Twitter</label>
                                             <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="text" class="form-control" placeholder="Enter your twitter profile" ng-model="main.user.twitter">
+                                                <input type="url" class="form-control" placeholder="Enter your twitter profile" ng-model="main.user.twitter" required>
                                                 <div class="form-control-position">
                                                     <i class="bx bxl-twitter"></i>
                                                 </div>
@@ -85,7 +85,7 @@
                                         <div class="col-12 col-sm-6">
                                             <label>LinkedIn</label>
                                             <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="text" class="form-control" placeholder="Enter your LinkedIn profile" ng-model="main.user.linkedIn">
+                                                <input type="url" class="form-control" placeholder="Enter your LinkedIn profile" ng-model="main.user.linkedin" required>
                                                 <div class="form-control-position">
                                                     <i class="bx bxl-linkedin"></i>
                                                 </div>
@@ -94,7 +94,7 @@
                                         <div class="col-12 col-sm-6">
                                             <label>Website</label>
                                             <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="text" class="form-control" placeholder="Enter your website" ng-model="main.user.website">
+                                                <input type="url" class="form-control" placeholder="Enter your website" ng-model="main.user.website">
                                                 <div class="form-control-position">
                                                     <i class="bx bx-world"></i>
                                                 </div>
@@ -103,7 +103,7 @@
                                         <div class="col-12 col-sm-6">
                                             <label>YouTube</label>
                                             <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="text" class="form-control" placeholder="Enter your YouTube profile" ng-model="main.user.youtube">
+                                                <input type="url" class="form-control" placeholder="Enter your YouTube profile" ng-model="main.user.youtube">
                                                 <div class="form-control-position">
                                                     <i class="bx bxl-youtube"></i>
                                                 </div>

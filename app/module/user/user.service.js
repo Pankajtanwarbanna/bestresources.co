@@ -28,6 +28,32 @@ exports.findUser        = (payload, callback) => {
     })
 }
 
+exports.updateCount     = (payload, callback) => {
+
+    let QUERY           = '';
+
+    if(payload.resource) {
+        QUERY           = `
+            UPDATE ${SCHEMA}.${TABLE}
+            SET     totalResource = totalResource + 1
+            WHERE   userId  = "${payload.userId}"
+        `;
+    } else {
+        QUERY           = `
+            UPDATE ${SCHEMA}.${TABLE}
+            SET     totalThanks = totalThanks + 1
+            WHERE   userId  = "${payload.userId}"
+        `;
+    }
+
+    database.query(QUERY, function(error, response) {
+        if(error) {
+            return callback(error);
+        }
+        return callback(null, response.data);
+    })
+}
+
 exports.createUser      = (payload, callback) => {
 
     database.insert({
@@ -36,14 +62,16 @@ exports.createUser      = (payload, callback) => {
             {
                 userId          : Utility.uuid(),
                 email           : payload.email,
-                firstName       : payload.firstName || 'Guest',
-                lastName        : payload.lastName  || 'User',
+                firstName       : payload.email.split('@')[0] || 'Guest',
+                lastName        : payload.lastName  || '',
                 about           : payload.about || "",
                 avatar          : config.DEFAULT_AVATAR_LINK,
                 twitter         : payload.twitter || "",
                 linkedin        : payload.linkedin || "",
                 website         : payload.website || "",
                 youtube         : payload.youtube || "",
+                totalResource   : 0,
+                totalThanks     : 0,
                 verified        : false
             }
         ]
@@ -51,6 +79,9 @@ exports.createUser      = (payload, callback) => {
         if(error) {
             return callback(error);
         }
+        result          = [{
+            'userId'    : result.data.inserted_hashes[0] 
+        }]
         return callback(null, result)
     })
 }

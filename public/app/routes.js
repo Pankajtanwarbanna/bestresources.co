@@ -17,7 +17,7 @@ let app = angular.module('userRoutes', ['ngRoute'])
                 controllerAs    : 'verify'
             })
 
-            .when('/resource', {
+            .when('/resource/:resourceSlugUrl', {
                 templateUrl     : '/app/views/resources/resource.html'
             })
             

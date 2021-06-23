@@ -77,7 +77,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     } 
 })
 
-.controller('addResourceController' , function(user, $scope) {
+.controller('addResourceController' , function(user, $scope, $timeout, $location) {
     let app                         = this;
     app.resourceData                = {
         "total_blocks"              : 1,
@@ -125,7 +125,11 @@ angular.module('userCtrl', ['userServices', 'authServices'])
         user.postResource(app.resourceData).then(function(data) {
             let response        = data.data.response;
             app.successMsg      = response.message;
+            app.url             = response.url;
             app.loading         = false;
+            $timeout(function() {
+                $location.path(response.url)
+            }, 10000);
         }).catch(error => {
             let response        = error.data.response;
             app.errorMsg        = response.message;

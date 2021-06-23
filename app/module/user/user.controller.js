@@ -8,10 +8,11 @@ const Utility               = require(constant.path.app + 'util/utility');
 
 exports.join                = (req, res) => {
     
+    const payload           = {
+        'email'             : req.body.email
+    }
+
     const getUser           = function(getUserCallback) {
-        const payload       = {
-            'email'         : req.body.email
-        }
         userService.findUser(payload, function(error, user) {
             if(error) {
                 return getUserCallback(error);
@@ -29,8 +30,9 @@ exports.join                = (req, res) => {
                 } 
                 return createUserCallback(null, user);
             });
+        } else {
+            return createUserCallback(null, user);
         }
-        return createUserCallback(null, user);
     }
 
     const generateMagicLink = function(userInfo, generateMagicLinkCallback) {

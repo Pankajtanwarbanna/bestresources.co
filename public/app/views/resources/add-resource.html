@@ -1,4 +1,28 @@
-<div class="content-wrapper">
+<div class="content-wrapper" ng-if="addResource.successMsg">
+   <div class="content-body">
+       
+       <section id="auth-login" class="row flexbox-container">
+           <div class="col-12">
+               <div class="card bg-transparent shadow-none kb-header">
+                 <!-- Verified -->
+                 <div class="card-body text-center" ng-if="!verify.verified">
+                   <div class="mb-1" >
+                       <img src="/assets/images/icon/verified.png" width="294px" height="253px;">
+                   </div>
+                   <h1 class="mb-2 text-success kb-title">Kaboom 💥 </h1>
+                   <p class="mb-3">
+                     Hey 👋 {{ main.user.firstName }}, {{ addResource.successMsg }}
+                   </p>
+                   <small>(redirecting you to your resource at <a href="{{ addResource.url }}">{{ addResource.url }}</a>)</small>
+                 </div>
+                 <!-- Failed -->
+               </div>
+             </div>
+       </section>
+   </div>
+</div>
+
+<div class="content-wrapper" ng-if="!addResource.successMsg">
     <div class="content-header row">
        <div class="content-header-left col-12 mb-2 mt-1">
           <div class="breadcrumbs-top">
@@ -13,9 +37,25 @@
           </div>
        </div>
     </div>
-    <div class="content-body">
+    <div class="content-body" ng-if="!main.goodGuy">
+      <section>
+         <div class="row">
+            <div class="col-12">
+               <!-- Profile Not complete Msg -->
+               <div class="alert bg-rgba-danger alert-dismissible mb-2" role="alert">
+                  <p class="mb-0 text-primary">
+                     Hey 👋 {{ main.user.firstName }}, we have noticed that you have not completed your profile. Please fill out the profile details to proceed further.
+                  </p>
+                  <br>
+                  <a href="/profile" class="text-success"><i class="bx bx-user"></i>Complete Profile Now</a>
+               </div>
+           </div>
+         </div>
+      </section>
+    </div>
+    <div class="content-body" ng-if="main.goodGuy">
        <!--/ Search result section -->
-       <section class="faq-bottom">
+       <section>
          <form ng-submit="addResource.postResource(resourceData);">
             <div class="row">
                <!-- Resource Info -->
@@ -72,14 +112,26 @@
                                  </div>
                               </div>
                               <label>Link</label>
-                              <fieldset class="form-group position-relative has-icon-left" ng-repeat="resourceBlock in [] | range: addResource.resourceData.blocks[blockIndex].total_links" ng-init="linkIndex = $index">
-                                 <input type="text" class="form-control" placeholder="Enter link" ng-model="addResource.resourceData.blocks[blockIndex].links[linkIndex].link" ng-change="verifyLink(addResource.resourceData.blocks[blockIndex].links[linkIndex].link, blockIndex, linkIndex)" required>
-                                 <div class="form-control-position">
-                                    <i class="bx bx-link" ng-if="!addResource.resourceData.blocks[blockIndex].links[linkIndex].link"></i>
-                                    <i class="bx bx-check-circle text-success" ng-if="addResource.resourceData.blocks[blockIndex].links[linkIndex].link && addResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
-                                    <i class="bx bx-x-circle text-danger" ng-if="addResource.resourceData.blocks[blockIndex].links[linkIndex].link && !addResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
+                              <div class="row" ng-repeat="resourceBlock in [] | range: addResource.resourceData.blocks[blockIndex].total_links" ng-init="linkIndex = $index">
+                                 <div class="col-12 col-sm-6">
+                                    <fieldset class="form-group position-relative has-icon-left">
+                                       <input type="text" class="form-control" placeholder="Enter link" ng-model="addResource.resourceData.blocks[blockIndex].links[linkIndex].link" ng-change="verifyLink(addResource.resourceData.blocks[blockIndex].links[linkIndex].link, blockIndex, linkIndex)" required>
+                                       <div class="form-control-position">
+                                          <i class="bx bx-link" ng-if="!addResource.resourceData.blocks[blockIndex].links[linkIndex].link"></i>
+                                          <i class="bx bx-check-circle text-success" ng-if="addResource.resourceData.blocks[blockIndex].links[linkIndex].link && addResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
+                                          <i class="bx bx-x-circle text-danger" ng-if="addResource.resourceData.blocks[blockIndex].links[linkIndex].link && !addResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
+                                       </div>
+                                    </fieldset>
                                  </div>
-                              </fieldset>
+                                 <div class="col-12 col-sm-6">
+                                    <fieldset class="form-group position-relative has-icon-left">
+                                       <input type="text" class="form-control" placeholder="Enter title of link" ng-model="addResource.resourceData.blocks[blockIndex].links[linkIndex].title" required>
+                                       <div class="form-control-position">
+                                          <i class="bx bx-text"></i>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                              </div>
                               <button class="btn btn-light-primary btn-block rounded" type="button" ng-click="addResourceBlockLink(blockIndex)">
                               <span><i class="bx bx-link"></i> Add Link</span>
                               </button>
@@ -154,6 +206,19 @@
                   </div>
                </div>
                <div class="col-md-12">
+                  <!-- Error Msg -->
+                  <div class="alert bg-rgba-danger alert-dismissible mb-2" role="alert" ng-if="addResource.errorMsg">
+                     <p class="mb-0 text-danger">
+                        <b>😔 Oops!</b> {{ addResource.errorMsg }}
+                     </p>
+                  </div>
+                  <!-- Loading Msg -->
+                  <div class="alert bg-rgba-primary alert-dismissible mb-2" role="alert" ng-if="addResource.loading">
+                     <p class="mb-0">
+                        <b>⏱️ Hold on!</b> please wait while we setup this amazing resource for the community.
+                     </p>
+                  </div>
+
                   <button type="submit" class="btn btn-success glow mr-1 mb-1" ng-if="!addResource.loading">
                      <i class="bx bx-check"></i>
                      <span class="align-middle ml-25">Publish Now</span>

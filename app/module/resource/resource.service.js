@@ -9,25 +9,35 @@ const USERS_TABLE       = 'users';
 
 exports.createResource  = (payload, callback) => {
 
+    let slugUrl         = Utility.generateSlugUrl(payload.title) + '-' + Utility.shortId();
     database.insert({
         table       : RESOURCE_TABLE,
         records     : [
             {
-                resourceId      : Utility.uuid(),
-                title           : payload.title,
-                description     : payload.description,
-                blocks          : payload.blocks,
-                tags            : payload.tags,
-                slugUrl         : payload.title.split(' ').join('-') + '-' + Utility.uuid(),
-                resourceLevel   : payload.resourceLevel,
-                resourceType    : payload.resourceType,
-                author          : payload.author,
-                show            : true
+                'resourceId'    : Utility.uuid(),
+                'title'         : payload.title.trim(),
+                'description'   : payload.description.trim(),
+                'blocks'        : payload.blocks,
+                'tags'          : payload.tags,
+                'resourceType'  : payload.resourceType,
+                'resourceLevel' : payload.resourceLevel,
+                'views'         : {},
+                'viewsCount'    : 0,
+                'thanks'        : {},
+                'thanksCount'   : 0,
+                'blocksCount'   : Object.keys(payload.blocks).length,    
+                'slugUrl'       : slugUrl,
+                'author'        : payload.author,
+                'show'          : true
             }
         ]
     }, function(error, result) {
         if(error) {
             return callback(error);
+        }
+        result          = {
+            'message'   : "That's really great! Your resources has been published.",
+            'url'       : '/resource/' + slugUrl
         }
         return callback(null, result)
     })
@@ -35,24 +45,45 @@ exports.createResource  = (payload, callback) => {
 
 exports.getResources    = (payload, callback) => {
 
-    //payload['show']     = true;
     let QUERY           = `
         SELECT  resource.resourceId,
                 resource.title,
                 resource.description,
-                resource.blocks,
                 resource.slugUrl,
                 resource.tags,
+                resource.thanksCount,
+                resource.viewsCount,
+                resource.blocksCount,
+                resource.resourceLevel,
+                resource.resourceType,
                 resource.__createdtime__,
                 resource.__updatedtime__,
                 user.firstName,
                 user.lastName,
                 user.about,
-                user.twitter
+                user.avatar
         FROM ${SCHEMA}.${RESOURCE_TABLE} AS resource
         INNER JOIN ${SCHEMA}.${USERS_TABLE} AS user ON user.userId = resource.author
     `;
+
+    let trend           = payload.trend;
+    switch(trend) {
+        case 'intresting':
+            QUERY       += `ORDER BY resource.thanksCount DESC`;
+            break;
+        case 'hot':
+            QUERY       += `ORDER BY resource.thanksCount DESC, resource.viewsCount DESC, resource.blocksCount DESC`;
+            break;
+        case 'recent':
+            QUERY       += `ORDER BY resource.__createdtime__ DESC`;
+            break;
+        default:
+            QUERY  .getResources     += `ORDER BY resource.thanksCount DESC`;
+            break;
+    }
     
+    if(payload['trend']) delete payload['trend'];
+
     Object.keys(payload).forEach((fieldName, fieldIndex) => {
         if(fieldIndex === 0) {
             QUERY       += ' WHERE ';
@@ -61,8 +92,6 @@ exports.getResources    = (payload, callback) => {
         }
         QUERY           += `resource.${fieldName} = "${payload[fieldName]}"`
     })
-
-    console.log(QUERY);
 
     database.query(QUERY, function(error, response) {
         if(error) {

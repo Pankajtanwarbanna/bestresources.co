@@ -20,6 +20,7 @@ angular.module('mainController', ['authServices'])
 
             auth.getUser().then(function (data){
                 app.user    = data.data.response[0];
+                app.goodGuy = app.user.firstName && app.user.lastName && app.user.about && app.user.twitter && app.user.linkedin;
                 app.loadme  = true;
             }).catch(function (error) {
                 app.loadme  = true;
