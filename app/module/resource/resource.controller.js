@@ -80,7 +80,7 @@ exports.getResource         = (req, res) => {
 
     const getResources      = function(getResourcesCallback) {
         const payload       = {
-            resourceId      : req.params.resourceId
+            slugUrl         : req.params.slugUrl
         }
         resourceService.getResources(payload, function(error, resource) {
             if(error) {

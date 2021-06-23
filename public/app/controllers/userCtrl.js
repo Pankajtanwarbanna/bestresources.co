@@ -136,4 +136,22 @@ angular.module('userCtrl', ['userServices', 'authServices'])
             app.loading         = false;
         })
     }
-});
+})
+
+.controller('resourceController', function(user, $routeParams) {
+    let app                     = this;
+
+    let slugUrl                 = $routeParams.resourceSlugUrl;
+    app.loading                 = true;
+
+    user.fetchResource(slugUrl).then(function(data) {
+        let response            = data.data.response;
+        app.content             = response[0];
+        app.loading             = false;
+    }).catch(error => {
+        let response            = error.data.response;
+        app.errorMsg            = response.message;
+        app.loading             = false;
+        app.loading             = false;
+    })
+})

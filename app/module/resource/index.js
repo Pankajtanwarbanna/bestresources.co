@@ -19,15 +19,11 @@ router.post(
 
 router.get(
     '/',
-    jwtMiddleware.verify,
-    authMiddleware.ensureUser,
     resourceController.get
 );
 
 router.get(
-    '/:resourceId',
-    jwtMiddleware.verify,
-    authMiddleware.ensureUser,
+    '/:slugUrl',
     resourceValidator.getResourceValidator,
     resourceController.getResource
 );

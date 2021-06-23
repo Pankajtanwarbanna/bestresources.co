@@ -48,9 +48,9 @@ exports.resourceValidator   = function (req, res, next) {
 exports.getResourceValidator= function (req, res, next) {
     
     let validationSchema    = {
-        'resourceId'             : {
+        'slugUrl'           : {
             notEmpty        : true,
-            errorMessage    : 'resourceId cannot be empty!'
+            errorMessage    : 'slugUrl cannot be empty!'
         }
     };
     

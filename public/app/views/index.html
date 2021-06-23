@@ -227,20 +227,20 @@
 						<div class="col-12">
 							<!-- search menu tab -->
 							<ul class="nav nav-pills py-1 mb-1" role="tablist">
-								<li class="nav-item">
-									<a class="nav-link active" id="intresting-tab" data-toggle="tab" href="#intresting" role="tab" aria-selected="true">
+								<li class="nav-item" ng-click="main.selectTrend('intresting');">
+									<a class="nav-link active" id="intresting-tab" data-toggle="tab" href="#" role="tab" aria-selected="true">
 									<i class="bx bx-happy-heart-eyes"></i>
 									<span class="d-none d-sm-block">Intresting</span>
 									</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" id="trending-tab" data-toggle="tab" href="#trending" role="tab" aria-selected="false">
+								<li class="nav-item" ng-click="main.selectTrend('hot');">
+									<a class="nav-link" id="trending-tab" data-toggle="tab" href="#" role="tab" aria-selected="false">
 									<i class="bx bxs-hot"></i>
 									<span class="d-none d-sm-block">Trending</span>
 									</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" id="recent-tab" data-toggle="tab" href="#recent" role="tab" aria-selected="false">
+								<li class="nav-item" ng-click="main.selectTrend('recent');">
+									<a class="nav-link" id="recent-tab" data-toggle="tab" href="#" role="tab" aria-selected="false">
 									<i class="bx bx-time"></i>
 									<span class="d-none d-sm-block">Recent</span>
 									</a>
@@ -252,52 +252,71 @@
 					<!-- Search Bar end -->
 
 					<!-- seach result section -->
-					<div class="row">
+					<div class="row" ng-if="main.loading">
+						<!-- Loading -->
+						<div class="col-12" ng-if="main.loading">
+							<div class="card bg-transparent shadow-none kb-header">
+								<!-- Verifying -->
+								<div class="card-body text-center" ng-if="!verify.verified && !verify.errorMsg">
+								<div class="spinner-border text-success mb-1" role="status">
+									<span class="sr-only">Loading...</span>
+								</div>
+								<h1 class="mb-2 text-primary kb-title">{{ main.loadingMsg }}</h1>
+								<p class="mb-3">
+									pulling it out, trust me, it's worth the wait.
+								</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" ng-if="!main.loading">
 						<!-- Search content area -->
 						<div class="col-lg-8 col-md-7 col-12 order-2 order-md-1">
 							<div id="searchResults" class="py-0 search-results">
 								<!-- Web results -->
 								<div class="web-result">
 									<ul class="list-unstyled">
-									<li>
+									<li ng-repeat="resource in main.resources">
 										<div class="card">
 										<div class="card-header pb-0">
 											<div class="media align-items-center">
-												<a href="/profile" class="pr-1" target="_blank">
-													<img src="/assets/images/icon/default-user.webp" alt="Pankaj Tanwar" class="rounded-circle" height="40" width="40">
+												<a href="/profile/{{ resource.userId }}" class="pr-1" target="_blank">
+													<img src="{{ resource.avatar }}" alt="Pankaj Tanwar" class="rounded-circle" height="40" width="40">
 												</a>
 												<div class="media-body d-sm-flex justify-content-between align-items-center">
 													<div class="media-text ">
 														<p class="mt-50 mb-0 card-text">
-															<a class="mb-0" href="/profile">Pankaj Tanwar</a>
+															<a class="mb-0" href="/profile/{{ resource.userId }}">{{ resource.firstName }} {{ resource.lastName }}</a>
 														</p>
-														<p>Senior Software Engineer at Uber (5+ YOE)</p>
+														<p>{{ resource.about }} </p>
 													</div>
 												</div>
 											</div>
-											<h4 class="card-title cursor-pointer">
-												<a href="/resource">
-													My resources to learn system design to advance level.
+										</div>
+										<div class="card-header pb-0 pt-0">
+											<h4 class="card-title cursor-pointer align-items-left">
+												<a href="/resource/{{ resource.slugUrl }}">
+													{{ resource.title }}
 												</a>
 											</h4>
 										</div>
 										<div class="card-body" style="padding-bottom: 10px;">
 											<div class="d-lg-flex align-items-center mb-50">
 												<div class=" font-small-2">
-													Posted 2 hours ago - 1.2K views
+													Posted 2 hours ago - {{ resource.viewsCount }} views
 												</div>
 											</div>
 											<p class="card-text">
-												<b>Feb 22, 2021</b> - Hey everyone, I am sharing my resources, which I used while preparing for system design interviews. It helped me grab offers from Uber... 
+												<b>{{ resource.__createdtime__ | date : 'MMM d, yyyy' }}</b> - {{ resource.description}} 
 											</p>
-											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">Free</span>
-											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">Begineer</span>
+											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">{{ resource.resourceType }}</span>
+											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">{{ resource.resourceLevel }}</span>
 											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">System Design</span>
 										</div>
 										<div class="card-footer border-top d-flex justify-content-between">
 											<div>
 												<i class="bx bx-donate-heart"></i>
-												<small class="mb-50">54 Thanks</small>	
+												<small class="mb-50">{{ resource.thanksCount }} Thanks</small>	
 											</div>
 											<div>
 												<i class="bx bx-share-alt"></i>
@@ -420,7 +439,7 @@
 				<!--/ Search result section -->
 			</div>
 		</div>
-		<div class="ng-view"></div>
+		<div class="ng-view" autoscroll="true"></div>
 	</div>
 	<!-- END: Content-->
 

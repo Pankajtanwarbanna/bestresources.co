@@ -26,5 +26,15 @@ angular.module('userServices',[])
         return $http.post('/api/resources/new', data)
     }
 
+    // user.getResources();
+    userFactory.getResources        = function(trend) {
+        return $http.get('/api/resources?trend='+ trend);
+    }
+
+    // user.fetchResource(slugUrl)
+    userFactory.fetchResource       = function(slugUrl) {
+        return $http.get('/api/resources/' + slugUrl);
+    }
+
     return userFactory;
 });

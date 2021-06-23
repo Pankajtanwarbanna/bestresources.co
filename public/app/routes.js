@@ -18,7 +18,9 @@ let app = angular.module('userRoutes', ['ngRoute'])
             })
 
             .when('/resource/:resourceSlugUrl', {
-                templateUrl     : '/app/views/resources/resource.html'
+                templateUrl     : '/app/views/resources/resource.html',
+                controller      : 'resourceController',
+                controllerAs    : 'resource'
             })
             
             .when('/add-resource', {

@@ -15,6 +15,10 @@ angular.module('mainController', ['authServices'])
 
         app.home        = !next.$$route;
 
+        if(app.home) {
+            getResources();
+        }
+
         if(auth.isLoggedIn()) {
             app.isLoggedIn  = true;
 
@@ -34,4 +38,50 @@ angular.module('mainController', ['authServices'])
         }
 
     });
+
+    app.selectTrend             = function(trend) {
+        getResources(trend);
+    }
+
+    function getResources(trend = 'intresting') {
+        getLoadingMsg();
+
+        user.getResources(trend).then(function(data) {
+            app.resources       = data.data.response;
+            app.loading         = false;
+        }).catch(error => {
+            let response        = error.data.response;
+            app.errorMsg        = response.message;
+            app.loading         = false;
+        })
+    }
+
+    function getLoadingMsg() {
+        const messages = [
+            "Why don't you order a sandwich?",
+            "The bits are flowing slowly today",
+            "Have you lost weight?",
+            "Do not run! We are your friends!",
+            "Do you come here often?",
+            "We're making you a cookie.",
+            "Is this Windows?",
+            "I swear it's almost done.",
+            "Keeping all the 1's and removing all the 0's...",
+            "Convincing AI not to turn evil..",
+            "Trying to sort in O(n)...",
+            "Installing dependencies",
+            "Let's hope it's worth the wait",
+            "You seem like a nice person...",
+            "Making stuff up. Please wait...",
+            "Loading the Loading message....",
+            "Still faster than Windows update.",
+            "Fighting the dragon.."
+        ]
+
+        let minValue        = 0;
+        let maxValue        = messages.length - 1;
+        let messageIndex    = (Math.floor(Math.random() * (+maxValue - +minValue)) + +minValue);
+        app.loading         = true;
+        app.loadingMsg      = messages[messageIndex];
+    }
 });

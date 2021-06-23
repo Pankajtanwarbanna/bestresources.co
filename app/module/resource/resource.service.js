@@ -58,6 +58,7 @@ exports.getResources    = (payload, callback) => {
                 resource.resourceType,
                 resource.__createdtime__,
                 resource.__updatedtime__,
+                user.userId,
                 user.firstName,
                 user.lastName,
                 user.about,
@@ -67,6 +68,17 @@ exports.getResources    = (payload, callback) => {
     `;
 
     let trend           = payload.trend;
+    if(payload['trend']) delete payload['trend'];
+
+    Object.keys(payload).forEach((fieldName, fieldIndex) => {
+        if(fieldIndex === 0) {
+            QUERY       += ' WHERE ';
+        } else {
+            QUERY       += ' AND ';
+        }
+        QUERY           += `resource.${fieldName} = "${payload[fieldName]}"`
+    });
+
     switch(trend) {
         case 'intresting':
             QUERY       += `ORDER BY resource.thanksCount DESC`;
@@ -78,20 +90,18 @@ exports.getResources    = (payload, callback) => {
             QUERY       += `ORDER BY resource.__createdtime__ DESC`;
             break;
         default:
-            QUERY  .getResources     += `ORDER BY resource.thanksCount DESC`;
+            QUERY       += `ORDER BY resource.thanksCount DESC`;
             break;
     }
-    
-    if(payload['trend']) delete payload['trend'];
 
-    Object.keys(payload).forEach((fieldName, fieldIndex) => {
-        if(fieldIndex === 0) {
-            QUERY       += ' WHERE ';
-        } else {
-            QUERY       += ' AND ';
-        }
-        QUERY           += `resource.${fieldName} = "${payload[fieldName]}"`
-    })
+    if(payload.slugUrl) {
+        QUERY           = `
+            SELECT  *
+            FROM ${SCHEMA}.${RESOURCE_TABLE} AS resource
+            INNER JOIN ${SCHEMA}.${USERS_TABLE} AS user ON user.userId = resource.author
+            WHERE resource.slugUrl  = "${payload.slugUrl}"
+        `
+    }
 
     database.query(QUERY, function(error, response) {
         if(error) {
