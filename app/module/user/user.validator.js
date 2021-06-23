@@ -48,3 +48,27 @@ exports.verifyValidator     = function (req, res, next) {
     });
 };
 
+exports.getUserValidator    = function (req, res, next) {
+    
+    let validationSchema    = {
+        'userId'             : {
+            notEmpty        : true,
+            errorMessage    : 'UserId cannot be empty!'
+        }
+    };
+    
+    req.checkParams(validationSchema);
+
+    req.getValidationResult().then(function (result) {
+        if(false == result.isEmpty()) {
+            return res.status(400).json(ResponseHelper.build(
+                'ERROR_VALIDATION',
+                errorHelper.parseValidationErrors(result.mapped())
+            )).end();
+        }
+        
+        next();
+    });
+};
+
+

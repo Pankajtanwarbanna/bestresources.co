@@ -67,3 +67,26 @@ exports.getResourceValidator= function (req, res, next) {
         next();
     });
 };
+
+exports.thanksValidator     = function (req, res, next) {
+    
+    let validationSchema    = {
+        'slugUrl'           : {
+            notEmpty        : true,
+            errorMessage    : 'slugUrl cannot be empty!'
+        }
+    };
+    
+    req.checkBody(validationSchema);
+
+    req.getValidationResult().then(function (result) {
+        if(false == result.isEmpty()) {
+            return res.status(400).json(ResponseHelper.build(
+                'ERROR_VALIDATION',
+                errorHelper.parseValidationErrors(result.mapped())
+            )).end();
+        }
+        
+        next();
+    });
+};

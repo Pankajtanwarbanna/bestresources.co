@@ -41,6 +41,12 @@ let app = angular.module('userRoutes', ['ngRoute'])
                 controllerAs    : 'profile'
             })
 
+            .when('/user/:userId', {
+                templateUrl     : '/app/views/profile/user.html',
+                controller      : 'userController',
+                controllerAs    : 'user'
+            })
+
             .when('/notifications', {
                 templateUrl     : '/app/views/profile/notifications.html',
                 authenticated   : true

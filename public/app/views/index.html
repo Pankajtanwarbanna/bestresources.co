@@ -27,6 +27,7 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="/assets/css/vertical-menu.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/explore.min.css">
+	<link rel="stylesheet" type="text/css" href="https://www.pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/app-assets/css/pages/app-users.min.css">
     <!-- END: Page CSS-->
 
 	<!-- Angular Libs -->
@@ -280,13 +281,13 @@
 										<div class="card">
 										<div class="card-header pb-0">
 											<div class="media align-items-center">
-												<a href="/profile/{{ resource.userId }}" class="pr-1" target="_blank">
+												<a href="/user/{{ resource.userId }}" class="pr-1" target="_blank">
 													<img src="{{ resource.avatar }}" alt="Pankaj Tanwar" class="rounded-circle" height="40" width="40">
 												</a>
 												<div class="media-body d-sm-flex justify-content-between align-items-center">
 													<div class="media-text ">
 														<p class="mt-50 mb-0 card-text">
-															<a class="mb-0" href="/profile/{{ resource.userId }}">{{ resource.firstName }} {{ resource.lastName }}</a>
+															<a class="mb-0" href="/user/{{ resource.userId }}">{{ resource.firstName }} {{ resource.lastName }}</a>
 														</p>
 														<p>{{ resource.about }} </p>
 													</div>

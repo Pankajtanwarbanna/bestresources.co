@@ -36,5 +36,15 @@ angular.module('userServices',[])
         return $http.get('/api/resources/' + slugUrl);
     }
 
+    // user.sayThanks(slugUrl)
+    userFactory.sayThanks           = function(slugUrl) {
+        return $http.post('/api/resources/thanks', { slugUrl });
+    }
+
+    // user.getUser(userId)
+    userFactory.getUser             = function(userId) {
+        return $http.get('/api/user/' + userId);
+    }
+
     return userFactory;
 });

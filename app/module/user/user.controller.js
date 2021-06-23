@@ -149,3 +149,29 @@ exports.update          = (req, res) => {
         }));
     })
 }
+
+exports.user            = (req, res) => {
+    const payload       = {
+        userId          : req.params.userId
+    };
+
+    const getUser           = function(getUserCallback) {
+        userService.findUser(payload, function(error, user) {
+            if(error) {
+                return getUserCallback(error);
+            } 
+            return getUserCallback(null, user);
+        });
+    }
+
+    async.waterfall([
+        getUser
+    ], function (error, result) {
+        if (error) {
+            return res.status(400).json(Response.build('ERROR', 
+                errorHelper.parseError(error) 
+            ));   
+        }
+        return res.status(200).json(Response.build('SUCCESS', result ));
+    });
+}

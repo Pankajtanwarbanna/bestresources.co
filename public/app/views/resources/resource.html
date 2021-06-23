@@ -7,7 +7,7 @@
                     <div class="col-12">
                         <div class="card bg-transparent shadow-none kb-header">
                             <!-- Verifying -->
-                            <div class="card-body text-center" ng-if="!verify.verified && !verify.errorMsg">
+                            <div class="card-body text-center">
                             <div class="spinner-border text-success mb-1" role="status">
                                 <span class="sr-only">Loading...</span>
                             </div>
@@ -48,18 +48,45 @@
                                     </div>
                                     <div class="card-footer border-top d-flex justify-content-between">
                                         <div>
-                                            <i class="bx bx-donate-heart"></i>
-                                            <small class="mb-50">{{ resource.content.thanksCount }}  Thanks</small>	
+                                            <!-- <i class="bx bx-donate-heart"></i>
+                                            <small class="mb-50">{{ resource.content.thanksCount }}  Thanks</small>	 -->
+                                            <div class="list-left d-flex">
+                                                <div class="list-icon mr-1" ng-click="resource.sayThanks()">
+                                                  <div class="avatar bg-rgba-danger m-0 p-25">
+                                                    <div class="avatar-content">
+                                                      <i class="bx bx-donate-heart text-danger font-medium-5"></i>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-content">
+                                                  <span>{{ resource.content.thanksCount }}</span>
+                                                  <small class="text-muted d-block">thanks</small>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="align-items-right">
+                                            <div class="list-left d-flex">
+                                                <div class="list-icon mr-1">
+                                                  <div class="avatar bg-rgba-info m-0 p-25">
+                                                    <div class="avatar-content">
+                                                      <i class="bx bx-share-alt text-info font-medium-5"></i>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div>
-                                            <i class="bx bx-share-alt"></i>
-                                            <small>Share</small>	
+                                            <div class="list-left d-flex">
+                                                <div class="list-icon mr-1">
+                                                  <div class="avatar bg-rgba-info m-0 p-25">
+                                                    <div class="avatar-content">
+                                                      <i class="bx bx-bookmark-heart text-info font-medium-5"></i>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
-                                        <div>
-                                            <i class="bx bx-bookmark-heart"></i>
-                                            <small>Save</small>	
-                                        </div>
-                                        <i class="bx bx-dots-vertical-rounded font-medium-2 cursor-pointer"></i>
+                                        <!-- <i class="bx bx-dots-vertical-rounded font-medium-2 cursor-pointer"></i> -->
                                     </div>
                                 </li>
                                 </ul>
@@ -116,12 +143,19 @@
                                           <button class="btn btn-sm d-block d-sm-none btn-block text-center btn-primary">
                                             <i class="cursor-pointer bx bx-donate-heart font-small-3 mr-25"></i><span>Say thanks to Pankaj.</span>
                                         </button> -->
-                                        <button class="btn btn-primary search-btn rounded d-none d-sm-block float-right" type="button">
+                                        <button class="btn btn-primary search-btn rounded d-none d-sm-block float-right" type="button" ng-if="!resource.thanked" ng-click="resource.sayThanks()">
                                             <i class="cursor-pointer bx bx-donate-heart font-small-3 mr-50"></i><span>Say thanks to {{ resource.content.firstName }}.</span>
                                         </button>
-                                        <button class="btn btn-primary search-btn rounded d-sm-none btn-block text-center mb-1" type="button">
+                                        <button class="btn btn-primary search-btn rounded d-sm-none btn-block text-center mb-1" type="button" ng-if="!resource.thanked" ng-click="resource.sayThanks()">
                                             <i class="cursor-pointer bx bx-donate-heart font-small-3 mr-50"></i><span>Say thanks to {{ resource.content.firstName }}.</span>
                                         </button>
+                                        <button class="btn btn-success search-btn rounded d-none d-sm-block float-right" type="button" ng-if="resource.thanked">
+                                          <i class="cursor-pointer bx bx-check font-small-3 mr-50"></i><span>Thank you sent to {{ resource.content.firstName }}.</span>
+                                      </button>
+                                      <button class="btn btn-success search-btn rounded d-sm-none btn-block text-center mb-1" type="button" ng-if="!resource.thanked">
+                                          <i class="cursor-pointer bx bx-check font-small-3 mr-50"></i><span>Thank you sent to {{ resource.content.firstName }}.</span>
+                                      </button>
+
                                         <div class="knowledge-panel-suggestion">
                                             <div class="suggestion d-inline-block text-center mr-2" ng-if="resource.content.facebook">
                                                 <a href="{{ resource.content.facebook }}" target="_blank">

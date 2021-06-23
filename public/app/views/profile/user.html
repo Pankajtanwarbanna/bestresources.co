@@ -1,0 +1,99 @@
+<div class="content-wrapper">
+    <div class="content-body"><!-- users view start -->
+        <section class="users-view">
+            <!-- seach result section -->
+            <div class="row" ng-if="user.loading">
+                <!-- Loading -->
+                <div class="col-12">
+                    <div class="card bg-transparent shadow-none kb-header">
+                        <!-- Verifying -->
+                        <div class="card-body text-center">
+                        <div class="spinner-border text-success mb-1" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <h1 class="mb-2 text-primary kb-title">{{ main.loadingMsg }}</h1>
+                        <p class="mb-3">
+                            pulling it out, trust me, it's worth the wait.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- users view media object start -->
+            <div class="row" ng-if="!user.loading">
+            <div class="col-12 col-sm-7">
+            <div class="media mb-2">
+                <a class="mr-1" href="javascript:void(0);">
+                <img src="{{ user.user.avatar}}" alt="users view avatar"
+                    class="users-avatar-shadow rounded-circle" height="64" width="64">
+                </a>
+                <div class="media-body pt-25">
+                <h4 class="media-heading"><span class="users-view-name">{{ user.user.firstName}} {{ user.user.lastName}} </span><span
+                    class="text-muted font-medium-1"> @</span><span
+                    class="users-view-username text-muted font-medium-1 ">{{ user.user.email.split('@')[0]}}</span></h4>
+                <span>Member since :</span>
+                <span class="users-view-id">{{ user.user.__createdtime__ | date : 'MMM d, yyyy' }}</span>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-sm-5 px-0 d-flex justify-content-end align-items-center px-1 mb-2" ng-if="user.user.userId == main.user.userId">
+                <a href="/profile" class="btn btn-sm btn-primary">Edit</a>
+            </div>
+            </div>
+            <!-- users view card details start -->
+            <div class="card" ng-if="!user.loading">
+            <div class="card-body">
+            <div class="row bg-primary bg-lighten-5 rounded mb-2 mx-25 text-center text-lg-left">
+                <div class="col-12 col-sm-6 p-2">
+                <h6 class="text-primary mb-0">Total Resources : <span class="font-large-1 align-middle">{{ user.user.totalResource }}</span></h6>
+                </div>
+                <div class="col-12 col-sm-6 p-2">
+                <h6 class="text-primary mb-0">Total Thanks : <span class="font-large-1 align-middle"> {{ user.user.totalThanks }}</span></h6>
+                </div>
+            </div>
+            <div class="col-12">
+                <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                    <td>Name:</td>
+                    <td class="users-view-name">{{ user.user.firstName}} {{ user.user.lastName}}</td>
+                    </tr>
+                    <tr>
+                    <td>E-mail:</td>
+                    <td class="users-view-email">{{ user.user.email }}</td>
+                    </tr>
+                    <tr>
+                    <td>About :</td>
+                    <td>{{ user.user.about}}</td>
+                    </tr>
+
+                </tbody>
+                </table>
+                <h5 class="mb-1"><i class="bx bx-link"></i> Social Links</h5>
+                <table class="table table-borderless">
+                <tbody>
+                    <tr ng-if="user.user.twitter">
+                    <td>Twitter:</td>
+                    <td><a href="javascript:void(0);">{{ user.user.twitter }}</a></td>
+                    </tr>
+                    <tr ng-if="user.user.linkedin">
+                    <td>linkedin:</td>
+                    <td><a href="javascript:void(0);">{{ user.user.linkedin }}</a></td>
+                    </tr>
+                    <tr ng-if="user.user.website">
+                    <td>Website:</td>
+                    <td><a href="javascript:void(0);">{{ user.user.website }}</a></td>
+                    </tr>
+                    <tr ng-if="user.user.youtube">
+                    <td>YouTube:</td>
+                    <td><a href="javascript:void(0);">{{ user.user.youtube }}</a></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+            </div>
+
+        </section>
+    </div>
+</div>

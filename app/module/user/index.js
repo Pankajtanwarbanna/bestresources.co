@@ -35,6 +35,12 @@ router.put(
     userController.update
 );
 
+router.get(
+    '/:userId',
+    userValidator.getUserValidator,
+    userController.user
+);
+
 module.exports = {
     router: router
 };

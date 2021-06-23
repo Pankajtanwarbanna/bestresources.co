@@ -15,6 +15,7 @@ angular.module('mainController', ['authServices'])
 
         app.home        = !next.$$route;
 
+        getLoadingMsg();
         if(app.home) {
             getResources();
         }
@@ -44,7 +45,6 @@ angular.module('mainController', ['authServices'])
     }
 
     function getResources(trend = 'intresting') {
-        getLoadingMsg();
 
         user.getResources(trend).then(function(data) {
             app.resources       = data.data.response;

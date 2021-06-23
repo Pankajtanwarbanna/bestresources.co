@@ -45,7 +45,6 @@ exports.updateCount     = (payload, callback) => {
             WHERE   userId  = "${payload.userId}"
         `;
     }
-
     database.query(QUERY, function(error, response) {
         if(error) {
             return callback(error);

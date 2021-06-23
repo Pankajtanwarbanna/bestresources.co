@@ -28,6 +28,14 @@ router.get(
     resourceController.getResource
 );
 
+router.post(
+    '/thanks',
+    jwtMiddleware.verify,
+    authMiddleware.ensureUser,
+    resourceValidator.thanksValidator,
+    resourceController.sayThanks
+);
+
 module.exports = {
     router: router
 };

@@ -138,7 +138,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     }
 })
 
-.controller('resourceController', function(user, $routeParams) {
+.controller('resourceController', function(user, auth, $routeParams, $location) {
     let app                     = this;
 
     let slugUrl                 = $routeParams.resourceSlugUrl;
@@ -153,5 +153,40 @@ angular.module('userCtrl', ['userServices', 'authServices'])
         app.errorMsg            = response.message;
         app.loading             = false;
         app.loading             = false;
-    })
+    });
+
+    // say thanks to author
+    app.sayThanks               = () => {
+        if(auth.isLoggedIn()) {
+            app.content.thanksCount += 1;
+            if(!app.thanked) {
+                app.thanked             = true;
+                user.sayThanks(slugUrl).then(function(data) {
+                    let response        = data.data.response;
+                }).catch(error => {
+                    let response            = error.data.response;
+                    app.errorMsg            = response.message;
+                    app.loading             = false;
+                });
+            }
+        } else {
+            $location.path('/join')
+        }
+    }
 })
+
+.controller('userController' , function(user, $routeParams) {
+    let app             = this;
+    app.userId          = $routeParams.userId;
+    app.loading         = true;
+
+    user.getUser(app.userId).then(function(data) {
+        let response        = data.data.response;
+        app.user            = response[0];
+        app.loading         = false;
+    }).catch(error => {
+        let response            = error.data.response;
+        app.errorMsg            = response.message;
+        app.loading             = false;
+    });
+});

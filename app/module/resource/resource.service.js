@@ -110,3 +110,29 @@ exports.getResources    = (payload, callback) => {
         return callback(null, response.data);
     })
 }
+
+exports.updateCount     = (payload, callback) => {
+
+    let QUERY           = '';
+
+    if(payload.viewed) {
+        QUERY           = `
+            UPDATE ${SCHEMA}.${RESOURCE_TABLE}
+            SET     viewsCount = viewsCount + 1
+            WHERE   slugUrl  = "${payload.slugUrl}"
+        `;
+    } else {
+        QUERY           = `
+            UPDATE ${SCHEMA}.${RESOURCE_TABLE}
+            SET     thanksCount = thanksCount + 1
+            WHERE   slugUrl  = "${payload.slugUrl}"
+        `;
+    }
+
+    database.query(QUERY, function(error, response) {
+        if(error) {
+            return callback(error);
+        }
+        return callback(null, response.data);
+    })
+}
