@@ -62,11 +62,12 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     }
 })
 
-.controller('profileController', function(user, $timeout) {
+.controller('profileController', function(user, $timeout, $scope) {
     let app             = this;
 
     app.loading         = false;
 
+    // update profile
     app.updateProfile   = function(profile) {
         app.loading     = true;
 

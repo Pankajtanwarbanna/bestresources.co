@@ -1,6 +1,6 @@
 {
     "server"                    : {
-        "url"                   : "http://localhost:8080",
+        "url"                   : "https://bestresources.co/",
         "port"                  : 8080
     },
     "DATABASE"                  : {
@@ -16,6 +16,6 @@
     "ROUTES"                    : {
         "ACCOUNT_VERIFY_PAGE"   : "/account"
     },
-    "DEFAULT_AVATAR_LINK"       : "http://localhost:8080/assets/images/icon/default-user.webp",
-    "DEFAULT_TAG_IMAGE"         : "http://localhost:8080/assets/images/tags/tag.png"
+    "DEFAULT_AVATAR_LINK"       : "https://bestresources.s3.ap-south-1.amazonaws.com/profile/default-user.webp",
+    "DEFAULT_TAG_IMAGE"         : "https://bestresources.s3.ap-south-1.amazonaws.com/profile/logo.png"
 }
