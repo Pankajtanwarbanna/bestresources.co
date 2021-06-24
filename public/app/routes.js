@@ -31,7 +31,9 @@ let app = angular.module('userRoutes', ['ngRoute'])
             })
 
             .when('/tags', {
-                templateUrl     : '/app/views/tags/tags.html'
+                templateUrl     : '/app/views/tags/tags.html',
+                controller      : 'tagController',
+                controllerAs    : 'tag'
             })
 
             .when('/profile', {

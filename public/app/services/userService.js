@@ -56,5 +56,15 @@ angular.module('userServices',[])
         return $http.get('/api/resources/bookmarks');
     }
 
+    // user.submitTag()
+    userFactory.submitTag         = function(tagData) {
+        return $http.post('/api/tags/new', tagData);
+    }
+
+    // user.getTags()
+    userFactory.getTags             = function() {
+        return $http.get('/api/tags/get');
+    }
+
     return userFactory;
 });

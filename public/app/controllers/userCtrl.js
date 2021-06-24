@@ -238,4 +238,33 @@ angular.module('userCtrl', ['userServices', 'authServices'])
         app.errorMsg            = response.message;
         app.loading             = false;
     });
+})
+
+.controller('tagController', function(user) {
+    let app                     = this;
+    app.tagsLoading             = true;
+
+    user.getTags().then(function(data) {
+        let response            = data.data.response;
+        app.tags                = response;
+        app.tagsLoading         = false;
+    }).catch(error => {
+        let response            = error.data.response;
+        app.errorMsg            = response.message;
+        app.tagsLoading         = false;
+    });
+
+    // add new tag
+    app.submitTag               = (tagData) => {
+        app.loading             = true;
+        user.submitTag(app.tagData).then(function(data) {
+            let response            = data.data.response;
+            app.successMsg          = response.message;
+            app.loading             = false;
+        }).catch(error => {
+            let response            = error.data.response;
+            app.errorMsg            = response.message;
+            app.loading             = false;
+        });
+    }
 });

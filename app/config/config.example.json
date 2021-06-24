@@ -16,5 +16,6 @@
     "ROUTES"                    : {
         "ACCOUNT_VERIFY_PAGE"   : "/account"
     },
-    "DEFAULT_AVATAR_LINK"       : "http://localhost:8080/assets/images/icon/default-user.webp"
+    "DEFAULT_AVATAR_LINK"       : "http://localhost:8080/assets/images/icon/default-user.webp",
+    "DEFAULT_TAG_IMAGE"         : "http://localhost:8080/assets/images/tags/tag.png"
 }

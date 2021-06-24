@@ -1,29 +1,49 @@
 <div class="content-wrapper">
     <div class="content-body">
-        <!--/ Search result section -->
-        <section class="faq-bottom">
+        <!--/ tags result section -->
+        <section>
             <div class="row mb-2">
                 <div class="col-12 text-center">
                     <h2 class="faq-subtitle"> Tags</h2>
                     <p class="p-2 text-muted font-medium-1">Explore most popular tags!</p>
                 </div>
+                <div class="col-12 col-sm-12 px-0 d-flex justify-content-end align-items-center px-1 mb-2">
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#default"><i class="bx bx-purchase-tag"></i> Suggest a new tag</button>
+                </div>
             </div>  
+            <!-- loading result section -->
+            <div class="row" ng-if="tag.tagsLoading">
+              <!-- Loading -->
+              <div class="col-12">
+                  <div class="card bg-transparent shadow-none kb-header">
+                      <!-- Verifying -->
+                      <div class="card-body text-center">
+                      <div class="spinner-border text-success mb-1" role="status">
+                          <span class="sr-only">Loading...</span>
+                      </div>
+                      <h1 class="mb-2 text-primary kb-title">{{ main.loadingMsg }}</h1>
+                      <p class="mb-3">
+                          fetching all tags, please wait.
+                      </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
             <div class="row">
-              <div class="col-lg-4 col-md-5 col-12 order-1 order-md-2">
+              <div class="col-lg-4 col-md-5 col-12 order-1 order-md-2" ng-repeat="tag in tag.tags">
                 <div class="card">
                   <div class="card-body">
                     <div class="media d-flex align-items-center">
-                      <a href="/tag/javascript">
-                        <img src="/assets/images/home-page/topics/javascript.png" class="rounded" alt="group image"
-                          height="64" width="64" />
+                      <a href="/tag/{{ tag.slugUrl }}">
+                        <img src="{{ tag.avatar }}" class="rounded" alt="{{ tag.tag }}" height="64" width="64" />
                       </a>
                       <div class="media-body ml-1">
                         <h6 class="media-heading mb-0">
-                            <span>JavaScript</span>
+                            <span class="text-uppercase">{{ tag.tag }}</span>
                         </h6>
-                        <small class="text-muted">2.8k Posts</small>
+                        <small class="text-muted">(added recently)</small>
                       </div>
-                        <a href="/tag/javascript">
+                        <a href="/tag/{{ tag.slugUrl }}">
                             <i class="cursor-pointer bx bx-link-external text-primary d-flex align-items-center "></i>
                         </a>
                     </div>
@@ -34,4 +54,54 @@
             </div>       
         </section>
     </div>
+</div>
+
+
+<!--Add Tag Modal -->
+<div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="myModalLabel1">Suggest new tag.</h3>
+        <button type="button" class="close rounded-pill" data-dismiss="modal" aria-label="Close">
+          <i class="bx bx-x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Success Msg -->
+        <div class="alert bg-rgba-success alert-dismissible mb-2" role="alert" ng-if="tag.successMsg">
+          <p class="mb-0">
+              <b>Yay!</b> Tag has been successfully added.
+          </p>
+      </div>
+      <!-- Error Msg -->
+      <div class="alert bg-rgba-success alert-dismissible mb-2" role="alert" ng-if="!main.isLoggedIn">
+        <p class="mb-0">
+            <b>Oops!</b> Please <a href="/join">login</a> to add a new tag.
+        </p>
+    </div>
+        <form class="form-validate" ng-submit="tag.submitTag(tagData);" ng-if="!tag.successMsg && main.isLoggedIn">
+          <div class="row text-center">
+              <div class="col-12">
+                <img src="/assets/images/logo/logo.png" class="mb-1" width="60px" height="60px"/>
+                  <div class="form-group">
+                      <div class="controls">
+                          <input type="text" class="form-control" placeholder="Enter tag Name" ng-model="tag.tagData.tag" ng-disabled="tag.loading" required>
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-success glow mr-1 mb-1" ng-if="!tag.loading">
+                    <i class="bx bx-purchase-tag"></i>
+                    <span class="align-middle ml-25">Add Tag</span>
+                </button> 
+                <button type="submit" class="btn btn-success glow mr-1 mb-1" ng-if="tag.loading" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  <span class="align-middle ml-25">Adding Tag</span>
+              </button> 
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
 </div>

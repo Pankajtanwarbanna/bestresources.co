@@ -86,7 +86,7 @@
 				<li class="nav-item">
 					<a class="dropdown-toggle nav-link dropdown-user-link" href="/profile">
 						<div class="user-nav d-sm-flex d-none">
-							<span class="user-name">Hey 👋 {{ main.user.firstName }}</span>
+							<span class="user-name">Hey 👋 {{ main.user.firstName || "Friend"}}</span>
 							<span class="user-status text-muted">Available</span>
 						</div>
 						<span>
@@ -157,7 +157,7 @@
 				<li ng-if="!main.isLoggedIn">
 					<a href="/join">
 						<i class="bx bx-user"></i>
-						<span class="menu-title text-truncate">Join the Community</span>
+						<span class="menu-title text-truncate">My Profile</span>
 					</a>
 				</li>
 				<li ng-if="main.isLoggedIn">
