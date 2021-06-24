@@ -40,10 +40,12 @@ angular.module('mainController', ['authServices'])
 
     });
 
+    // select trend
     app.selectTrend             = function(trend) {
         getResources(trend);
     }
 
+    // fetch resources
     function getResources(trend = 'intresting') {
 
         user.getResources(trend).then(function(data) {
@@ -56,6 +58,21 @@ angular.module('mainController', ['authServices'])
         })
     }
 
+    // take to resource page
+    app.takeMeToResourcePage   = (url) => {
+        $location.path('/resource/' + url);
+    }
+
+    // share page
+    app.share                   = (url, title) => {
+        app.url                 = window.location.href + '/resource/' + url;
+        app.title               = title;
+        app.twitterShare        = encodeURI('https://twitter.com/share?url=' + app.url + '&text=' + title + '   { from @bestresourcesCo }');
+        app.linkedinShare       = encodeURI('https://www.linkedin.com/sharing/share-offsite/?url=' + app.url);
+        app.whatsappShare       = encodeURI('https://api.whatsapp.com/send?text=' + title +' (from bestresources.co)' + app.url); 
+    }
+
+    // get loading message
     function getLoadingMsg() {
         const messages = [
             "Why don't you order a sandwich?",

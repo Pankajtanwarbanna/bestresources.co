@@ -173,6 +173,14 @@ angular.module('userCtrl', ['userServices', 'authServices'])
             $location.path('/join')
         }
     }
+
+    // share
+    app.share                   = (url, title) => {
+        app.url                 = window.location.href;
+        app.twitterShare        = encodeURI('https://twitter.com/share?url=' + app.url + '&text=' + title + '   { from @bestresourcesCo }');
+        app.linkedinShare       = encodeURI('https://www.linkedin.com/sharing/share-offsite/?url=' + app.url);
+        app.whatsappShare       = encodeURI('https://api.whatsapp.com/send?text=' + title +' (from bestresources.co)' + app.url); 
+    }
 })
 
 .controller('userController' , function(user, $routeParams) {

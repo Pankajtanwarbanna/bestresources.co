@@ -65,8 +65,8 @@
                                               </div>
                                         </div>
                                         <div class="align-items-right">
-                                            <div class="list-left d-flex">
-                                                <div class="list-icon mr-1">
+                                            <div class="list-left d-flex" ng-click="resource.share(null, resource.content.title)">
+                                                <div class="list-icon mr-1" data-toggle="modal" data-target="#default">
                                                   <div class="avatar bg-rgba-info m-0 p-25">
                                                     <div class="avatar-content">
                                                       <i class="bx bx-share-alt text-info font-medium-5"></i>
@@ -152,7 +152,7 @@
                                         <button class="btn btn-success search-btn rounded d-none d-sm-block float-right" type="button" ng-if="resource.thanked">
                                           <i class="cursor-pointer bx bx-check font-small-3 mr-50"></i><span>Thank you sent to {{ resource.content.firstName }}.</span>
                                       </button>
-                                      <button class="btn btn-success search-btn rounded d-sm-none btn-block text-center mb-1" type="button" ng-if="!resource.thanked">
+                                      <button class="btn btn-success search-btn rounded d-sm-none btn-block text-center mb-1" type="button" ng-if="resource.thanked">
                                           <i class="cursor-pointer bx bx-check font-small-3 mr-50"></i><span>Thank you sent to {{ resource.content.firstName }}.</span>
                                       </button>
 
@@ -194,4 +194,54 @@
                 </div>
           </section>
     </div>
+</div>
+
+
+<!--Share Modal -->
+<div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="myModalLabel1">❤️ Spread some love.</h3>
+        <button type="button" class="close rounded-pill" data-dismiss="modal" aria-label="Close">
+          <i class="bx bx-x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="card-title cursor-pointer">
+          {{ resource.content.title }}
+        </p>
+        <div class="knowledge-panel-suggestion">
+          <div class="suggestion d-inline-block text-center mr-2">
+              <a href="{{ resource.linkedinShare }}" target="_blank">
+              <i class="bx bxl-linkedin-square linkedin font-large-1"></i>
+              <span class="font-small-2 d-block">Linkedin</span>
+              </a>
+          </div>
+          <div class="suggestion d-inline-block text-center mr-2">
+              <a href="{{ resource.twitterShare }}" target="_blank">
+              <i class="bx bxl-twitter twitter font-large-1"></i>
+              <span class="font-small-2 d-block">Twitter</span>
+              </a>
+          </div>
+        <div class="suggestion d-inline-block text-center mr-2">
+          <a href="{{ resource.whatsappShare }}" target="_blank">
+          <i class="bx bxl-whatsapp text-info font-large-1"></i>
+          <span class="font-small-2 d-block">WhatsApp</span>
+          </a>
+      </div>
+          </div>
+      </div>
+      <div class="col-sm-12">
+				<label>Permalink</label>
+				<fieldset class="form-group position-relative has-icon-left">
+					<input type="url" class="form-control" placeholder="Param link" ng-model="resource.url">
+					<div class="form-control-position">
+						<i class="bx bx-link"></i>
+					</div>
+				</fieldset> 
+			</div>
+    </div>
+  </div>
 </div>

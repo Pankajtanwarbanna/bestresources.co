@@ -312,22 +312,48 @@
 											</p>
 											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">{{ resource.resourceType }}</span>
 											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">{{ resource.resourceLevel }}</span>
-											<span class="badge badge-light-primary mb-sm-0 mb-25 mr-50">System Design</span>
 										</div>
 										<div class="card-footer border-top d-flex justify-content-between">
 											<div>
-												<i class="bx bx-donate-heart"></i>
-												<small class="mb-50">{{ resource.thanksCount }} Thanks</small>	
+												<!-- <i class="bx bx-donate-heart"></i>
+												<small class="mb-50">{{ resource.content.thanksCount }}  Thanks</small>	 -->
+												<div class="list-left d-flex">
+													<div class="list-icon mr-1" ng-click="main.takeMeToResourcePage(resource.slugUrl);">
+													  <div class="avatar bg-rgba-danger m-0 p-25">
+														<div class="avatar-content">
+														  <i class="bx bx-donate-heart text-danger font-medium-5"></i>
+														</div>
+													  </div>
+													</div>
+													<div class="list-content">
+													  <span>{{ resource.thanksCount }}</span>
+													  <small class="text-muted d-block">thanks</small>
+													</div>
+												  </div>
+											</div>
+											<div class="align-items-right">
+												<div class="list-left d-flex" ng-click="main.share(resource.slugUrl, resource.title)">
+													<div class="list-icon mr-1" data-toggle="modal" data-target="#default">
+													  <div class="avatar bg-rgba-info m-0 p-25">
+														<div class="avatar-content">
+														  <i class="bx bx-share-alt text-info font-medium-5"></i>
+														</div>
+													  </div>
+													</div>
+												</div>
 											</div>
 											<div>
-												<i class="bx bx-share-alt"></i>
-												<small>Share</small>	
+												<div class="list-left d-flex">
+													<div class="list-icon mr-1" ng-click="main.takeMeToResourcePage(resource.slugUrl);">
+													  <div class="avatar bg-rgba-info m-0 p-25">
+														<div class="avatar-content">
+														  <i class="bx bx-bookmark-heart text-info font-medium-5"></i>
+														</div>
+													  </div>
+													</div>
+												  </div>
 											</div>
-											<div>
-												<i class="bx bx-bookmark-heart"></i>
-												<small>Save</small>	
-											</div>
-											<i class="bx bx-dots-vertical-rounded font-medium-2 cursor-pointer"></i>
+											<!-- <i class="bx bx-dots-vertical-rounded font-medium-2 cursor-pointer"></i> -->
 										</div>
 										</div>
 									</li>
@@ -441,6 +467,55 @@
 			</div>
 		</div>
 		<div class="ng-view" autoscroll="true"></div>
+
+		<!--Share Modal -->
+		<div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h3 class="modal-title" id="myModalLabel1">❤️ Spread some love.</h3>
+			<button type="button" class="close rounded-pill" data-dismiss="modal" aria-label="Close">
+				<i class="bx bx-x"></i>
+			</button>
+			</div>
+			<div class="modal-body">
+				<p class="card-title cursor-pointer">
+					{{ main.title }}
+				  </p>
+			<div class="knowledge-panel-suggestion">
+				<div class="suggestion d-inline-block text-center mr-2">
+					<a href="{{ resource.linkedinShare }}" target="_blank">
+					<i class="bx bxl-linkedin-square linkedin font-large-1"></i>
+					<span class="font-small-2 d-block">Linkedin</span>
+					</a>
+				</div>
+				<div class="suggestion d-inline-block text-center mr-2">
+					<a href="{{ resource.twitterShare }}" target="_blank">
+					<i class="bx bxl-twitter twitter font-large-1"></i>
+					<span class="font-small-2 d-block">Twitter</span>
+					</a>
+				</div>
+			<div class="suggestion d-inline-block text-center mr-2">
+				<a href="{{ resource.whatsappShare }}" target="_blank">
+				<i class="bx bxl-whatsapp text-info font-large-1"></i>
+				<span class="font-small-2 d-block">WhatsApp</span>
+				</a>
+			</div>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<label>Permalink</label>
+				<fieldset class="form-group position-relative has-icon-left">
+					<input type="url" class="form-control" placeholder="Param link" ng-model="main.url">
+					<div class="form-control-position">
+						<i class="bx bx-link"></i>
+					</div>
+				</fieldset> 
+			</div>
+		</div>
+		</div>
+		</div>
 	</div>
 	<!-- END: Content-->
 
