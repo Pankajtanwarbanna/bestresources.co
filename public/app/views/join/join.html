@@ -20,6 +20,11 @@
                                     </div>
                                 </div>
                                 <div class="card-body" ng-if="!join.successMsg">
+                                    <div class="alert bg-rgba-success alert-dismissible mb-2" role="alert" ng-if="join.action">
+                                        <p class="mb-0">
+                                            {{ join.action }}
+                                        </p>
+                                    </div>
                                     <form ng-submit="join.sendMagicLink(joinData)">
                                         <div class="form-group mb-50">
                                             <label class="text-bold-600">Email address</label>

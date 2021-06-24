@@ -6,6 +6,7 @@ const Utility           = require(constant.path.app + 'util/utility');
 const SCHEMA            = config.DATABASE.INSTANCE_SCHEMA;
 const RESOURCE_TABLE    = 'resources';
 const USERS_TABLE       = 'users';
+const BOOKMARK_TABLE    = 'bookmarks';
 
 exports.createResource  = (payload, callback) => {
 
@@ -45,6 +46,11 @@ exports.createResource  = (payload, callback) => {
 
 exports.getResources    = (payload, callback) => {
 
+    let userId          = payload['userId'];
+    let bookmarkQuery   = '';
+    if(userId) { 
+        bookmarkQuery   = ', bookmark.bookmarkId';
+    }
     let QUERY           = `
         SELECT  resource.resourceId,
                 resource.title,
@@ -63,10 +69,18 @@ exports.getResources    = (payload, callback) => {
                 user.lastName,
                 user.about,
                 user.avatar
+                ${bookmarkQuery}
         FROM ${SCHEMA}.${RESOURCE_TABLE} AS resource
         INNER JOIN ${SCHEMA}.${USERS_TABLE} AS user ON user.userId = resource.author
     `;
 
+    // to check if user has book marked it already
+    if(payload['userId']) {
+        QUERY           += ` LEFT JOIN ${SCHEMA}.${BOOKMARK_TABLE} AS bookmark ON bookmark.resourceId = resource.resourceId AND bookmark.userId = "${payload.userId}"`;
+    }  
+    delete payload['userId'];
+
+    // trend
     let trend           = payload.trend;
     if(payload['trend']) delete payload['trend'];
 
@@ -128,6 +142,45 @@ exports.updateCount     = (payload, callback) => {
             WHERE   slugUrl  = "${payload.slugUrl}"
         `;
     }
+
+    database.query(QUERY, function(error, response) {
+        if(error) {
+            return callback(error);
+        }
+        return callback(null, response.data);
+    })
+}
+
+exports.addBookmark     = (payload, callback) => {
+
+    database.insert({
+        table       : BOOKMARK_TABLE,
+        records     : [
+            {
+                'bookmarkId'    : Utility.uuid(),
+                'resourceId'    : payload.resourceId,
+                'userId'        : payload.userId
+            }
+        ]
+    }, function(error, result) {
+        if(error) {
+            return callback(error);
+        }
+        result          = {
+            'message'   : "That's really great! Your resources has been bookmarked.",
+        }
+        return callback(null, result)
+    })
+}
+
+exports.checkBookmark   = (payload, callback) => {
+
+    let QUERY           = `
+        SELECT * 
+        FROM ${SCHEMA}.${BOOKMARK_TABLE}
+        WHERE resourceId = "${payload.resourceId}" AND 
+        userId  = "${payload.userId}"
+    `;
 
     database.query(QUERY, function(error, response) {
         if(error) {

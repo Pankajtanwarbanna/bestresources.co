@@ -31,6 +31,32 @@ function ensureUser(req, res, next) {
     }
 }
 
+function partialEnsureUser(req, res, next) {
+
+    if(!req.decoded || !req.decoded.userId) {
+        next();      
+    } else {
+        const payload       = {
+            'userId'        : req.decoded.userId
+        }
+        userService.findUser(payload, function(error, user) {
+            if(error) {
+                return res.status(400).json(Response.build('ERROR', 
+                    errorHelper.parseError('Something went wrong!') 
+                ));               
+            } 
+            if(Utility.isEmpty(user)) {
+                return res.status(400).json(Response.build('ERROR', 
+                    errorHelper.parseError('User not found.') 
+                ));   
+            }
+            req.user    = user;
+            next();
+        });
+    }
+}
+
 module.exports = {
-    ensureUser
+    ensureUser,
+    partialEnsureUser
 };

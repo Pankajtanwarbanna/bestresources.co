@@ -344,12 +344,18 @@
 											</div>
 											<div>
 												<div class="list-left d-flex">
-													<div class="list-icon mr-1" ng-click="main.takeMeToResourcePage(resource.slugUrl);">
-													  <div class="avatar bg-rgba-info m-0 p-25">
+													<!-- Book mark now -->
+													<div class="list-icon mr-1" ng-if="!resource.bookmarkId">
+														<div class="avatar bg-rgba-info m-0 p-25" ng-click="main.takeMeToResourcePage(resource.slugUrl);">
 														<div class="avatar-content">
-														  <i class="bx bx-bookmark-heart text-info font-medium-5"></i>
+															<i class="bx bx-bookmark-heart text-info font-medium-5"></i>
 														</div>
-													  </div>
+													</div>
+													</div>
+													<!-- Book marked -->
+													<div class="list-content" ng-if="resource.bookmarkId">
+														<i class="bx bx-check text-success font-medium-5"></i>
+														<small class="text-muted d-block">saved</small>
 													</div>
 												  </div>
 											</div>

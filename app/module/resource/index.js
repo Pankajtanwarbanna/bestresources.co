@@ -19,11 +19,15 @@ router.post(
 
 router.get(
     '/',
+    jwtMiddleware.partialVerify,
+    authMiddleware.partialEnsureUser,
     resourceController.get
 );
 
 router.get(
     '/:slugUrl',
+    jwtMiddleware.partialVerify,
+    authMiddleware.partialEnsureUser,
     resourceValidator.getResourceValidator,
     resourceController.getResource
 );
@@ -34,6 +38,13 @@ router.post(
     authMiddleware.ensureUser,
     resourceValidator.thanksValidator,
     resourceController.sayThanks
+);
+
+router.post(
+    '/:resourceId/bookmark',
+    jwtMiddleware.verify,
+    authMiddleware.ensureUser,
+    resourceController.bookmark
 );
 
 module.exports = {

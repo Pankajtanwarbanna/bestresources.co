@@ -77,14 +77,20 @@
                                         </div>
                                         <div>
                                             <div class="list-left d-flex">
-                                                <div class="list-icon mr-1">
-                                                  <div class="avatar bg-rgba-info m-0 p-25">
-                                                    <div class="avatar-content">
-                                                      <i class="bx bx-bookmark-heart text-info font-medium-5"></i>
-                                                    </div>
+                                              <!-- Book mark now -->
+                                              <div class="list-icon mr-1" ng-if="!resource.isBookmarked">
+                                                <div class="avatar bg-rgba-info m-0 p-25" ng-click="resource.bookmark(resource.content.resourceId)">
+                                                  <div class="avatar-content">
+                                                    <i class="bx bx-bookmark-heart text-info font-medium-5"></i>
                                                   </div>
                                                 </div>
                                               </div>
+                                              <!-- Book marked -->
+                                              <div class="list-content" ng-if="resource.isBookmarked">
+                                                <i class="bx bx-check text-success font-medium-5"></i>
+                                                <small class="text-muted d-block">saved</small>
+                                              </div>
+                                            </div>
                                         </div>
                                         <!-- <i class="bx bx-dots-vertical-rounded font-medium-2 cursor-pointer"></i> -->
                                     </div>

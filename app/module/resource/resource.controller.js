@@ -53,7 +53,8 @@ exports.get                 = (req, res) => {
     let trend               = req.query.trend || 'intresting';
     const getResources      = function(getResourcesCallback) {
         const payload       = {
-            trend           : trend
+            trend           : trend,
+            userId          : req.decoded ? req.decoded.userId : null
         };
 
         resourceService.getResources(payload, function(error, resource) {
@@ -104,9 +105,29 @@ exports.getResource         = (req, res) => {
         });
     }
 
+    const checkBookmark     = function(resource, checkBookmarkCallback) {
+        const payload       = {
+            resourceId      : resource[0] ? resource[0].resourceId : null,
+            userId          : req.decoded ? req.decoded.userId : null
+        }
+
+        if(payload["userId"] && payload["resourceId"]) {
+            resourceService.checkBookmark(payload, function(error, result) {
+                if(error) {
+                    return checkBookmarkCallback(null, resource);
+                } 
+                if(result.length > 0) resource[0].bookmarked   = true;
+                return checkBookmarkCallback(null, resource);
+            });
+        } else {
+            return checkBookmarkCallback(null, resource)
+        }
+    }
+
     async.waterfall([
         getResources,
-        markViewed    
+        markViewed,
+        checkBookmark    
     ], function (error, result) {
         if (error) {
             return res.status(400).json(Response.build('ERROR', 
@@ -157,6 +178,34 @@ exports.sayThanks           = (req, res) => {
     async.waterfall([
         markThanks,
         updateThanks    
+    ], function (error, result) {
+        if (error) {
+            return res.status(400).json(Response.build('ERROR', 
+                errorHelper.parseError(error) 
+            ));   
+        }
+        return res.status(200).json(Response.build('SUCCESS', result ));
+    });
+}
+
+exports.bookmark            = (req, res) => {
+
+    const addBookmark       = function(addBookmarkCallback) {
+        const payload       = {
+            resourceId      : req.params.resourceId,
+            userId          : req.decoded.userId
+        };
+
+        resourceService.addBookmark(payload, function(error, result) {
+            if(error) {
+                return addBookmarkCallback(error);
+            }
+            return addBookmarkCallback(null, result);
+        });
+    }
+
+    async.waterfall([
+        addBookmark
     ], function (error, result) {
         if (error) {
             return res.status(400).json(Response.build('ERROR', 

@@ -74,7 +74,6 @@ app.run(['$rootScope','auth','$location', 'user', function ($rootScope,auth,$loc
     $rootScope.$on('$routeChangeStart', function (event, next, current) {
 
         if(next.$$route) {
-
             if(next.$$route.authenticated === true) {
 
                 if(!auth.isLoggedIn()) {

@@ -3,8 +3,16 @@
 */
 angular.module('userCtrl', ['userServices', 'authServices'])
 
-.controller('joinController', function (user) {
+.controller('joinController', function (user, $routeParams) {
     let app = this;
+
+    app.actionMsg           = {
+        'thanks'            : 'You need to login before thanking the author.',
+        'bookmark'          : 'You need to login before bookmarking the resourse.',
+        'login'             : 'You need to login to proceed further.'
+    }
+
+    app.action              = app.actionMsg[$routeParams.action];
 
     // Send Magic Link
     app.sendMagicLink       = (joinData) => {
@@ -147,6 +155,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     user.fetchResource(slugUrl).then(function(data) {
         let response            = data.data.response;
         app.content             = response[0];
+        app.isBookmarked        = app.content.bookmarked;
         app.loading             = false;
     }).catch(error => {
         let response            = error.data.response;
@@ -180,6 +189,23 @@ angular.module('userCtrl', ['userServices', 'authServices'])
         app.twitterShare        = encodeURI('https://twitter.com/share?url=' + app.url + '&text=' + title + '   { from @bestresourcesCo }');
         app.linkedinShare       = encodeURI('https://www.linkedin.com/sharing/share-offsite/?url=' + app.url);
         app.whatsappShare       = encodeURI('https://api.whatsapp.com/send?text=' + title +' (from bestresources.co)' + app.url); 
+    }
+
+    // book mark
+    app.bookmark                = (resourceId) => {
+        if(auth.isLoggedIn()) {
+            app.isBookmarked    = true;
+            user.bookmark(resourceId).then(function(data) {
+                let response            = error.data.response;
+            }).catch(error => {
+                let response            = error.data.response;
+                app.errorMsg            = response.message;
+                console.log(app.errorMsg)
+            });
+        } else {
+            // TODO Pass message also here /join?action=thanks
+            $location.path('/join')
+        }
     }
 })
 

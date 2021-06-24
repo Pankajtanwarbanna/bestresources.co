@@ -23,6 +23,23 @@ function verify(req, res, next) {
     }
 }
 
+function partialVerify(req, res, next) {
+    const token = req.body.token || req.body.query || req.headers['x-access-token'];
+
+    if(token) {
+        // verify token
+        try {
+            req.decoded = jwtService.decode(token);
+            next();
+        } catch(err) {
+            next(); 
+        }
+    } else {
+        next(); 
+    }
+}
+
 module.exports = {
-    verify
+    verify,
+    partialVerify
 }
