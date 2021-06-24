@@ -51,5 +51,10 @@ angular.module('userServices',[])
         return $http.post('/api/resources/' + resourceId + '/bookmark')
     }
 
+    // user.myBookmarks()
+    userFactory.myBookmarks         = function() {
+        return $http.get('/api/resources/bookmarks');
+    }
+
     return userFactory;
 });

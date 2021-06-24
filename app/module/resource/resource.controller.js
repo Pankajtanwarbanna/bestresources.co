@@ -215,3 +215,28 @@ exports.bookmark            = (req, res) => {
         return res.status(200).json(Response.build('SUCCESS', result ));
     });
 }
+
+exports.myBookmarks         = (req, res) => {
+    const getBookmarks      = function(getBookmarksCallback) {
+        const payload       = {
+            userId          : req.decoded.userId
+        }
+        resourceService.getBookmarks(payload, function(error, result) {
+            if(error) {
+                return getBookmarksCallback(error);
+            } 
+            return getBookmarksCallback(null, result);
+        });
+    }
+
+    async.waterfall([
+        getBookmarks
+    ], function (error, result) {
+        if (error) {
+            return res.status(400).json(Response.build('ERROR', 
+                errorHelper.parseError(error) 
+            ));   
+        }
+        return res.status(200).json(Response.build('SUCCESS', result ));
+    });
+}

@@ -54,7 +54,9 @@ let app = angular.module('userRoutes', ['ngRoute'])
 
             .when('/bookmarks', {
                 templateUrl     : '/app/views/bookshelf/my-bookshelf.html',
-                authenticated   : true
+                authenticated   : true,
+                controller      : 'bookmarkController',
+                controllerAs    : 'bookmark'
             })
 
             .when('/team', {

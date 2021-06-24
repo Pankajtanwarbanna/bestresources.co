@@ -189,3 +189,20 @@ exports.checkBookmark   = (payload, callback) => {
         return callback(null, response.data);
     })
 }
+
+exports.getBookmarks    = (payload, callback) => {
+
+    let QUERY           = `
+        SELECT * 
+        FROM ${SCHEMA}.${BOOKMARK_TABLE} AS bookmark
+        LEFT JOIN ${SCHEMA}.${RESOURCE_TABLE} AS resource ON resource.resourceId = bookmark.resourceId
+        WHERE userId = "${payload.userId}" 
+    `;
+
+    database.query(QUERY, function(error, response) {
+        if(error) {
+            return callback(error);
+        }
+        return callback(null, response.data);
+    })
+}

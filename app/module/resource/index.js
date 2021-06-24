@@ -18,6 +18,13 @@ router.post(
 );
 
 router.get(
+    '/bookmarks',
+    jwtMiddleware.verify,
+    authMiddleware.ensureUser,
+    resourceController.myBookmarks
+);
+
+router.get(
     '/',
     jwtMiddleware.partialVerify,
     authMiddleware.partialEnsureUser,

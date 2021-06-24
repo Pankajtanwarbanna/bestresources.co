@@ -196,7 +196,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
         if(auth.isLoggedIn()) {
             app.isBookmarked    = true;
             user.bookmark(resourceId).then(function(data) {
-                let response            = error.data.response;
+                let response            = data.data.response;
             }).catch(error => {
                 let response            = error.data.response;
                 app.errorMsg            = response.message;
@@ -218,6 +218,21 @@ angular.module('userCtrl', ['userServices', 'authServices'])
         let response        = data.data.response;
         app.user            = response[0];
         app.loading         = false;
+    }).catch(error => {
+        let response            = error.data.response;
+        app.errorMsg            = response.message;
+        app.loading             = false;
+    });
+})
+
+.controller('bookmarkController', function(user) {
+    let app             = this;
+    app.loading         = true;
+
+    user.myBookmarks().then(function(data) {
+        let response            = data.data.response;
+        app.myBookmarks         = response;
+        app.loading             = false;
     }).catch(error => {
         let response            = error.data.response;
         app.errorMsg            = response.message;
