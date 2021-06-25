@@ -105,10 +105,10 @@
                     <div class="col-lg-4 col-md-5 col-12" ng-repeat="block in resource.content.blocks">
                         <div class="card box-search">
                         <div class="card-body">
-                            <div class="text-center">
+                            <!-- <div class="text-center">
                                 <img class="img-fluid rounded" src="/assets/images/system-design.jpeg" alt="logo">
-                            </div>
-                            <h5 class="mt-1">{{ block.title }}</h5>
+                            </div> -->
+                            <h5 class="">{{ block.title }}</h5>
                             <p class="mt-1" ng-repeat="link in block.links">
                                 <i class="bx bx-link-external pr-1 align-middle"></i>
                                 <a href="{{ link.link }}" class="align-middle" target="_blank">
@@ -134,7 +134,9 @@
                                     <div class="col-12 col-sm-9">
                                       <div class="row">
                                         <div class="col-12 text-center text-sm-left">
-                                          <h6 class="media-heading mb-0">{{ resource.content.firstName }} {{ resource.content.lastName }}<i class="cursor-pointer bx bx-badge-check text-primary ml-50 align-middle"></i></h6>
+                                          <a href="/user/{{ resource.content.userId }}">
+                                            <h6 class="media-heading mb-0">{{ resource.content.firstName }} {{ resource.content.lastName }}<i class="cursor-pointer bx bx-badge-check text-primary ml-50 align-middle"></i></h6>
+                                          </a>
                                         </div>
                                         <div class="col-12 text-center text-sm-left">
                                             <div class="mb-1">

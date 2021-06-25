@@ -1,0 +1,256 @@
+<div class="content-wrapper" ng-if="editResource.successMsg">
+    <div class="content-body">
+        <section id="auth-login" class="row flexbox-container">
+            <div class="col-12">
+                <div class="card bg-transparent shadow-none kb-header">
+                  <!-- Verified -->
+                  <div class="card-body text-center" ng-if="!verify.verified">
+                    <div class="mb-1" >
+                        <img src="https://bestresources.s3.ap-south-1.amazonaws.com/profile/verified.png" width="294px" height="253px;">
+                    </div>
+                    <h1 class="mb-2 text-success kb-title">Kaboom 💥 </h1>
+                    <p class="mb-3">
+                      Hey 👋 {{ main.user.firstName }}, {{ editResource.successMsg }}
+                    </p>
+                    <small>(redirecting you to your resource at <a href="{{ editResource.url }}">{{ editResource.url }}</a>)</small>
+                  </div>
+                  <!-- Failed -->
+                </div>
+              </div>
+        </section>
+    </div>
+ </div>
+
+ <div class="content-wrapper" ng-if="editResource.loading">
+    <div class="content-body">
+        <div class="row">
+            <!-- Loading -->
+            <div class="col-12">
+                <div class="card bg-transparent shadow-none kb-header">
+                    <!-- Verifying -->
+                    <div class="card-body text-center">
+                    <div class="spinner-border text-success mb-1" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <h1 class="mb-2 text-primary kb-title">{{ main.loadingMsg }}</h1>
+                    <p class="mb-3">
+                        pulling it out, trust me, it's worth the wait.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+ <div class="content-wrapper" ng-if="!editResource.successMsg && !editResource.loading">
+     <div class="content-header row">
+        <div class="content-header-left col-12 mb-2 mt-1">
+           <div class="breadcrumbs-top">
+              <h5 class="content-header-title float-left pr-1 mb-0">Edit Resource</h5>
+              <div class="breadcrumb-wrapper d-none d-sm-block">
+                 <ol class="breadcrumb p-0 mb-0 pl-1">
+                    <li class="breadcrumb-item">
+                       <a href="#">Seems something amazing is cooking up..</a>
+                    </li>
+                 </ol>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="content-body" ng-if="!main.goodGuy">
+       <section>
+          <div class="row">
+             <div class="col-12">
+                <!-- Profile Not complete Msg -->
+                <div class="alert bg-rgba-danger alert-dismissible mb-2" role="alert">
+                   <p class="mb-0 text-primary">
+                      Hey 👋 {{ main.user.firstName }}, we have noticed that you have not completed your profile. Please fill out the profile details to proceed further.
+                   </p>
+                   <br>
+                   <a href="/profile" class="text-success"><i class="bx bx-user"></i>Complete Profile Now</a>
+                </div>
+            </div>
+          </div>
+       </section>
+     </div>
+     <div class="content-body" ng-if="main.goodGuy">
+        <!--/ Search result section -->
+        <section>
+          <form ng-submit="editResource.updateResource(editResource.resourceData);">
+             <div class="row">
+                <!-- Resource Info -->
+                <div class="col-md-12">
+                   <div class="card">
+                      <div class="card-header">
+                         <h4 class="card-title">Resource Info</h4>
+                      </div>
+                      <div class="card-body">
+                         <div class="row">
+                            <div class="col-md-12">
+                               <fieldset class="form-group">
+                                  <label>Title</label>
+                                  <input type="text" class="form-control" placeholder="Enter resource title" ng-model="editResource.resourceData.title" required>
+                               </fieldset>
+                               <fieldset class="form-group">
+                                  <label>Description</label>
+                                  <textarea type="text" class="form-control" placeholder="Enter resource description" ng-model="editResource.resourceData.description" rows="3" required></textarea>
+                                  <p><small class="text-muted">Write something related to resource which helps readers.</small></p>
+                               </fieldset>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <!-- Resource Block -->
+                <div class="col-md-12">
+                   <div class="card"  ng-repeat="resourceBlock in [] | range: editResource.blocks" ng-init="blockIndex = $index">
+                      <div class="card-header">
+                         <h4 class="card-title">Resource Block #{{ blockIndex + 1}}</h4>
+                      </div>
+                      <div class="card-body">
+                         <div class="row">
+                            <div class="col-md-12">
+                               <fieldset class="form-group">
+                                  <label>Title</label>
+                                  <input type="text" class="form-control" placeholder="Enter resource block title" ng-model="editResource.resourceData.blocks[blockIndex].title" required>
+                               </fieldset>
+                               <div class="form-group d-flex flex-md-row flex-column justify-content-between align-items-center">
+                                   <div class="text-left">
+                                       <div class="checkbox checkbox-sm">
+                                           <input type="checkbox" class="form-check-input" id="{{ 'discriptionCheck' + blockIndex }}" ng-model="editResource.resourceData.blocks[blockIndex].isDescription">
+                                           <label class="checkboxsmall" for="{{ 'discriptionCheck' + blockIndex }}"><span>Add some text?</span></label>
+                                       </div>
+                                   </div>
+                               </div>
+                               <fieldset class="form-group" ng-if="editResource.resourceData.blocks[blockIndex].isDescription">
+                                  <label>Description</label>
+                                  <textarea type="text" class="form-control" placeholder="Enter resource block description" ng-model="editResource.resourceData.blocks[blockIndex].description" rows="3" required></textarea>
+                                  <p><small class="text-muted"> Resource block information goes here.</small></p>
+                               </fieldset>
+                               <div class="divider">
+                                  <div class="divider-text text-uppercase text-muted"><small>Resource Links</small>
+                                  </div>
+                               </div>
+                               <label>Link</label>
+                               <div class="row" ng-repeat="resourceBlock in [] | range: editResource.resourceData.blocks[blockIndex].total_links" ng-init="linkIndex = $index">
+                                  <div class="col-12 col-sm-6">
+                                     <fieldset class="form-group position-relative has-icon-left">
+                                        <input type="text" class="form-control" placeholder="Enter link" ng-model="editResource.resourceData.blocks[blockIndex].links[linkIndex].link" ng-change="verifyLink(editResource.resourceData.blocks[blockIndex].links[linkIndex].link, blockIndex, linkIndex)" required>
+                                        <div class="form-control-position">
+                                           <i class="bx bx-link" ng-if="!editResource.resourceData.blocks[blockIndex].links[linkIndex].link"></i>
+                                           <i class="bx bx-check-circle text-success" ng-if="editResource.resourceData.blocks[blockIndex].links[linkIndex].link && editResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
+                                           <i class="bx bx-x-circle text-danger" ng-if="editResource.resourceData.blocks[blockIndex].links[linkIndex].link && !editResource.resourceData.blocks[blockIndex].links[linkIndex].verified"></i>
+                                        </div>
+                                     </fieldset>
+                                  </div>
+                                  <div class="col-12 col-sm-6">
+                                     <fieldset class="form-group position-relative has-icon-left">
+                                        <input type="text" class="form-control" placeholder="Enter title of link" ng-model="editResource.resourceData.blocks[blockIndex].links[linkIndex].title" required>
+                                        <div class="form-control-position">
+                                           <i class="bx bx-text"></i>
+                                        </div>
+                                     </fieldset>
+                                  </div>
+                               </div>
+                               <button class="btn btn-light-primary btn-block rounded" type="button" ng-click="addResourceBlockLink(blockIndex)">
+                               <span><i class="bx bx-link"></i> Add Link</span>
+                               </button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <!-- Add Block -->
+                <div class="col-md-12 mb-1">
+                   <button class="btn btn-primary btn-block rounded" type="button" ng-click="addResourceBlock()">
+                   <span><i class="bx bx-book-reader"></i> Add Resource Block</span>
+                   </button>
+                </div>
+                <!-- Tags Info -->
+                <div class="col-md-12">
+                   <div class="card">
+                      <div class="card-header">
+                         <h4 class="card-title">Tags Info</h4>
+                      </div>
+                      <div class="card-body">
+                         <div class="row">
+                            <div class="col-md-12">
+                               <div class="mb-1">
+                                  <button class="btn btn-danger search-btn rounded mr-1" type="button" ng-repeat="tag in editResource.resourceData.tags" ng-init="$tagIndex = $index" ng-click="removeResourceTag($tagIndex)">
+                                     <span>{{ tag }} &nbsp;&nbsp;&nbsp; <i class="bx bx-x-circle"></i></span>
+                                  </button>
+                               </div>
+                               <fieldset>
+                                  <div class="input-group">
+                                     <input type="text" class="form-control" placeholder="Enter tag here" aria-describedby="button-addon2" ng-model="tag">
+                                     <div class="input-group-append" id="button-addon2">
+                                        <button class="btn btn-primary" type="button" ng-click="addResourceTag(tag);"><i class="bx bx-purchase-tag"></i> &nbsp;Add Tag</button>
+                                     </div>
+                                  </div>
+                               </fieldset>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <!-- Some more info -->
+                <div class="col-md-12">
+                   <div class="card">
+                      <div class="card-header">
+                         <h4 class="card-title">Some more Info</h4>
+                      </div>
+                      <div class="card-body">
+                         <div class="row">
+                            <div class="col-md-12">
+                               <div class="form-group">
+                                  <label>Resource Type</label>
+                                  <select class="form-control" id="accountSelect" ng-model="editResource.resourceData.resourceType" required>
+                                     <option value="">-- Select resource type --</option> 
+                                     <option value="FREE">FREE</option>
+                                      <option value="PAID">PAID</option>
+                                      <option value="FREE-PAID">FREE + PAID</option>
+                                  </select>
+                               </div>
+                              <div class="form-group">
+                                  <label>Resource Level</label>
+                                  <select class="form-control" id="accountSelect" ng-model="editResource.resourceData.resourceLevel" required>
+                                     <option value="">-- Select resource level --</option>
+                                     <option value="BEGINNER">Beginner Friendly</option>
+                                     <option value="INTERMEDIATE">Intermediate</option>
+                                     <option value="EXPERT">Expert</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-12">
+                   <!-- Error Msg -->
+                   <div class="alert bg-rgba-danger alert-dismissible mb-2" role="alert" ng-if="editResource.errorMsg">
+                      <p class="mb-0 text-danger">
+                         <b>😔 Oops!</b> {{ editResource.errorMsg }}
+                      </p>
+                   </div>
+                   <!-- Loading Msg -->
+                   <div class="alert bg-rgba-primary alert-dismissible mb-2" role="alert" ng-if="editResource.editLoading">
+                      <p class="mb-0">
+                         <b>⏱️ Hold on!</b> please wait while we update this amazing resource for the community.
+                      </p>
+                   </div>
+ 
+                   <button type="submit" class="btn btn-success glow mr-1 mb-1" ng-if="!editResource.editLoading">
+                      <i class="bx bx-check"></i>
+                      <span class="align-middle ml-25">Update Now</span>
+                   </button> 
+                   <button class="btn btn-success glow mr-1 mb-1" type="button" ng-if="editResource.editLoading" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      &nbsp;&nbsp;Updating the resource
+                  </button>       
+                </div>
+             </div>
+          </form>
+        </section>
+     </div>
+  </div>

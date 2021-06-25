@@ -36,6 +36,11 @@ angular.module('userServices',[])
         return $http.get('/api/resources/' + slugUrl);
     }
 
+    // user.updateResource(slugUrl)
+    userFactory.updateResource       = function(resourceData) {
+        return $http.post('/api/resources/edit', resourceData);
+    }
+
     // user.sayThanks(slugUrl)
     userFactory.sayThanks           = function(slugUrl) {
         return $http.post('/api/resources/thanks', { slugUrl });

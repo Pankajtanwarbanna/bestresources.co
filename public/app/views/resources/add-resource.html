@@ -85,7 +85,7 @@
                <div class="col-md-12">
                   <div class="card"  ng-repeat="resourceBlock in [] | range: addResource.resourceData.total_blocks" ng-init="blockIndex = $index">
                      <div class="card-header">
-                        <h4 class="card-title">Resource Block Info</h4>
+                        <h4 class="card-title">Resource Block #{{ blockIndex + 1}}</h4>
                      </div>
                      <div class="card-body">
                         <div class="row">
@@ -184,7 +184,7 @@
                            <div class="col-md-12">
                               <div class="form-group">
                                  <label>Resource Type</label>
-                                 <select class="form-control" id="accountSelect" ng-model="addResource.resourceData.resourceType" required>
+                                 <select class="form-control" id="resourceType" ng-model="addResource.resourceData.resourceType" required>
                                     <option value="">-- Select resource type --</option> 
                                     <option value="FREE">FREE</option>
                                      <option value="PAID">PAID</option>
@@ -193,7 +193,7 @@
                               </div>
                              <div class="form-group">
                                  <label>Resource Level</label>
-                                 <select class="form-control" id="accountSelect" ng-model="addResource.resourceData.resourceLevel" required>
+                                 <select class="form-control" id="resourceLevel" ng-model="addResource.resourceData.resourceLevel" required>
                                     <option value="">-- Select resource level --</option>
                                     <option value="BEGINNER">Beginner Friendly</option>
                                     <option value="INTERMEDIATE">Intermediate</option>

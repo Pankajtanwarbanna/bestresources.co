@@ -138,6 +138,48 @@ exports.getResource         = (req, res) => {
     });
 }
 
+exports.update              = (req, res) => {
+
+
+    const getResources      = function(getResourcesCallback) {
+        const payload       = {
+            slugUrl         : req.body.slugUrl
+        }
+        resourceService.getResources(payload, function(error, resource) {
+            if(error) {
+                return getResourcesCallback(error);
+            } 
+            return getResourcesCallback(null, resource);
+        });
+    }
+
+    const updateResource      = function(content, updateResourceCallback) {
+        let resource          = content[0];
+        if(resource && req.decoded.userId == resource.author) {
+            resourceService.updateResource(req.body, function(error, result) {
+                if(error) {
+                    return updateResourceCallback(error);
+                } 
+                return updateResourceCallback(null, result);
+            });
+        } else {
+            return updateResourceCallback('Permission denied.')
+        }
+    }
+
+    async.waterfall([
+        getResources,
+        updateResource
+    ], function (error, result) {
+        if (error) {
+            return res.status(400).json(Response.build('ERROR', 
+                errorHelper.parseError(error) 
+            ));   
+        }
+        return res.status(200).json(Response.build('SUCCESS', result ));
+    });
+}
+
 exports.sayThanks           = (req, res) => {
     let slugUrl             = req.body.slugUrl;
     let author              = req.decoded.userId;

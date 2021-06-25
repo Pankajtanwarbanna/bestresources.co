@@ -138,7 +138,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
             app.loading         = false;
             $timeout(function() {
                 $location.path(response.url)
-            }, 10000);
+            }, 3000);
         }).catch(error => {
             let response        = error.data.response;
             app.errorMsg        = response.message;
@@ -161,7 +161,6 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     }).catch(error => {
         let response            = error.data.response;
         app.errorMsg            = response.message;
-        app.loading             = false;
         app.loading             = false;
     });
 
@@ -201,12 +200,81 @@ angular.module('userCtrl', ['userServices', 'authServices'])
             }).catch(error => {
                 let response            = error.data.response;
                 app.errorMsg            = response.message;
-                console.log(app.errorMsg)
             });
         } else {
             // TODO Pass message also here /join?action=thanks
             $location.path('/join')
         }
+    }
+})
+
+.controller('editResourceController', function(user, $scope, $routeParams, $timeout,$location) {
+    let app                         = this;
+
+    let slugUrl                 = $routeParams.resourceId;
+    app.loading                 = true;
+
+    function isValidURL(string) {
+        var res = string.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+        return (res !== null)
+    };
+
+    $scope.verifyLink               = (link, blockIndex, linkIndex) => {
+        app.resourceData.blocks[blockIndex].links[linkIndex].verified   = link && isValidURL(link);
+    }
+
+    $scope.addResourceBlock         = () => {
+        app.blocks                      += 1;
+        app.resourceData.blocksCount    += 1;
+        app.resourceData.blocks[app.blocks - 1] = {
+            "total_links"       : 1
+        }
+    }
+
+    $scope.addResourceBlockLink     = (blockIndex) => {
+        if(!app.resourceData.blocks)                        app.resourceData.blocks = {};
+        if(!app.resourceData.blocks[blockIndex])            app.resourceData.blocks[blockIndex] = {};
+        app.resourceData.blocks[blockIndex].total_links   = app.resourceData.blocks[blockIndex].total_links ? app.resourceData.blocks[blockIndex].total_links + 1 : 1;
+    }
+
+    $scope.addResourceTag           = (tag) => {
+        app.resourceData.tags.push(tag.toLowerCase());
+        $scope.tag                  = null;
+    }
+
+    $scope.removeResourceTag        = (tagIndex) => {
+        app.resourceData.tags.splice(tagIndex, 1);
+    }
+
+    // fetch resource
+    user.fetchResource(slugUrl).then(function(data) {
+        let response            = data.data.response;
+        app.resourceData        = response[0];
+        app.blocks              = Object.keys(app.resourceData.blocks).length;
+        app.loading             = false;
+    }).catch(error => {
+        let response            = error.data.response;
+        app.errorMsg            = response.message;
+        app.loading             = false;
+    });
+
+    // update resource
+    app.updateResource          = function(resourceData) {
+        app.editLoading         = true;
+        app.errorMsg            = '';
+        user.updateResource(resourceData).then((data) => {
+            let response            = data.data.response;
+            app.successMsg          = response.message;
+            app.editLoading         = false;
+            app.url                 = response.url;
+            $timeout(function() {
+                $location.path(response.url)
+            }, 3000);
+        }).catch(error => {
+            let response            = error.data.response;
+            app.errorMsg            = response.message;
+            app.editLoading         = false;
+        });
     }
 })
 

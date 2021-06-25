@@ -40,6 +40,14 @@ router.get(
 );
 
 router.post(
+    '/edit',
+    jwtMiddleware.verify,
+    authMiddleware.ensureUser,
+    resourceValidator.resourceValidator,
+    resourceController.update
+);
+
+router.post(
     '/thanks',
     jwtMiddleware.verify,
     authMiddleware.ensureUser,

@@ -22,6 +22,13 @@ let app = angular.module('userRoutes', ['ngRoute'])
                 controller      : 'resourceController',
                 controllerAs    : 'resource'
             })
+
+            .when('/edit/:resourceId', {
+                templateUrl     : '/app/views/resources/edit-resource.html',
+                authenticated   : true,
+                controller      : 'editResourceController',
+                controllerAs    : 'editResource'
+            })
             
             .when('/add-resource', {
                 templateUrl     : '/app/views/resources/add-resource.html',

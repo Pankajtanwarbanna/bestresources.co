@@ -260,11 +260,11 @@
 								<!-- Web results -->
 								<div class="web-result">
 									<ul class="list-unstyled">
-									<li> <!-- --ng-repeat="resource in main.resources" --> 
-										<div class="card box-search">
+									<li ng-repeat="resource in main.resources"> <!-- -- --> 
+										<div class="card box-search"  ng-if="$index == 5 && !main.isLoggedIn">
 											<div class="card-body">
 												<div class="text-sm-left">
-													<h6 class="media-heading mb-0 text-primary">Hey 👋, Looks like you’re enjoying the discussion, but you haven’t signed up for an account yet.</h6>
+													<h6 class="media-heading mb-0 text-primary">Hey 👋, Looks like you’re enjoying it, but you haven’t signed up for an account yet.</h6>
 												</div>
 												<p class="mt-1">
 												</p>
@@ -303,7 +303,7 @@
 										<div class="card-body" style="padding-bottom: 10px;">
 											<div class="d-lg-flex align-items-center mb-50">
 												<div class=" font-small-2">
-													Posted 2 hours ago - {{ resource.viewsCount }} views
+													Posted sometime ago - {{ resource.viewsCount }} views
 												</div>
 											</div>
 											<p class="card-text">
@@ -438,30 +438,32 @@
 									<h6 class="media-heading mb-0 text-success">Featured ✨</h6>
 								</div>
 								<h5 class="mt-1">
-									<a href="/resource">
-										My resources to learn system design to advance level.
+									<a href="/resource/free-beginner-javascript-notes-reference--qv90gz">
+										FREE Beginner JavaScript Notes + Reference.
 									</a>
 								</h5>
-								<small>Posted 2 Hours ago - 1.2K views</small>
+								<small>By Pankaj Tanwar</small>
 								<p class="mt-1">
 								</p>
 								<p class="card-text">
-									<b>Feb 22, 2021</b> - Hey everyone, I am sharing my resources, which I used while preparing for system design interviews. It helped me grab offers from Uber. I have curated all of my resources out here, If it adds a value, consider hitting up a thumbsup to cheer me up!
+									<b>Feb 25, 2021</b> - Hey! welcome to my favourite Beginner JavaScript Notes + Reference. These notes are a free resource, written by @wesbos to learn JavaScript from zero. These notes are totally free and have been modeled after the content in his Beginner JavaScript course.
 								</p>
-								<div class="row knowledge-panel text-center py-1">
-								<div class="col border-right">
-									<p class="mb-0">1,367</p>
-									<small>Thanks</small>
+								<h6>Connect With Pankaj</h6>
+								<div class="knowledge-panel-suggestion">
+									<div class="suggestion d-inline-block text-center mr-2">
+										<a href="https://twitter.com/the2ndfloorguy" target="_blank">
+											<i class="bx bxl-twitter twitter font-large-1"></i>
+											<span class="font-small-2 d-block">Twitter</span>
+										</a>
+									</div>
+								  <div class="suggestion d-inline-block text-center mr-2">
+									<a href="https://www.linkedin.com/in/pankajtanwarbanna/" target="_blank">
+									  <i class="bx bxl-linkedin-square linkedin font-large-1"></i>
+									  <span class="font-small-2 d-block">Linkedin</span>
+									</a>
+								  </div>
 								</div>
-								<div class="col border-right">
-									<p class="mb-0">74</p>
-									<small>Share</small>
-								</div>
-								<div class="col d-inline-block">
-									<p class="mb-0">5</p>
-									<small>Views</small>
-								</div>
-								</div>
+					  
 							</div>
 							</div>
 						</div>

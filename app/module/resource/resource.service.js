@@ -125,6 +125,26 @@ exports.getResources    = (payload, callback) => {
     })
 }
 
+exports.updateResource   = (payload, callback) => {
+
+    database.update({
+        table       : RESOURCE_TABLE,
+        records     : [
+            payload
+        ]
+    }, function(error, result) {
+        if(error) {
+            return callback(error);
+        }
+        result          = {
+            'message'   : "That's really great! Your resources has been updated.",
+            'url'       : '/resource/' + payload.slugUrl
+        }
+        return callback(null, result)
+    })
+
+}
+
 exports.updateCount     = (payload, callback) => {
 
     let QUERY           = '';

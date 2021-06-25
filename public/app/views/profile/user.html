@@ -37,7 +37,7 @@
             </div>
             </div>
             <div class="col-12 col-sm-5 px-0 d-flex justify-content-end align-items-center px-1 mb-2" ng-if="user.user.userId == main.user.userId">
-                <a href="/profile" class="btn btn-sm btn-primary">Edit</a>
+                <a href="/profile" class="btn btn-sm btn-primary">Edit Profile</a>
             </div>
             </div>
             <!-- users view card details start -->
@@ -74,19 +74,19 @@
                 <tbody>
                     <tr ng-if="user.user.twitter">
                     <td>Twitter:</td>
-                    <td><a href="javascript:void(0);">{{ user.user.twitter }}</a></td>
+                    <td><a href="{{ user.user.twitter }}">{{ user.user.twitter }}</a></td>
                     </tr>
                     <tr ng-if="user.user.linkedin">
                     <td>linkedin:</td>
-                    <td><a href="javascript:void(0);">{{ user.user.linkedin }}</a></td>
+                    <td><a href="{{ user.user.linkedin }}">{{ user.user.linkedin }}</a></td>
                     </tr>
                     <tr ng-if="user.user.website">
                     <td>Website:</td>
-                    <td><a href="javascript:void(0);">{{ user.user.website }}</a></td>
+                    <td><a href="{{ user.user.website }}">{{ user.user.website }}</a></td>
                     </tr>
                     <tr ng-if="user.user.youtube">
                     <td>YouTube:</td>
-                    <td><a href="javascript:void(0);">{{ user.user.youtube }}</a></td>
+                    <td><a href="{{ user.user.youtube }}">{{ user.user.youtube }}</a></td>
                     </tr>
                 </tbody>
                 </table>
