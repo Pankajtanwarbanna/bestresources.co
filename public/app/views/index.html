@@ -25,6 +25,16 @@
     <!-- BEGIN: Page CSS-->
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.min.css">
     <!-- END: Page CSS-->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-198813032-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-198813032-1');
+	</script>
 </head>
 <!-- END: Head-->
 
@@ -253,6 +263,17 @@
 							</div>
 						</div>
 					</div>
+					<!-- Beta Launch Message -->
+					<div class="row">
+						<div class="col-12" ng-if="!main.loading">
+						   <!-- Profile Not complete Msg -->
+						   <div class="alert bg-rgba-primary alert-dismissible mb-2" role="alert">
+							  <p class="mb-0 text-info">
+								 Hey 👋, Welcome to beta launch of bestresources.co, we are waiting for your feedback at pankaj@bestresources.co
+							  </p>
+						   </div>
+					   </div>
+					 </div>
 					<div class="row" ng-if="!main.loading">
 						<!-- Search content area -->
 						<div class="col-lg-8 col-md-7 col-12 order-2 order-md-1">
