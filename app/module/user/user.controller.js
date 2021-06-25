@@ -4,6 +4,7 @@ const Response              = require(constant.path.app + 'util/response');
 const errorHelper           = require(constant.path.app + 'util/errorHelper');
 const userService           = require(constant.path.module + 'user/user.service');
 const magicService          = require(constant.path.app + 'service/magic.service');
+const mailService           = require(constant.path.app + 'service/mail.service');
 const Utility               = require(constant.path.app + 'util/utility');
 
 exports.join                = (req, res) => {
@@ -49,10 +50,21 @@ exports.join                = (req, res) => {
         })
     }
 
-    const sendEmail         = function(linkInfo, sendEmailCallback) {
-        console.log(linkInfo);
-        return sendEmailCallback(null, {
-            'message'       : 'We have sent the magic link to your email, and we need your help to open it.'
+    const sendEmail         = function(link, sendEmailCallback) {
+        const payload       = {
+            'event'         : 'auth',
+            'email'         : req.body.email,
+            'link'          : link
+        }
+        mailService.hitEmail(payload, function(error, result) {
+            if(error) {
+                return sendEmailCallback(error);
+            } else {
+                result              = {
+                    'message'       : 'We have sent the magic link to your email, and we need your help to open it.'
+                }
+                return sendEmailCallback(null, result);    
+            }
         })
     }
 

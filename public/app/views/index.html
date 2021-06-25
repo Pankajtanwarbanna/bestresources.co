@@ -261,22 +261,6 @@
 								<div class="web-result">
 									<ul class="list-unstyled">
 									<li ng-repeat="resource in main.resources"> <!-- -- --> 
-										<div class="card box-search"  ng-if="$index == 5 && !main.isLoggedIn">
-											<div class="card-body">
-												<div class="text-sm-left">
-													<h6 class="media-heading mb-0 text-primary">Hey 👋, Looks like you’re enjoying it, but you haven’t signed up for an account yet.</h6>
-												</div>
-												<p class="mt-1">
-												</p>
-												<p class="card-text">
-													When you create an account, we remember exactly what you’ve read, so you always come right back where you left off. And you can like posts to share the love. ❤️
-												</p>
-												<a class="btn btn-primary search-btn rounded text-center mb-1" href="/join">
-													<i class="cursor-pointer bx bx-check font-small-3 mr-50"></i><span>Sign up.</span>
-												</a>
-											</div>
-											</div>
-
 										<div class="card">
 										<div class="card-header pb-0">
 											<div class="media align-items-center">
@@ -286,7 +270,7 @@
 												<div class="media-body d-sm-flex justify-content-between align-items-center">
 													<div class="media-text ">
 														<p class="mt-50 mb-0 card-text">
-															<a class="mb-0" href="/user/{{ resource.userId }}">{{ resource.firstName }} {{ resource.lastName }}</a>
+															<a class="mb-0" href="/user/{{ resource.userId }}"> {{ resource.firstName }} {{ resource.lastName }}</a>
 														</p>
 														<p>{{ resource.about }} </p>
 													</div>
@@ -361,6 +345,21 @@
 											<!-- <i class="bx bx-dots-vertical-rounded font-medium-2 cursor-pointer"></i> -->
 										</div>
 										</div>
+										<div class="card box-search"  ng-if="($index == 5 || main.resources.length-1 == $index) && !main.isLoggedIn">
+											<div class="card-body">
+												<div class="text-sm-left">
+													<h6 class="media-heading mb-0 text-primary">Hey 👋, Looks like you’re enjoying it, but you haven’t signed up for an account yet.</h6>
+												</div>
+												<p class="mt-1">
+												</p>
+												<p class="card-text">
+													When you create an account, we remember exactly what you’ve read, so you always come right back where you left off. And you can like posts to share the love. ❤️
+												</p>
+												<a class="btn btn-primary search-btn rounded text-center mb-1" href="/join">
+													<i class="cursor-pointer bx bx-check font-small-3 mr-50"></i><span>Sign up.</span>
+												</a>
+											</div>
+											</div>
 									</li>
 									</ul>
 								</div>

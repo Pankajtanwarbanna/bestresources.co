@@ -9,6 +9,10 @@
         "INSTANCE_PASSWORD"     : "",
         "INSTANCE_SCHEMA"       : ""
     },
+    "EMAIL_SERVER"              : {
+        "DOMAIN"                : "",
+        "API_KEY"               : ""
+    },
     "SECRET"                    : "BEST-RESOURCES",
     "AUTH_TOKEN_EXPIRY"         : "30d",
     "MAGIC_LINK_EXPIRY"         : "15m",

@@ -16,6 +16,7 @@
         "express-validator": "^5.3.1",
         "harperive": "^2.0.1",
         "jsonwebtoken": "^8.5.1",
+        "mailgun-js": "^0.22.0",
         "morgan": "^1.10.0"
     }
 }

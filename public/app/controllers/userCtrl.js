@@ -38,26 +38,30 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     app.saparator       = '_$_';
 
     app.magicToken      = $routeParams.token;
-    app.data            = decodeURIComponent(escape(window.atob(app.magicToken)));
-    
-    app.data            = app.data ? app.data.split(app.saparator) : null;
+    try {
+        app.data            = decodeURIComponent(escape(window.atob(app.magicToken)));
+        app.data            = app.data ? app.data.split(app.saparator) : null;
 
-    // Verify token
-    if(app.data && app.data.length == 2) {
-        app.email       = app.data[0];
-        user.verifyToken(app.magicToken).then(function(data) {
-            let response        = data.data.response;
-            app.successMsg      = response.message;
-            app.verified        = true;
-            authToken.setToken(response.auth);
-            $timeout(function() {
-                $location.path('/')
-            }, 2000);
-        }).catch(error => {
-            let response        = error.data.response;
-            app.errorMsg        = response.message;
-        })
-    } else {
+        // Verify token
+        if(app.data && app.data.length == 2) {
+            app.email       = app.data[0];
+            user.verifyToken(app.magicToken).then(function(data) {
+                let response        = data.data.response;
+                app.successMsg      = response.message;
+                app.verified        = true;
+                authToken.setToken(response.auth);
+                $timeout(function() {
+                    $location.path('/')
+                }, 2000);
+            }).catch(error => {
+                let response        = error.data.response;
+                app.errorMsg        = response.message;
+            })
+        } else {
+            app.errorMsg    = 'Link does not seem to be correct. Would you mind checking it again?'
+        }
+    }
+    catch(err) {
         app.errorMsg    = 'Link does not seem to be correct. Would you mind checking it again?'
     }
 })
