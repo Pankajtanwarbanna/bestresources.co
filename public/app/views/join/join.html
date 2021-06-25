@@ -1,6 +1,24 @@
 <div class="content-wrapper">
     <div class="content-body">
-        <section id="auth-login" class="row flexbox-container">
+        <!-- loading result section -->
+        <div class="row" ng-if="join.successMsg">
+            <!-- Loading -->
+            <div class="col-12">
+                <div class="card bg-transparent shadow-none kb-header">
+                    <!-- Verifying -->
+                    <div class="card-body text-center">
+                        <div class="mb-1" >
+                            <img src="https://bestresources.s3.ap-south-1.amazonaws.com/profile/email-sent.png" width="294px" height="253px;">
+                        </div>
+                        <h1 class="mb-2 text-success kb-title">Wooh! 🎉</h1>
+                        <p class="mb-3">
+                          {{ join.successMsg }}.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="auth-login" class="row flexbox-container" ng-if="!join.successMsg">
             <div class="col-xl-12">
                 <div class="card bg-authentication mb-0">
                     <div class="row m-0">
@@ -8,18 +26,13 @@
                         <!-- Success Msg -->
                         <div class="col-md-12 col-12 px-0">
                             <div class="card disable-rounded-right mb-0 p-2 h-100 d-flex justify-content-center">
-                                <div class="alert bg-rgba-success alert-dismissible mb-2" role="alert" ng-if="join.successMsg">
-                                    <p class="mb-0">
-                                        {{ join.successMsg }}
-                                    </p>
-                                </div>
 
-                                <div class="card-header pb-1" ng-if="!join.successMsg">
+                                <div class="card-header pb-1">
                                     <div class="card-title">
                                         <h4 class="text-center mb-2">Welcome to the community.</h4>
                                     </div>
                                 </div>
-                                <div class="card-body" ng-if="!join.successMsg">
+                                <div class="card-body">
                                     <div class="alert bg-rgba-success alert-dismissible mb-2" role="alert" ng-if="join.action">
                                         <p class="mb-0">
                                             {{ join.action }}

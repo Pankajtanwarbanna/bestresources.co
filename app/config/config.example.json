@@ -1,6 +1,6 @@
 {
     "server"                    : {
-        "url"                   : "https://bestresources.co/",
+        "url"                   : "https://bestresources.co",
         "port"                  : 8080
     },
     "DATABASE"                  : {
@@ -14,7 +14,7 @@
     "MAGIC_LINK_EXPIRY"         : "15m",
     "MAGIC_LINK_SEPARATOR"      : "_$_",
     "ROUTES"                    : {
-        "ACCOUNT_VERIFY_PAGE"   : "/account"
+        "ACCOUNT_VERIFY_PAGE"   : "/verify"
     },
     "DEFAULT_AVATAR_LINK"       : "https://bestresources.s3.ap-south-1.amazonaws.com/profile/default-user.webp",
     "DEFAULT_TAG_IMAGE"         : "https://bestresources.s3.ap-south-1.amazonaws.com/profile/logo.png"
