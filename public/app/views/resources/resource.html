@@ -1,6 +1,18 @@
 <div class="content-wrapper">
     <div class="content-body">
         <section>
+                <!-- Failed -->
+                <div class="card-body text-center" ng-if="resource.invalidUrl">
+                  <div class="mb-1" >
+                      <img src="https://bestresources.s3.ap-south-1.amazonaws.com/profile/failure.png" width="294px" height="253px;">
+                  </div>
+                  <h1 class="mb-2 text-danger kb-title">It's broken 😔</h1>
+                  <p class="mb-3">
+                    Hey 👋, Link does not seem to be correct. Would you mind checking it again?
+                  </p>
+                  <hr>
+                  <div class="text-center"><small class="mr-25">Would like to explore?</small><a href="/"><small>Click here</small></a></div>
+                </div>
                 <!-- loading result section -->
                 <div class="row" ng-if="resource.loading">
                     <!-- Loading -->
@@ -19,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" ng-if="!resource.loading">
+                <div class="row" ng-if="!resource.loading && !resource.invalidUrl">
                     <!-- Search content area -->
                     <div class="col-lg-12 col-md-7 col-12">
                         <div class="py-0 search-results">

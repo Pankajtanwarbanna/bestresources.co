@@ -29,7 +29,8 @@ exports.createResource  = (payload, callback) => {
                 'blocksCount'   : Object.keys(payload.blocks).length,    
                 'slugUrl'       : slugUrl,
                 'author'        : payload.author,
-                'show'          : true
+                'show'          : true,
+                'approved'      : 0
             }
         ]
     }, function(error, result) {
@@ -37,8 +38,7 @@ exports.createResource  = (payload, callback) => {
             return callback(error);
         }
         result          = {
-            'message'   : "That's really great! Your resources has been published.",
-            'url'       : '/resource/' + slugUrl
+            'message'   : "That's really great! Your resources has been submitted. To ensure the quality content to the community, our content team will review the resource and inform you."
         }
         return callback(null, result)
     })
@@ -113,11 +113,13 @@ exports.getResources    = (payload, callback) => {
             SELECT  *
             FROM ${SCHEMA}.${RESOURCE_TABLE} AS resource
             INNER JOIN ${SCHEMA}.${USERS_TABLE} AS user ON user.userId = resource.author
-            WHERE resource.slugUrl  = "${payload.slugUrl}"
+            WHERE resource.slugUrl  = "${payload.slugUrl}" AND resource.approved = 1
         `
     }
-
+    console.log(QUERY)
     database.query(QUERY, function(error, response) {
+        console.log(error)
+        console.log(response)
         if(error) {
             return callback(error);
         }

@@ -71,7 +71,8 @@ exports.createUser      = (payload, callback) => {
                 youtube         : payload.youtube || "",
                 totalResource   : 0,
                 totalThanks     : 0,
-                verified        : false
+                verified        : false,
+                permission      : 'user'
             }
         ]
     }, function(error, result) {

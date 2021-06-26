@@ -25,11 +25,12 @@ angular.module('mainController', ['authServices'])
             app.isLoggedIn  = true;
 
             auth.getUser().then(function (data){
-                app.user    = data.data.response[0];
-                app.goodGuy = app.user.firstName && app.user.lastName && app.user.about && app.user.twitter && app.user.linkedin;
-                app.loadme  = true;
+                app.user            = data.data.response[0];
+                app.goodGuy         = app.user.firstName && app.user.lastName && app.user.about && app.user.twitter && app.user.linkedin;
+                app.loadme          = true;
+                app.authorized      = app.user.permission == 'admin';
             }).catch(function (error) {
-                app.loadme  = true;
+                app.loadme          = true;
                 auth.logout();
                 $route.reload();
             })

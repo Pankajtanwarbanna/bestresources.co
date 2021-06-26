@@ -138,11 +138,7 @@ angular.module('userCtrl', ['userServices', 'authServices'])
         user.postResource(app.resourceData).then(function(data) {
             let response        = data.data.response;
             app.successMsg      = response.message;
-            app.url             = response.url;
             app.loading         = false;
-            $timeout(function() {
-                $location.path(response.url)
-            }, 3000);
         }).catch(error => {
             let response        = error.data.response;
             app.errorMsg        = response.message;
@@ -159,8 +155,12 @@ angular.module('userCtrl', ['userServices', 'authServices'])
 
     user.fetchResource(slugUrl).then(function(data) {
         let response            = data.data.response;
-        app.content             = response[0];
-        app.isBookmarked        = app.content.bookmarked;
+        if(response.length == 0) {
+            app.invalidUrl          = true;
+        } else {
+            app.content             = response[0];
+            app.isBookmarked        = app.content.bookmarked;    
+        }
         app.loading             = false;
     }).catch(error => {
         let response            = error.data.response;
