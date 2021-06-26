@@ -84,7 +84,9 @@ exports.getResources    = (payload, callback) => {
     let trend           = payload.trend;
     if(payload['trend']) delete payload['trend'];
 
-    Object.keys(payload).forEach((fieldName, fieldIndex) => {
+    let fields          = Object.keys(payload);
+
+    fields.forEach((fieldName, fieldIndex) => {
         if(fieldIndex === 0) {
             QUERY       += ' WHERE ';
         } else {
@@ -92,6 +94,9 @@ exports.getResources    = (payload, callback) => {
         }
         QUERY           += `resource.${fieldName} = "${payload[fieldName]}"`
     });
+
+    // only approved posts
+    QUERY               += (fields.length > 0 ? ' AND ' : ' WHERE ') + ' resource.approved = 1';
 
     switch(trend) {
         case 'intresting':
@@ -116,10 +121,7 @@ exports.getResources    = (payload, callback) => {
             WHERE resource.slugUrl  = "${payload.slugUrl}" AND resource.approved = 1
         `
     }
-    console.log(QUERY)
     database.query(QUERY, function(error, response) {
-        console.log(error)
-        console.log(response)
         if(error) {
             return callback(error);
         }
@@ -215,7 +217,16 @@ exports.checkBookmark   = (payload, callback) => {
 exports.getBookmarks    = (payload, callback) => {
 
     let QUERY           = `
-        SELECT * 
+        SELECT  resource.resourceId,
+                resource.title,
+                resource.__createdtime__,
+                resource.thanksCount,
+                resource.viewsCount,
+                resource.resourceLevel,
+                resource.resourceType,
+                resource.slugUrl,
+                bookmark.resourceId,
+                bookmark.userId
         FROM ${SCHEMA}.${BOOKMARK_TABLE} AS bookmark
         LEFT JOIN ${SCHEMA}.${RESOURCE_TABLE} AS resource ON resource.resourceId = bookmark.resourceId
         WHERE userId = "${payload.userId}" 
