@@ -43,6 +43,10 @@ let app = angular.module('userRoutes', ['ngRoute'])
                 controllerAs    : 'tag'
             })
 
+            .when('/ideabox', {
+                templateUrl     : '/app/views/ideabox/ideabox.html'
+            })
+
             .when('/profile', {
                 templateUrl     : '/app/views/profile/profile.html',
                 authenticated   : true,

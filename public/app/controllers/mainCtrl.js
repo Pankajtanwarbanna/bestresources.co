@@ -10,6 +10,7 @@ angular.module('mainController', ['authServices'])
 
     app.loadme  = false;
     app.home    = true;
+    app.trend   = 'intresting';
 
     $rootScope.$on('$routeChangeStart', function (event, next, current) {
 
@@ -42,6 +43,8 @@ angular.module('mainController', ['authServices'])
 
     // select trend
     app.selectTrend             = function(trend) {
+        app.trend               = trend;
+        getLoadingMsg();
         getResources(trend);
     }
 

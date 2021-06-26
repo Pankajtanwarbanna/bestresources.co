@@ -127,11 +127,16 @@
 					</a>
 				</li>
 				<li>
+					<a href="/ideabox">
+						<i class="bx bx-bulb" data-icon="desktop"></i>
+						<span class="menu-title text-truncate">Idex Box</span>
+					</a>
+				</li>
+				<li>
 					<a href="/tags">
 						<i class="bx bx-purchase-tag" data-icon="desktop"></i>
 						<span class="menu-title text-truncate">Tags</span>
 					</a>
-				</li>
 				<li>
 					<a href="/bookmarks">
 						<i class="bx bx-book-reader" data-icon="desktop"></i>
@@ -165,21 +170,21 @@
 						<span class="menu-title text-truncate">Notifications</span>
 					</a>
 				</li>
-				<li class="navigation-header text-truncate">
+				<!-- <li class="navigation-header text-truncate">
 					<span>More</span>
-				</li>
+				</li> -->
 				<!-- <li>
 					<a href="/profile">
 						<i class="bx bx-brightness-half"></i>
 						<span class="menu-title text-truncate">Dark Mode</span>
 					</a>
 				</li> -->
-				<li>
+				<!-- <li>
 					<a href="/team">
 						<i class="bx bx-cool" data-icon="desktop"></i>
 						<span class="menu-title text-truncate">About</span>
 					</a>
-				</li>
+				</li> -->
 
 					<!-- <a href="/daily-dose">
 						<i class="bx bx-droplet" data-icon="desktop"></i>
@@ -267,9 +272,9 @@
 					<div class="row">
 						<div class="col-12" ng-if="!main.loading">
 						   <!-- Profile Not complete Msg -->
-						   <div class="alert bg-rgba-primary alert-dismissible mb-2" role="alert">
+						   <div class="alert bg-rgba alert-dismissible mb-2" role="alert">
 							  <p class="mb-0 text-info">
-								 Hey 👋, Welcome to beta launch of bestresources.co, we are waiting for your feedback at pankaj@bestresources.co
+								 Hey 👋, Welcome to beta launch 🚀 of bestresources.co, we are waiting for your feedback at pankaj@bestresources.co
 							  </p>
 						   </div>
 					   </div>
@@ -451,7 +456,43 @@
 						</div>
 						<!--/ Search content area -->
 						<!-- Search Sidebar area -->
-						<div class="col-lg-4 col-md-5 col-12 order-1 order-md-2">
+						<div class="col-lg-4 col-md-5 col-12 order-1 order-md-2" ng-if="main.trend === 'intresting'">
+							<div class="card box-search">
+							<div class="card-body">
+								<div class="text-sm-left">
+									<h6 class="media-heading mb-0 text-success">Featured ✨</h6>
+								</div>
+								<h5 class="mt-1">
+									<a href="/resource/free-beginner-javascript-notes-reference--qv90gz">
+										FREE Beginner JavaScript Notes + Reference.
+									</a>
+								</h5>
+								<small>By Pankaj Tanwar</small>
+								<p class="mt-1">
+								</p>
+								<p class="card-text">
+									<b>Feb 25, 2021</b> - Hey! welcome to my favourite Beginner JavaScript Notes + Reference. These notes are a free resource, written by @wesbos to learn JavaScript from zero. These notes are totally free and have been modeled after the content in his Beginner JavaScript course.
+								</p>
+								<h6>Connect With Pankaj</h6>
+								<div class="knowledge-panel-suggestion">
+									<div class="suggestion d-inline-block text-center mr-2">
+										<a href="https://twitter.com/the2ndfloorguy" target="_blank">
+											<i class="bx bxl-twitter twitter font-large-1"></i>
+											<span class="font-small-2 d-block">Twitter</span>
+										</a>
+									</div>
+								  <div class="suggestion d-inline-block text-center mr-2">
+									<a href="https://www.linkedin.com/in/pankajtanwarbanna/" target="_blank">
+									  <i class="bx bxl-linkedin-square linkedin font-large-1"></i>
+									  <span class="font-small-2 d-block">Linkedin</span>
+									</a>
+								  </div>
+								</div>
+					  
+							</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-5 col-12 order-1 order-md-2 d-none d-sm-block" ng-if="main.trend !== 'intresting'">
 							<div class="card box-search">
 							<div class="card-body">
 								<div class="text-sm-left">
