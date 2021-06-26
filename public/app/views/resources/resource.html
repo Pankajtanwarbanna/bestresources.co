@@ -109,14 +109,14 @@
                                 <img class="img-fluid rounded" src="/assets/images/system-design.jpeg" alt="logo">
                             </div> -->
                             <h5 class="">{{ block.title }}</h5>
+                            <p class="card-text">
+                              {{ block.description }}
+                          </p>
                             <p class="mt-1" ng-repeat="link in block.links">
                                 <i class="bx bx-link-external pr-1 align-middle"></i>
                                 <a href="{{ link.link }}" class="align-middle" target="_blank">
                                     {{ link.title }}
                                 </a>
-                            </p>
-                            <p class="card-text">
-                                {{ block.description }}
                             </p>
                         </div>
                         </div>

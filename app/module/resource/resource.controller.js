@@ -156,7 +156,19 @@ exports.update              = (req, res) => {
     const updateResource      = function(content, updateResourceCallback) {
         let resource          = content[0];
         if(resource && req.decoded.userId == resource.author) {
-            resourceService.updateResource(req.body, function(error, result) {
+            const payload     = {
+                'resourceId'    : resource.resourceId,
+                'title'         : req.body.title.trim(),
+                'description'   : req.body.description.trim(),
+                'blocks'        : req.body.blocks,
+                'tags'          : req.body.tags,
+                'resourceType'  : req.body.resourceType,
+                'resourceLevel' : req.body.resourceLevel,
+                'blocksCount'   : Object.keys(req.body.blocks).length,
+                'slugUrl'       : req.body.slugUrl,
+                'author'        : resource.author    
+            }
+            resourceService.updateResource(payload, function(error, result) {
                 if(error) {
                     return updateResourceCallback(error);
                 } 
