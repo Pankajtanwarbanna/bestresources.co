@@ -193,13 +193,25 @@ exports.update              = (req, res) => {
 }
 
 exports.sayThanks           = (req, res) => {
-    let slugUrl             = req.body.slugUrl;
-    let author              = req.decoded.userId;
+    const slugUrl           = req.body.slugUrl;
 
     // update resourceUrl -> thanks count + thanks {}
     // add thanks in new table
     // ++ count in userProfile    
-    const markThanks        = function(markViewedCallback) {
+    const getResources      = function(getResourcesCallback) {
+        const payload       = {
+            slugUrl         : req.body.slugUrl
+        }
+        resourceService.getResources(payload, function(error, resource) {
+            if(error) {
+                return getResourcesCallback(error);
+            } 
+            if(resource.length == 0) return getResourcesCallback('Resource not found.')
+            return getResourcesCallback(null, resource);
+        });
+    }
+
+    const markThanks        = function(resource, markViewedCallback) {
         const payload       = {
             slugUrl         : slugUrl,
             thanked         : true
@@ -209,13 +221,13 @@ exports.sayThanks           = (req, res) => {
             if(error) {
                 return markViewedCallback(error);
             }
-            return markViewedCallback(null, result);
+            return markViewedCallback(null, resource);
         });
     }
 
     const updateThanks      = function(resource, markViewedCallback) {
         const payload       = {
-            'userId'        : author,
+            'userId'        : resource[0].author,
             'thanks'        : true
         }
 
@@ -230,6 +242,7 @@ exports.sayThanks           = (req, res) => {
     }
 
     async.waterfall([
+        getResources,
         markThanks,
         updateThanks    
     ], function (error, result) {
