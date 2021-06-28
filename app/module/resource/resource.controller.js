@@ -52,17 +52,31 @@ exports.get                 = (req, res) => {
     
     let trend               = req.query.trend || 'intresting';
     const getResources      = function(getResourcesCallback) {
-        const payload       = {
-            trend           : trend,
-            userId          : req.decoded ? req.decoded.userId : null
-        };
-
-        resourceService.getResources(payload, function(error, resource) {
-            if(error) {
-                return getResourcesCallback(error);
-            } 
-            return getResourcesCallback(null, resource);
-        });
+        if(req.query.search) {
+            const payload       = {
+                search          : req.query.search,
+                userId          : req.decoded ? req.decoded.userId : null
+            };
+    
+            resourceService.searchResources(payload, function(error, resource) {
+                if(error) {
+                    return getResourcesCallback(error);
+                } 
+                return getResourcesCallback(null, resource);
+            });
+        } else {
+            const payload       = {
+                trend           : trend,
+                userId          : req.decoded ? req.decoded.userId : null
+            };
+    
+            resourceService.getResources(payload, function(error, resource) {
+                if(error) {
+                    return getResourcesCallback(error);
+                } 
+                return getResourcesCallback(null, resource);
+            });
+        }
     }
 
     async.waterfall([

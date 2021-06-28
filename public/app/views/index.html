@@ -209,11 +209,10 @@
 					<!-- Search Bar -->
 					<div class="search-bar">
 					<!-- input search -->
-					<form>
+					<form ng-submit="main.searchResource();">
 						<fieldset class="page-search-input form-group position-relative">
-						<input type="search" class="form-control rounded-right form-control-lg shadow pl-2" id="searchbar"
-							placeholder="What would you like to learn?">
-						<button class="btn btn-primary search-btn rounded" type="button">
+						<input type="search" class="form-control rounded-right form-control-lg shadow pl-2" id="searchbar" ng-model="main.searchKey" placeholder="What would you like to learn?">
+						<button class="btn btn-primary search-btn rounded" type="submit">
 							<span class="d-none d-sm-block">Search</span>
 							<i class="bx bx-search d-block d-sm-none"></i>
 						</button>

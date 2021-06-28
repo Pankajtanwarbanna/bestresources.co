@@ -23,6 +23,12 @@ let app = angular.module('userRoutes', ['ngRoute'])
                 controllerAs    : 'resource'
             })
 
+            .when('/search/:searchKey', {
+                templateUrl     : '/app/views/search/search.html',
+                controller      : 'searchController',
+                controllerAs    : 'search'
+            })
+
             .when('/edit/:resourceId', {
                 templateUrl     : '/app/views/resources/edit-resource.html',
                 authenticated   : true,

@@ -129,6 +129,41 @@ exports.getResources    = (payload, callback) => {
     })
 }
 
+exports.searchResources = (payload, callback) => {
+
+    let search          = payload['search'];
+
+    let QUERY           = `
+        SELECT  resource.resourceId,
+                resource.title,
+                resource.description,
+                resource.slugUrl,
+                resource.tags,
+                resource.thanksCount,
+                resource.viewsCount,
+                resource.blocksCount,
+                resource.resourceLevel,
+                resource.resourceType,
+                resource.__createdtime__,
+                resource.__updatedtime__,
+                user.userId,
+                user.firstName,
+                user.lastName,
+                user.about,
+                user.avatar
+        FROM ${SCHEMA}.${RESOURCE_TABLE} AS resource
+        INNER JOIN ${SCHEMA}.${USERS_TABLE} AS user ON user.userId = resource.author
+        WHERE resource.approved = 1 AND resource.title LIKE "%${search}%" OR resource.description LIKE "%${search}%"
+    `;
+
+    database.query(QUERY, function(error, response) {
+        if(error) {
+            return callback(error);
+        }
+        return callback(null, response.data);
+    })
+}
+
 exports.updateResource   = (payload, callback) => {
 
     database.update({

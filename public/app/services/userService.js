@@ -31,6 +31,11 @@ angular.module('userServices',[])
         return $http.get('/api/resources?trend='+ trend);
     }
 
+    // user.searchResources();
+    userFactory.searchResources     = function(searchKey) {
+        return $http.get('/api/resources?search='+ searchKey);
+    }
+
     // user.fetchResource(slugUrl)
     userFactory.fetchResource       = function(slugUrl) {
         return $http.get('/api/resources/' + slugUrl);

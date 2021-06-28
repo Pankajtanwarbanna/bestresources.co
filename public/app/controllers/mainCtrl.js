@@ -62,6 +62,11 @@ angular.module('mainController', ['authServices'])
         })
     }
 
+    // search resources 
+    app.searchResource          = () => {
+        $location.path('/search/' + app.searchKey);
+    }
+
     // take to resource page
     app.takeMeToResourcePage   = (url) => {
         $location.path('/resource/' + url);

@@ -340,4 +340,27 @@ angular.module('userCtrl', ['userServices', 'authServices'])
             app.loading             = false;
         });
     }
+})
+
+.controller('searchController', function(user, $routeParams, $location) {
+    let app         = this;
+
+    app.searchKey   = $routeParams.searchKey;
+    app.loading     = true;
+
+    // search resources
+    user.searchResources(app.searchKey).then(function(data) {
+        app.resources       = data.data.response;
+        app.loading         = false;
+        console.log(app.resources)
+    }).catch(error => {
+        let response        = error.data.response;
+        app.errorMsg        = response.message;
+        app.loading         = false;
+    })
+
+    // search 
+    app.searchResource      = function() {
+        $location.path('/search/' + app.searchKey);
+    }
 });
