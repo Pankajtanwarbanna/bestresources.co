@@ -5,6 +5,7 @@ const validator     = require('express-validator');
 const bodyParser    = require('body-parser')
 
 const constant      = require(__basePath + 'app/config/constant.js');
+const sitemapService= require(constant.path.service + '/sitemap.service');
 
 app.use(morgan('dev'));
 app.use(validator({}));
@@ -14,6 +15,11 @@ app.use(bodyParser.json())
 require(constant.path.app + 'core/routes')(app); // API Routes
 
 app.use(express.static(constant.path.base + '/public'));
+
+// dynamic sitemap
+app.get('/sitemap.xml', function(req, res) {
+  return sitemapService.sitemap(req, res);
+})
 
 // index page
 app.get('*', function (req,res) {

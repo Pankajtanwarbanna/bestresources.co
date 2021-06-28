@@ -6,11 +6,12 @@ angular.module('mainController', ['authServices'])
 
 .controller('mainCtrl', function ($window,$http, auth, $timeout, $location, authToken, $rootScope, user) {
 
-    let app     = this;
+    let app         = this;
 
-    app.loadme  = false;
-    app.home    = true;
-    app.trend   = 'intresting';
+    app.loadme      = false;
+    app.home        = true;
+    app.trend       = 'intresting';
+    app.searchKey   = '';
 
     $rootScope.$on('$routeChangeStart', function (event, next, current) {
 
