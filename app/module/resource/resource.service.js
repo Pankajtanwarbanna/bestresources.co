@@ -274,3 +274,41 @@ exports.getBookmarks    = (payload, callback) => {
         return callback(null, response.data);
     })
 }
+
+exports.searchByTag     = (payload, callback) => {
+
+    let tagId           = payload['tagId'];
+
+    let QUERY           = `
+        SELECT  resource.resourceId,
+                resource.title,
+                resource.description,
+                resource.slugUrl,
+                resource.tags,
+                resource.thanksCount,
+                resource.viewsCount,
+                resource.blocksCount,
+                resource.resourceLevel,
+                resource.resourceType,
+                resource.__createdtime__,
+                resource.__updatedtime__,
+                user.userId,
+                user.firstName,
+                user.lastName,
+                user.about,
+                user.avatar
+        FROM ${SCHEMA}.${RESOURCE_TABLE} AS resource
+        INNER JOIN ${SCHEMA}.${USERS_TABLE} AS user ON user.userId = resource.author
+        WHERE resource.approved = 1
+    `;
+
+    database.query(QUERY, function(error, response) {
+        if(error) {
+            return callback(error);
+        }
+        response.data = response.data.filter((resource) => {
+            return resource.tags.indexOf(tagId) > -1;
+        })
+        return callback(null, response.data);
+    })
+}

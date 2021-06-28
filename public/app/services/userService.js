@@ -75,6 +75,11 @@ angular.module('userServices',[])
     userFactory.getTags             = function() {
         return $http.get('/api/tags/get');
     }
+    
+    // user.getTags()
+    userFactory.searchByTag         = function(slugUrl) {
+        return $http.get('/api/tags/search?slugUrl=' + slugUrl);
+    }
 
     return userFactory;
 });

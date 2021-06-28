@@ -22,6 +22,12 @@ router.get(
     tagController.get
 );
 
+router.get(
+    '/search',
+    tagController.search
+);
+
+
 module.exports = {
     router: router
 };

@@ -25,9 +25,16 @@ exports.createTag       = (payload, callback) => {
 }
 
 exports.getTags         = (payload, callback) => {
+
+    let slugUrl         = payload['slugUrl'];
+    let slugQuery       = '';
+    
+    if(slugUrl) slugQuery =  `WHERE slugUrl = '${slugUrl}'`;
+
     let QUERY           = `
         SELECT tag, avatar, slugUrl, tagId 
         FROM ${SCHEMA}.${TABLE}
+        ${slugQuery}
         ORDER BY rank DESC
     `;
 

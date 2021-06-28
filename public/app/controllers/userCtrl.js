@@ -342,6 +342,22 @@ angular.module('userCtrl', ['userServices', 'authServices'])
     }
 })
 
+.controller('hashTagController', function(user, $routeParams) {
+    let app                     = this;
+    app.loading                 = true;
+    app.tagSlug                 = $routeParams.tagSlug;
+
+    user.searchByTag(app.tagSlug).then(function(data) {
+        let response            = data.data.response;
+        app.resources           = response;
+        app.loading             = false;
+    }).catch(error => {
+        let response            = error.data.response;
+        app.errorMsg            = response.message;
+        app.loading             = false;
+    });
+})
+
 .controller('searchController', function(user, $routeParams, $location) {
     let app         = this;
 

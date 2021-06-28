@@ -49,6 +49,12 @@ let app = angular.module('userRoutes', ['ngRoute'])
                 controllerAs    : 'tag'
             })
 
+            .when('/tag/:tagSlug', {
+                templateUrl     : '/app/views/tags/tag.html',
+                controller      : 'hashTagController',
+                controllerAs    : 'hashTag'
+            })
+
             .when('/ideabox', {
                 templateUrl     : '/app/views/ideabox/ideabox.html'
             })
