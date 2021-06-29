@@ -84,7 +84,7 @@ let app = angular.module('userRoutes', ['ngRoute'])
                 controllerAs    : 'bookmark'
             })
 
-            .when('/team', {
+            .when('/about', {
                 templateUrl     : '/app/views/team/team.html'
             })
 
