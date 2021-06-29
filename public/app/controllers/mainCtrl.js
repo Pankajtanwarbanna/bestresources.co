@@ -75,7 +75,8 @@ angular.module('mainController', ['authServices'])
 
     // share page
     app.share                   = (url, title) => {
-        app.url                 = window.location.href + '/resource/' + url;
+        app.url                 = window.location.href + 'resource/' + url;
+        console.log(app.url)
         app.title               = title;
         app.twitterShare        = encodeURI('https://twitter.com/share?url=' + app.url + '&text=' + title + '   { from @bestresourcesCo }');
         app.linkedinShare       = encodeURI('https://www.linkedin.com/sharing/share-offsite/?url=' + app.url);
