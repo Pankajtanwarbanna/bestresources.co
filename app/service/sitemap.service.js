@@ -23,6 +23,7 @@ exports.sitemap             =  (req, res) => {
         smStream.write({ url: '/profile',   changefreq: 'weekly',    priority: 0.3 });
         smStream.write({ url: '/ideabox',   changefreq: 'daily',     priority: 0.7 });
         smStream.write({ url: '/tags',      changefreq: 'daily',     priority: 0.7 });
+        smStream.write({ url: '/about',     changefreq: 'weekly',    priority: 0.5 });
 
         resourceService.getResources({}, function(error, resources) {
             if(error) {
