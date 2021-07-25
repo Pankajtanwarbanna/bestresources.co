@@ -1,0 +1,5083 @@
+[
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 4,
+      "title": "HTML Basics",
+      "links": {
+        0: {
+          "title": "Udemy Course: Responsive Websites with HTML",
+          "link": "https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/",
+          "verified": true
+        },
+        1: {
+          "link": "https://www.udemy.com/course/advanced-css-and-sass/",
+          "verified": true,
+          "title": "Udemy Course: Advanced CSS and Sass"
+        },
+        2: {
+          "link": "https://www.jungledisk.com/blog/2017/12/04/should-i-bother-with-semantic-html/",
+          "verified": true,
+          "title": "Article : HTML Sematic tags"
+        },
+        3: {
+          "link": "http://www.standardista.com/",
+          "verified": true,
+          "title": "Extra : Web Standards"
+        }
+      }
+    },
+    1: {
+      "total_links": 11,
+      "title": "CSS",
+      "links": {
+        0: {
+          "link": "https://css-tricks.com/",
+          "verified": true,
+          "title": "Website : CSS Tricks"
+        },
+        1: {
+          "link": "https://frontendmasters.com/courses/css-grids-flexbox/",
+          "verified": true,
+          "title": "Course : CSS grids and flexbox"
+        },
+        2: {
+          "title": "Course : Sass Crash Course",
+          "link": "https://www.youtube.com/watch?v=nu5mdN2JIwM&ab_channel=TraversyMedia",
+          "verified": true
+        },
+        3: {
+          "link": "https://sass-guidelin.es/",
+          "verified": true,
+          "title": "Explore : Sass Guidelines : Architecture"
+        },
+        4: {
+          "link": "https://www.youtube.com/watch?v=nu5mdN2JIwM&ab_channel=TraversyMedia",
+          "verified": true,
+          "title": "Explore : CSS State"
+        },
+        5: {
+          "link": "https://www.youtube.com/watch?v=bkLw5YIkRXw&ab_channel=CodeKwento",
+          "verified": true,
+          "title": "Lecture : Motion design with CSS"
+        },
+        6: {
+          "title": "Course : Motion Design",
+          "link": "https://frontendmasters.com/courses/motion-design-css/",
+          "verified": true
+        },
+        7: {
+          "title": "Extra : CSS Specification",
+          "link": "https://www.w3.org/Style/CSS/specs.en.html",
+          "verified": true
+        },
+        8: {
+          "link": "https://www.youtube.com/watch?v=vs34f9FiHps&ab_channel=CodingTech",
+          "verified": true,
+          "title": "Even more CSS secrets"
+        },
+        9: {
+          "link": "https://www.youtube.com/watch?v=L0xEOdybGFQ&ab_channel=GoogleChromeDevelopers",
+          "verified": true,
+          "title": "The Style of web fonts"
+        },
+        10: {
+          "title": "Article : Responsive web design basics",
+          "link": "https://web.dev/responsive-web-design-basics/",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 13,
+      "title": "UI/UX Basics",
+      "links": {
+        0: {
+          "link": "https://www.amazon.com/Non-Designers-Design-Book-4th/dp/0133966151",
+          "verified": true,
+          "title": "Book : The non designer"
+        },
+        1: {
+          "link": "https://frontendmasters.com/courses/design-for-developers",
+          "verified": true,
+          "title": "Course : Design for Developers"
+        },
+        2: {
+          "link": "https://frontendmasters.com/courses/responsive-typography-v2/",
+          "verified": true,
+          "title": "Course : responsive web typography"
+        },
+        3: {
+          "link": "https://www.youtube.com/watch?v=jWur1VrxNUg&ab_channel=GoogleChromeDevelopers",
+          "verified": true,
+          "title": "Video : Motion Design in UI"
+        },
+        4: {
+          "link": "https://www.smashingmagazine.com/2016/11/a-quick-guide-for-designing-better-buttons/",
+          "verified": true,
+          "title": "Article : Design Better Buttons"
+        },
+        5: {
+          "link": "https://alistapart.com/article/contrastandmeaning/",
+          "verified": true,
+          "title": "Article : Contrast and meaning"
+        },
+        6: {
+          "link": "https://vimeo.com/106504574",
+          "verified": true,
+          "title": "Lecture : Web Typography"
+        },
+        7: {
+          "link": "https://www.udacity.com/course/intro-to-the-design-of-everyday-things--design101",
+          "verified": true,
+          "title": "Course : Intro to Design Thinking"
+        },
+        8: {
+          "link": "https://fontreviewjournal.com/",
+          "verified": true,
+          "title": "Explore : Font review jounrney"
+        },
+        9: {
+          "link": "https://www.degreeless.design/",
+          "verified": true,
+          "title": "Extra : Degreeless Design"
+        },
+        10: {
+          "link": "https://method.ac/",
+          "verified": true,
+          "title": "Extra : Method Draw"
+        },
+        11: {
+          "link": "https://www.bookmarks.design/",
+          "verified": true,
+          "title": "Extra : Design Resources"
+        },
+        12: {
+          "link": "https://github.com/bradtraversy/design-resources-for-developers/",
+          "verified": true,
+          "title": "Extra : Design Resources for Developers"
+        }
+      }
+    },
+    3: {
+      "total_links": 5,
+      "title": "JavaScript",
+      "links": {
+        0: {
+          "link": "https://www.udemy.com/course/the-complete-javascript-course/",
+          "verified": true,
+          "title": "Udemy Course : The complete JavaScript Course"
+        },
+        1: {
+          "link": "https://github.com/getify/You-Dont-Know-JS",
+          "verified": true,
+          "title": "Book : You Don\"t Know JS"
+        },
+        2: {
+          "link": "https://frontendmasters.com/courses/javascript-hard-parts-v2/",
+          "verified": true,
+          "title": "Course : JavaScript, The hard part (v2)"
+        },
+        3: {
+          "link": "https://www.youtube.com/watch?v=jWur1VrxNUg&ab_channel=GoogleChromeDevelopers",
+          "verified": true,
+          "title": "Explore : The JavaScript State"
+        },
+        4: {
+          "link": "https://web.dev/why-speed-matters/",
+          "verified": true,
+          "title": "Article : Why does speed matter?"
+        }
+      }
+    },
+    4: {
+      "total_links": 5,
+      "title": "React",
+      "links": {
+        0: {
+          "link": "https://bradfrost.com/blog/post/atomic-web-design/",
+          "verified": true,
+          "title": "Article : Atomic Design"
+        },
+        1: {
+          "link": "https://www.udemy.com/join/login-popup/?next=/course/modern-react-bootcamp/learn/",
+          "verified": true,
+          "title": "Course : Modern React Bootcamp"
+        },
+        2: {
+          "link": "https://reactresources.com/",
+          "verified": true,
+          "title": "Extra : React Resources"
+        },
+        3: {
+          "link": "https://overreacted.io/",
+          "verified": true,
+          "title": "Explore : Overreacted"
+        },
+        4: {
+          "link": "https://frontendmasters.com/courses/pure-react-state/",
+          "verified": true,
+          "title": "Course : State management in pure react"
+        }
+      }
+    },
+    5: {
+      "total_links": 2,
+      "title": "Git",
+      "links": {
+        0: {
+          "link": "https://www.codecademy.com/learn/learn-git/modules/learn-git-git-workflow-u",
+          "verified": true,
+          "title": "Article : Basic Git Workflow"
+        },
+        1: {
+          "link": "https://danielkummer.github.io/git-flow-cheatsheet/",
+          "verified": true,
+          "title": "Website : Git Flow Cheatsheet"
+        }
+      }
+    },
+    6: {
+      "total_links": 2,
+      "title": "Rendering on the Web",
+      "links": {
+        0: {
+          "link": "https://developers.google.com/web/updates/2019/02/rendering-on-the-web",
+          "verified": true,
+          "title": "Rendering on the web"
+        },
+        1: {
+          "link": "https://www.toptal.com/front-end/client-side-vs-server-side-pre-rendering",
+          "verified": true,
+          "title": "Rendering on the web - 2"
+        }
+      }
+    },
+    7: {
+      "total_links": 5,
+      "title": "Nodejs",
+      "links": {
+        0: {
+          "link": "https://www.udemy.com/course/nodejs-the-complete-guide/",
+          "verified": true,
+          "title": "Course : NodeJs the complete guide"
+        },
+        1: {
+          "link": "https://www.udemy.com/course/mern-stack-front-to-back/",
+          "verified": true,
+          "title": "Course : MERN stack, front to back"
+        },
+        2: {
+          "link": "https://www.sitepoint.com/understanding-module-exports-exports-node-js/",
+          "verified": true,
+          "title": "Articles : Understanding modules in NodeJs"
+        },
+        3: {
+          "title": "Video : CORS and JSON",
+          "link": "https://www.youtube.com/watch?v=stvCHJZq5MI&ab_channel=WebDevTV",
+          "verified": true
+        },
+        4: {
+          "link": "https://www.youtube.com/watch?v=l20MBBFZAmA&ab_channel=ProgrammingwithMosh",
+          "verified": true,
+          "title": "Video : Event and Event Emitter in NodeJs"
+        }
+      }
+    },
+    8: {
+      "total_links": 6,
+      "title": "Creating Restful APIs",
+      "links": {
+        0: {
+          "link": "https://restfulapi.net/",
+          "verified": true,
+          "title": "Intro : What is REST"
+        },
+        1: {
+          "link": "https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+          "verified": true,
+          "title": "Docs : Web API design"
+        },
+        2: {
+          "link": "https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9#comment-4865610272",
+          "verified": true,
+          "title": "Article : REST full API design guidelines"
+        },
+        3: {
+          "link": "https://developers.google.com/search-ads/v2/standard-error-responses",
+          "verified": true,
+          "title": "Article : API error handling"
+        },
+        4: {
+          "link": "https://blog.restcase.com/rest-api-error-codes-101/",
+          "verified": true,
+          "title": "Video : REST api error code 101"
+        },
+        5: {
+          "link": "https://www.youtube.com/watch?v=iYM2zFP3Zn0",
+          "verified": true,
+          "title": "Extra : HTTP crash course and exploration"
+        }
+      }
+    },
+    9: {
+      "total_links": 5,
+      "title": "Authentication",
+      "links": {
+        0: {
+          "link": "https://www.youtube.com/watch?v=j8Yxff6L_po&ab_channel=Twilio",
+          "verified": true,
+          "title": "Everything you ever wanted to know about authentication"
+        },
+        1: {
+          "link": "https://www.fomasgroup.com/Portals/0/MgmNewsDocuments/jwt-handbook.pdf",
+          "verified": true,
+          "title": "Book : JWT handbook"
+        },
+        2: {
+          "link": "https://www.lynda.com/Node-js-tutorials/Understanding-cookies-sessions/798496/5028751-4.html",
+          "verified": true,
+          "title": "Video : Cookies and sessions"
+        },
+        3: {
+          "link": "https://www.youtube.com/watch?v=Hh_kiZTTBr0&ab_channel=BenAwad",
+          "verified": true,
+          "title": "Video : Should you implement authentication yourself?"
+        },
+        4: {
+          "link": "https://www.youtube.com/watch?v=2PPSXonhIck&t=380s",
+          "verified": true,
+          "title": "Video : Authentication on web"
+        }
+      }
+    },
+    10: {
+      "total_links": 1,
+      "title": "Validation",
+      "links": {
+        0: {
+          "link": "https://www.packetlabs.net/input-validation/#:~:text=Input%20Validation%20on%20Server%2Dside&text=Using%20server%2Dside%20validation%20indicates,vulnerable%20to%20Cross%2DSite%20Scripting.&text=If%20a%20JavaScript%20payload%20of,the%20alert%20box%20will%20appear.",
+          "verified": true,
+          "title": "Input validation on client side or server side"
+        }
+      }
+    },
+    11: {
+      "total_links": 3,
+      "title": "Databases with MongoDB",
+      "links": {
+        0: {
+          "link": "https://www.youtube.com/watch?v=ZS_kXvOeQ5Y&ab_channel=Academind",
+          "verified": true,
+          "title": "Video : SQL vs NoSQL or MySQL"
+        },
+        1: {
+          "link": "https://www.youtube.com/watch?v=VELru-FCWDM&ab_channel=Academind",
+          "verified": true,
+          "title": "Video : MongoDB complete introduction"
+        },
+        2: {
+          "link": "https://www.youtube.com/watch?v=yuPjoC3jmPA&ab_channel=MongoDB",
+          "verified": true,
+          "title": "Video : Data modeling with MongoDB"
+        }
+      }
+    }
+  },
+  "description": "Learn everything you need to build any SAAS product in a very organized, ordered, and self-paced learning roadmap based on experience by Abdulrahman Alotaibi (https://superengineer.vercel.app/)",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE-PAID",
+  "show": true,
+  "slugUrl": "the-complete-full-stack-engineer-roadmap-qvarro",
+  "tags": [
+    "javascript",
+    "react",
+    "mongo"
+  ],
+  "title": "The Complete Full-Stack Engineer Roadmap"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 5,
+      "title": "How The Internet Works 💻",
+      "links": {
+        0: {
+          "title": "✨ What happens when you go to google.com?",
+          "link": "https://github.com/alex/what-happens-when",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 Introduction to Networks",
+          "link": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/readings/",
+          "verified": true
+        },
+        2: {
+          "title": "💫 Browser Networking",
+          "link": "https://hpbn.co/",
+          "verified": true
+        },
+        3: {
+          "title": "🎊 IP Addressing",
+          "link": "https://pages.di.unipi.it/ricci/501302.pdf",
+          "verified": true
+        },
+        4: {
+          "title": "⭐️ HTTP/2",
+          "link": "https://daniel.haxx.se/http2/",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 2,
+      "title": "Advanced Front End 🔚",
+      "links": {
+        0: {
+          "title": "✨ HTML & CSS",
+          "link": "https://learn.shayhowe.com/advanced-html-css/",
+          "verified": true
+        },
+        1: {
+          "title": "💫 JavaScript",
+          "link": "https://github.com/getify/You-Dont-Know-JS",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 5,
+      "title": "Operating Systems 🖥",
+      "links": {
+        0: {
+          "title": "✨ Using the command line",
+          "link": "https://launchschool.com/books/command_line",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 What is an operating system?",
+          "link": "http://markburgess.org/os/os.pdf",
+          "verified": true
+        },
+        2: {
+          "title": "💫 Memory",
+          "link": "https://www.akkadia.org/drepper/cpumemory.pdf",
+          "verified": true
+        },
+        3: {
+          "title": "🎊 Unix Programming",
+          "link": "http://catb.org/esr/writings/taoup/html/",
+          "verified": true
+        },
+        4: {
+          "title": "⭐️ Bash-Scripting Guide",
+          "link": "https://tldp.org/LDP/abs/html/",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 5,
+      "title": "Languages 📕",
+      "links": {
+        0: {
+          "title": "✨ Know PHP",
+          "link": "https://en.wikibooks.org/wiki/PHP_Programming",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 Learn Ruby",
+          "link": "https://www.rubyguides.com/ruby-tutorial/",
+          "verified": true
+        },
+        2: {
+          "title": "💫 Learn Rust",
+          "link": "https://doc.rust-lang.org/stable/rust-by-example/",
+          "verified": true
+        },
+        3: {
+          "title": "🎊 Learn Go",
+          "link": "https://gobyexample.com/",
+          "verified": true
+        },
+        4: {
+          "title": "⭐️ Know Server-Side JavaScript",
+          "link": "https://github.com/maxogden/art-of-node",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 4,
+      "title": "Version Control 🖲",
+      "links": {
+        0: {
+          "title": "✨ A Visual Git Reference",
+          "link": "https://marklodato.github.io/visual-git-guide/index-en.html",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 Visualizing Git Concepts with D3",
+          "link": "https://onlywei.github.io/explain-git-with-d3/#",
+          "verified": true
+        },
+        2: {
+          "title": "💫 Github Cheat Sheet",
+          "link": "https://github.com/tiimgreen/github-cheat-sheet",
+          "verified": true
+        },
+        3: {
+          "title": "🎊 SVN",
+          "link": "https://dev.to/rajbdilip/quick-svn-guide-for-git-users-svn-the-git-way-26al",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 7,
+      "title": "Database Concepts 📓",
+      "links": {
+        0: {
+          "title": "🌟 Object-Relational Mapping",
+          "link": "https://dev.to/nielsenjared/what-is-object-relational-mapping-how-to-roll-your-own-javascript-orm-4ni3",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 ACID",
+          "link": "https://neo4j.com/blog/acid-vs-base-consistency-models-explained/",
+          "verified": true
+        },
+        2: {
+          "title": "💫 N+1 Problem",
+          "link": "https://medium.com/@bretdoucette/n-1-queries-and-how-to-avoid-them-a12f02345be5",
+          "verified": true
+        },
+        3: {
+          "title": "☄️ Sharding",
+          "link": "https://www.digitalocean.com/community/tutorials/understanding-database-sharding",
+          "verified": true
+        },
+        4: {
+          "title": "✨ CAP Theorem",
+          "link": "http://www.julianbrowne.com/article/brewers-cap-theorem",
+          "verified": true
+        },
+        5: {
+          "title": "💥 Normalization",
+          "link": "https://dev.to/nexttech/database-normalization-explained-5b1a",
+          "verified": true
+        },
+        6: {
+          "title": "🌟 Indexes",
+          "link": "https://dev.to/helenanders26/sql-series-speed-up-your-queries-with-indexes-3c83",
+          "verified": true
+        }
+      }
+    },
+    6: {
+      "total_links": 5,
+      "title": "Relational Databases 📔",
+      "links": {
+        0: {
+          "title": "✨ Theory of Relational Databases",
+          "link": "https://web.cecs.pdx.edu/~maier/TheoryBook/TRD.html",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 Learn MySQL",
+          "link": "https://www.techotopia.com/index.php/MySQL_Essentials",
+          "verified": true
+        },
+        2: {
+          "title": "💫 Learn PostgreSQL",
+          "link": "https://www.syncfusion.com/ebooks/postgres",
+          "verified": true
+        },
+        3: {
+          "title": "🎊 Learn MariaDB",
+          "link": "https://www.tutorialspoint.com/mariadb/index.htm",
+          "verified": true
+        },
+        4: {
+          "title": "🌟 Learn MS SQL",
+          "link": "https://www.tutorialspoint.com/ms_sql_server/index.htm",
+          "verified": true
+        }
+      }
+    },
+    7: {
+      "total_links": 4,
+      "title": "NoSQL Databases 📗",
+      "links": {
+        0: {
+          "title": "✨ Learning MongoDB",
+          "link": "https://github.com/evanlucas/learnyoumongo",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 Learn CouchDB",
+          "link": "http://guide.couchdb.org/editions/1/en/index.html",
+          "verified": true
+        },
+        2: {
+          "title": "💫 NoSQL Databases",
+          "link": "https://github.com/evanlucas/learnyoumongo",
+          "verified": true
+        },
+        3: {
+          "title": "🎊 Graph Databases",
+          "link": "https://graphdatabases.com/",
+          "verified": true
+        }
+      }
+    },
+    8: {
+      "total_links": 5,
+      "title": "APIs 📨",
+      "links": {
+        0: {
+          "title": "⭐️ Working with APIs",
+          "link": "https://launchschool.com/books/working_with_apis",
+          "verified": true
+        },
+        1: {
+          "title": "💥 REST",
+          "link": "https://dev.to/drminnaar/rest-api-guide-14n2",
+          "verified": true
+        },
+        2: {
+          "title": "💡 GraphQL",
+          "link": "https://dev.to/leonardomso/a-beginners-guide-to-graphql-3kjj",
+          "verified": true
+        },
+        3: {
+          "title": "☄️ JSON-RPC",
+          "link": "https://dev.to/radixdlt/json-rpc-vs-rest-for-distributed-platform-apis-3n0m",
+          "verified": true
+        },
+        4: {
+          "title": "🎉 HATEOAS",
+          "link": "https://restcookbook.com/Basics/hateoas/",
+          "verified": true
+        }
+      }
+    },
+    9: {
+      "total_links": 4,
+      "title": "Caching ♻️",
+      "links": {
+        0: {
+          "title": "✨ HTTP caching",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching",
+          "verified": true
+        },
+        1: {
+          "title": "☄️ Redis",
+          "link": "https://openmymind.net/2012/1/23/The-Little-Redis-Book/",
+          "verified": true
+        },
+        2: {
+          "title": "⭐️ Memcached",
+          "link": "https://www.tutorialspoint.com/memcached/index.htm",
+          "verified": true
+        },
+        3: {
+          "title": "🚀 Service workers",
+          "link": "https://dev.to/blarzhernandez/javascript-service-workers-visualized-1683",
+          "verified": true
+        }
+      }
+    },
+    10: {
+      "total_links": 7,
+      "title": "Security 🔒",
+      "links": {
+        0: {
+          "title": "✨ HTTPS + TLS",
+          "link": "https://dev.to/ahmedatefae/web-security-knowledge-you-must-understand-it-part-i-https-tls-ssl-cors-csp-298l",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 CORS",
+          "link": "https://dev.to/lydiahallie/cs-visualized-cors-5b8h",
+          "verified": true
+        },
+        2: {
+          "title": "💫 MD5",
+          "link": "https://dev.to/wagslane/very-basic-intro-to-hash-functions-sha-256-md-5-etc-399j",
+          "verified": true
+        },
+        3: {
+          "title": "🎊 SHA-2",
+          "link": "https://dev.to/wagslane/how-sha-2-works-step-by-step-sha-256-11ci",
+          "verified": true
+        },
+        4: {
+          "title": "💡 SCrypt",
+          "link": "https://dev.to/wagslane/very-basic-intro-to-the-scrypt-hash-7l5",
+          "verified": true
+        },
+        5: {
+          "title": "💥 BCrypt",
+          "link": "https://dev.to/sylviapap/bcrypt-explained-4k5c",
+          "verified": true
+        },
+        6: {
+          "title": "☄️ OWASP",
+          "link": "https://owasp.org/www-project-top-ten/",
+          "verified": true
+        }
+      }
+    },
+    11: {
+      "total_links": 3,
+      "title": "CI/CD 🧪",
+      "links": {
+        0: {
+          "title": "✨ Testing your code",
+          "link": "https://dev.to/thejessleigh/different-types-of-testing-explained-1ljo",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 Jenkins",
+          "link": "https://www.bogotobogo.com/DevOps/Jenkins/images/Intro_install/jenkins-the-definitive-guide.pdf",
+          "verified": true
+        },
+        2: {
+          "title": "💫 TravisCI",
+          "link": "https://github.com/dwyl/learn-travis",
+          "verified": true
+        }
+      }
+    },
+    12: {
+      "total_links": 6,
+      "title": "Development Concepts 📙",
+      "links": {
+        0: {
+          "title": "☄️ SOLID",
+          "link": "https://dev.to/ham8821/solid-principles-to-start-with-object-oriented-programming-1e49",
+          "verified": true
+        },
+        1: {
+          "title": "⭐️ KISS",
+          "link": "https://dev.to/getd/kiss-keep-it-simple-short-my-tech-writing-principal-jjn",
+          "verified": true
+        },
+        2: {
+          "title": "💥 YAGNI",
+          "link": "https://dev.to/gonedark/practicing-yagni-3n1d",
+          "verified": true
+        },
+        3: {
+          "title": "✨ DRY",
+          "link": "https://dev.to/codemouse92/clean-dry-solid-spaghetti-1lgm",
+          "verified": true
+        },
+        4: {
+          "title": "🎉 Domain-Driven Design",
+          "link": "http://www.infoq.com/minibooks/domain-driven-design-quickly",
+          "verified": true
+        },
+        5: {
+          "title": "🌟 Test Driven Development",
+          "link": "https://github.com/grzesiek-galezowski/tdd-ebook",
+          "verified": true
+        }
+      }
+    },
+    13: {
+      "total_links": 3,
+      "title": "Software Architecture 🏯",
+      "links": {
+        0: {
+          "title": "💫 Microservices and Service Oriented Architecture",
+          "link": "https://www.oreilly.com/programming/free/files/microservices-vs-service-oriented-architecture.pdf",
+          "verified": true
+        },
+        1: {
+          "title": "🎊 CQRS",
+          "link": "https://msdn.microsoft.com/en-us/library/jj554200.aspx",
+          "verified": true
+        },
+        2: {
+          "title": "⭐️ Serverless",
+          "link": "https://docs.microsoft.com/en-us/dotnet/standard/serverless-architecture/",
+          "verified": true
+        }
+      }
+    },
+    14: {
+      "total_links": 3,
+      "title": "Containers",
+      "links": {
+        0: {
+          "title": "✨ Docker Fundamentals",
+          "link": "https://dev.to/skaytech/docker-fundamentals-2ibi",
+          "verified": true
+        },
+        1: {
+          "title": "🎉 Docker Cookbook",
+          "link": "https://www.packtpub.com/free-ebooks/docker-cookbook-second-edition",
+          "verified": true
+        },
+        2: {
+          "title": "🎉 Docker Cookbook",
+          "link": "https://www.packtpub.com/free-ebooks/kubernetes-cookbook-second-edition",
+          "verified": true
+        }
+      }
+    },
+    15: {
+      "total_links": 3,
+      "title": "Servers 📬",
+      "links": {
+        0: {
+          "title": "☄️ Nginx Handbook",
+          "link": "https://github.com/trimstray/nginx-admins-handbook",
+          "verified": true
+        },
+        1: {
+          "title": "💡 Apache",
+          "link": "https://httpd.apache.org/",
+          "verified": true
+        },
+        2: {
+          "title": "💥 Caddy",
+          "link": "https://caddyserver.com/",
+          "verified": true
+        }
+      }
+    },
+    16: {
+      "total_links": 5,
+      "title": "Scalability ⚖️",
+      "links": {
+        0: {
+          "title": "💫 Distributed Systems",
+          "link": "http://book.mixu.net/distsys/single-page.html",
+          "verified": true
+        },
+        1: {
+          "title": "☄️ System Design Primer",
+          "link": "https://github.com/donnemartin/system-design-primer",
+          "verified": true
+        },
+        2: {
+          "title": "✨ Real-World Maintainable Software",
+          "link": "https://www.oreilly.com/content/real-world-maintainable-software/",
+          "verified": true
+        },
+        3: {
+          "title": "🎉 The 12 Factor App",
+          "link": "https://12factor.net/",
+          "verified": true
+        },
+        4: {
+          "title": "🌟 Architecting Frontend Projects To Scale",
+          "link": "https://dev.to/mmcshinsky/why-frontend-architecture-matters-1ldj",
+          "verified": true
+        }
+      }
+    }
+  },
+  "blocks"Count: 17,
+  "description": "It\"s easy to focus on the front end of web development, but what about the back end? Learning about the back end improves your front end skills. Here are some resources for full stack development that you can save for later.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "full-stack-developer-s-roadmap-by-ender-minyard--qvexwi",
+  "tags": [
+    "full stack",
+    "frontend",
+    "backend",
+    "3d3c14b2-c225-489c-b4e5-28a09befb4a1",
+    "f5857ce0-73c5-44fd-a932-a5a5e6a63606",
+    "5c535857-4e5b-4c21-893e-625799c7b05d"
+  ],
+  thanks: {},
+  thanksCount: 2,
+  "title": "Full Stack Developer\"s Roadmap 🗺 (by ender minyard)",
+  views: {},
+  viewsCount: 217
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 8,
+      "title": "Photos & Videos",
+      "links": {
+        0: {
+          "title": "Coverr",
+          "link": "https://coverr.co/",
+          "verified": true
+        },
+        1: {
+          "title": "Mixkit",
+          "link": "https://mixkit.co/",
+          "verified": true
+        },
+        2: {
+          "title": "Pexels",
+          "link": "https://www.pexels.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Photo Creator",
+          "link": "https://photos.icons8.com/creator",
+          "verified": true
+        },
+        4: {
+          "title": "Unscreen",
+          "link": "https://www.unscreen.com/",
+          "verified": true
+        },
+        5: {
+          "title": "Remove Background",
+          "link": "https://www.remove.bg/",
+          "verified": true
+        },
+        6: {
+          "title": "Generated Photos",
+          "link": "https://generated.photos/faces",
+          "verified": true
+        },
+        7: {
+          "title": "Duotone",
+          "link": "https://duotone.shapefactory.co/",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 7,
+      "title": "Illustrations",
+      "links": {
+        0: {
+          "title": "Open Peeps",
+          "link": "https://www.openpeeps.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Smash Illustrations",
+          "link": "https://usesmash.com/",
+          "verified": true
+        },
+        2: {
+          "title": "Open Doodles",
+          "link": "https://opendoodles.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Control Illustrations",
+          "link": "https://control.rocks/",
+          "verified": true
+        },
+        4: {
+          "title": "Ouch!",
+          "link": "https://icons8.com/ouch",
+          "verified": true
+        },
+        5: {
+          "title": "Avataaars Generator",
+          "link": "https://getavataaars.com/",
+          "verified": true
+        },
+        6: {
+          "title": "Faux Code Generator",
+          "link": "http://knutsynstad.com/fauxcode/",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 7,
+      "title": "Palette",
+      "links": {
+        0: {
+          "title": "Parametric Color Mixer",
+          "link": "https://colormixer.web.app/02007115ff623007ff9bc91b64440301ffff7c5f55610300/Sunset",
+          "verified": true
+        },
+        1: {
+          "title": "CSS Gradient",
+          "link": "https://cssgradient.io/",
+          "verified": true
+        },
+        2: {
+          "title": "Colorsinspo",
+          "link": "https://colorsinspo.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Color Hexa",
+          "link": "https://www.colorhexa.com/index.php",
+          "verified": true
+        },
+        4: {
+          "title": "Color Space",
+          "link": "https://mycolor.space/",
+          "verified": true
+        },
+        5: {
+          "title": "Palettte App",
+          "link": "https://palettte.app/",
+          "verified": true
+        },
+        6: {
+          "title": "Colorable",
+          "link": "https://colorable.jxnblk.com/",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 6,
+      "title": "Typography",
+      "links": {
+        0: {
+          "title": "Freebiesbug (free fonts)",
+          "link": "https://freebiesbug.com/free-fonts/",
+          "verified": true
+        },
+        1: {
+          "title": "Fonts Arena",
+          "link": "https://fontsarena.com/",
+          "verified": true
+        },
+        2: {
+          "title": "Befonts",
+          "link": "https://befonts.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Font Squirrel",
+          "link": "https://www.fontsquirrel.com/",
+          "verified": true
+        },
+        4: {
+          "title": "Fontjoy",
+          "link": "https://fontjoy.com/",
+          "verified": true
+        },
+        5: {
+          "title": "Type Scale",
+          "link": "https://type-scale.com/",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 6,
+      "title": "Animations & Effects",
+      "links": {
+        0: {
+          "title": "Smooth Shadow Generator",
+          "link": "https://brumm.af/shadows",
+          "verified": true
+        },
+        1: {
+          "title": "CSSeffectsSnippets",
+          "link": "https://emilkowalski.github.io/css-effects-snippets/",
+          "verified": true
+        },
+        2: {
+          "title": "Separator Generator",
+          "link": "https://wweb.dev/resources/css-separator-generator",
+          "verified": true
+        },
+        3: {
+          "title": "Animista",
+          "link": "https://animista.net/",
+          "verified": true
+        },
+        4: {
+          "title": "Draggable",
+          "link": "https://shopify.github.io/draggable/",
+          "verified": true
+        },
+        5: {
+          "title": "Block Reveal Effects",
+          "link": "https://tympanus.net/Development/BlockRevealers/index.html",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 7,
+      "title": "Iconography",
+      "links": {
+        0: {
+          "title": "IconStore",
+          "link": "https://iconstore.co/",
+          "verified": true
+        },
+        1: {
+          "title": "CSS Icons",
+          "link": "https://css.gg/",
+          "verified": true
+        },
+        2: {
+          "title": "Icon Transition Generator",
+          "link": "https://nucleoapp.com/tool/icon-transition",
+          "verified": true
+        },
+        3: {
+          "title": "Tilda Icons",
+          "link": "https://tilda.cc/free-icons/",
+          "verified": true
+        },
+        4: {
+          "title": "Ikonate",
+          "link": "https://ikonate.com/",
+          "verified": true
+        },
+        5: {
+          "title": "Eva Icons",
+          "link": "https://akveo.github.io/eva-icons/#/",
+          "verified": true
+        },
+        6: {
+          "title": "Animated Icons",
+          "link": "https://icons8.com/animated-icons",
+          "verified": true
+        }
+      }
+    },
+    6: {
+      "total_links": 6,
+      "title": "Patterns & Shapes",
+      "links": {
+        0: {
+          "title": "CSS Patterns",
+          "link": "https://bansal.io/pattern-css#triangles",
+          "verified": true
+        },
+        1: {
+          "title": "Get Waves",
+          "link": "https://getwaves.io/",
+          "verified": true
+        },
+        2: {
+          "title": "Blob Maker",
+          "link": "https://www.blobmaker.app/",
+          "verified": true
+        },
+        3: {
+          "title": "Rad Lines",
+          "link": "https://msurguy.github.io/rad-lines/",
+          "verified": true
+        },
+        4: {
+          "title": "Patterns",
+          "link": "https://products.ls.graphics/paaatterns/",
+          "verified": true
+        },
+        5: {
+          "title": "Scribbbles",
+          "link": "https://www.scribbbles.design/",
+          "verified": true
+        }
+      }
+    },
+    7: {
+      "total_links": 5,
+      "title": "Utility",
+      "links": {
+        0: {
+          "title": "Nucleo App",
+          "link": "https://nucleoapp.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Checklist design",
+          "link": "https://www.checklist.design/",
+          "verified": true
+        },
+        2: {
+          "title": "Design System Repo",
+          "link": "https://designsystemsrepo.com/design-systems-recent/",
+          "verified": true
+        },
+        3: {
+          "title": "CSSPeeper",
+          "link": "https://csspeeper.com/",
+          "verified": true
+        },
+        4: {
+          "title": "AI Image Upscaler",
+          "link": "https://icons8.com/upscaler",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "I’m going to share a list of free and very useful resources/tools that I use daily to create users interfaces (websites, landing pages, web applications, etc…) for my clients, and for my projects Cruip and SaaS Landing Page.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "50-free-tools-and-resources-to-create-awesome-user-interfaces-by-davide-pacilio--qvf0jm",
+  "tags": [
+    "design",
+    "frontend",
+    "f5857ce0-73c5-44fd-a932-a5a5e6a63606",
+    "13f3b796-fb34-43ac-a170-63d85fbe76f7",
+    "e68e660b-2684-4631-b858-9458f249da3d",
+    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+  ],
+  "title": "50+ free tools and resources to create awesome user interfaces (by Davide Pacilio)"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 4,
+      "title": "Colors",
+      "links": {
+        0: {
+          "title": "Color Hunt",
+          "link": "https://colorhunt.co/",
+          "verified": true
+        },
+        1: {
+          "title": "Coolors",
+          "link": "https://coolors.co/",
+          "verified": true
+        },
+        2: {
+          "title": "Muzli Colors",
+          "link": "https://colors.muz.li/",
+          "verified": true
+        },
+        3: {
+          "title": "Ui.Colour",
+          "link": "https://www.instagram.com/ui.colour",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 4,
+      "title": "Fonts",
+      "links": {
+        0: {
+          "title": "Google Fonts",
+          "link": "https://fonts.google.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Fontshare",
+          "link": "https://www.fontshare.com/",
+          "verified": true
+        },
+        2: {
+          "title": "Fontspark",
+          "link": "https://fontspark.app/",
+          "verified": true
+        },
+        3: {
+          "title": "Fontesk",
+          "link": "https://fontesk.com/",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 4,
+      "title": "Icons",
+      "links": {
+        0: {
+          "title": "Flaticon",
+          "link": "https://www.flaticon.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Unicons",
+          "link": "https://iconscout.com/unicons",
+          "verified": true
+        },
+        2: {
+          "title": "Feather Icons",
+          "link": "https://feathericons.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Material Icons",
+          "link": "https://fonts.google.com/icons",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 4,
+      "title": "Illustrations",
+      "links": {
+        0: {
+          "title": "Illu-Station",
+          "link": "https://illustation.io/",
+          "verified": true
+        },
+        1: {
+          "title": "Undraw",
+          "link": "https://undraw.co/",
+          "verified": true
+        },
+        2: {
+          "title": "IRA Design",
+          "link": "https://iradesign.io/",
+          "verified": true
+        },
+        3: {
+          "title": "Drawkit",
+          "link": "https://www.drawkit.io/",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 4,
+      "title": "Inspirations",
+      "links": {
+        0: {
+          "title": "Dribbble",
+          "link": "https://dribbble.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Behance",
+          "link": "https://www.behance.net/",
+          "verified": true
+        },
+        2: {
+          "title": "Awwwards",
+          "link": "https://www.awwwards.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Mobbin",
+          "link": "https://mobbin.design/",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 4,
+      "title": "Blog",
+      "links": {
+        0: {
+          "link": "https://www.blogger.com/",
+          "verified": true,
+          "title": "Blogger"
+        },
+        1: {
+          "title": "Hashnode",
+          "link": "https://hashnode.com/",
+          "verified": true
+        },
+        2: {
+          "title": "Medium",
+          "link": "https://medium.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Dev.To",
+          "link": "https://dev.to/",
+          "verified": true
+        }
+      }
+    }
+  },
+
+  "description": "Hey Everyone! Here are some awesome design resources which @innocentcoder uses in day-to-day life.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "my-secret-design-resources-by-innocentcoder-qvewlj",
+  "tags": [
+    "frontend",
+    "design",
+    "13f3b796-fb34-43ac-a170-63d85fbe76f7",
+    "f5857ce0-73c5-44fd-a932-a5a5e6a63606"
+  ],
+  "title": "My Secret Design Resources by @innocentcoder"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 5,
+      "title": "Warm Up With The Classics",
+      "links": {
+        0: {
+          "title": "Fizz Buzz",
+          "link": "https://www.hackerrank.com/challenges/fizzbuzz/problem",
+          "verified": true
+        },
+        1: {
+          "title": "Subarray Sum Equals K",
+          "link": "https://leetcode.com/problems/subarray-sum-equals-k/",
+          "verified": true
+        },
+        2: {
+          "title": "Arrays: Left Rotation",
+          "link": "https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays",
+          "verified": true
+        },
+        3: {
+          "title": "Strings: Making Anagrams",
+          "link": "https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings",
+          "verified": true
+        },
+        4: {
+          "title": "Nth Fibonacci",
+          "link": "https://www.algoexpert.io/questions/Nth%20Fibonacci",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 8,
+      "title": "Algorithms And Data Structures",
+      "links": {
+        0: {
+          "title": "Sum of Even Numbers After Queries",
+          "link": "https://leetcode.com/problems/sum-of-even-numbers-after-queries/",
+          "verified": true
+        },
+        1: {
+          "title": "Robot Return to Origin",
+          "link": "https://leetcode.com/problems/robot-return-to-origin/",
+          "verified": true
+        },
+        2: {
+          "title": "N-Repeated Element in Size 2N Array",
+          "link": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
+          "verified": true
+        },
+        3: {
+          "title": "Balanced Binary Tree",
+          "link": "https://leetcode.com/problems/balanced-binary-tree/",
+          "verified": true
+        },
+        4: {
+          "title": "Longest Substring Without Repeating Characters",
+          "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+          "verified": true
+        },
+        5: {
+          "title": "Remove Nth Node From End of List",
+          "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+          "verified": true
+        },
+        6: {
+          "title": "Merge k Sorted Lists",
+          "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+          "verified": true
+        },
+        7: {
+          "title": "Next Permutation",
+          "link": "https://leetcode.com/problems/next-permutation/",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 15,
+      "title": "Algorithms And Data Structures Videos",
+      "links": {
+        0: {
+          "title": "Data Structures & Algorithms #1 --- What Are Data Structures?",
+          "link": "https://www.youtube.com/watch?v=bum_19loj9A",
+          "verified": true
+        },
+        1: {
+          "title": "Multi-dim",
+          "link": "https://archive.org/details/0102WhatYouShouldKnow/02_05-multidimensionalArrays.mp4",
+          "verified": true
+        },
+        2: {
+          "title": "Dynamic Arrays",
+          "link": "https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays",
+          "verified": true
+        },
+        3: {
+          "title": "Resizing arrays",
+          "link": "https://archive.org/details/0102WhatYouShouldKnow/03_01-resizableArrays.mp4",
+          "verified": true
+        },
+        4: {
+          "title": "Data Structures: linked Lists",
+          "link": "https://youtu.be/njTh_OwMljA",
+          "verified": true
+        },
+        5: {
+          "title": "Core linked Lists Vs Arrays",
+          "link": "https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays",
+          "verified": true
+        },
+        6: {
+          "title": "Pointers to Pointers",
+          "link": "https://www.eskimo.com/~scs/cclass/int/sx8.html",
+          "verified": true
+        },
+        7: {
+          "title": "Data Structures: Trees",
+          "link": "https://youtu.be/oSWTXtMglKE",
+          "verified": true
+        },
+        8: {
+          "title": "Data Structures: Heaps",
+          "link": "https://youtu.be/t0Cq6tVNRBA",
+          "verified": true
+        },
+        9: {
+          "title": "Data Structures: Hash Tables",
+          "link": "https://youtu.be/shs0KM3wKv8",
+          "verified": true
+        },
+        10: {
+          "title": "Phone Book Problem",
+          "link": "https://www.coursera.org/learn/data-structures/lecture/NYZZP/phone-book-problem",
+          "verified": true
+        },
+        11: {
+          "title": "Data Structures: Stacks and Queues",
+          "link": "https://youtu.be/wjI1WNcIntg",
+          "verified": true
+        },
+        12: {
+          "title": "Using Stacks Last-In First-Out",
+          "link": "https://archive.org/details/0102WhatYouShouldKnow/05_01-usingStacksForLast-inFirst-out.mp4",
+          "verified": true
+        },
+        13: {
+          "title": "Data Structures: Crash Course Computer Science #14",
+          "link": "https://youtu.be/DuDz6B4cqVc",
+          "verified": true
+        },
+        14: {
+          "title": "Data Structures: Tries",
+          "link": "https://www.youtube.com/watch?v=zIjfhVPRZCg",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 9,
+      "title": "Algorithms",
+      "links": {
+        0: {
+          "title": "Algorithms: Graph Search, DFS and BFS --- Video",
+          "link": "https://www.youtube.com/watch?v=zaBhtODEL0w&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt",
+          "verified": true
+        },
+        1: {
+          "title": "BFS(breadth-first search) and DFS(depth-first search) --- Video",
+          "link": "https://www.youtube.com/watch?v=uWL6FJhq5fM",
+          "verified": true
+        },
+        2: {
+          "title": "Algorithms: Binary Search --- Video",
+          "link": "https://youtu.be/P3YID7liBug",
+          "verified": true
+        },
+        3: {
+          "title": "Binary Search Tree Review --- Video",
+          "link": "https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6",
+          "verified": true
+        },
+        4: {
+          "title": "Python Algorithms for Interviews --- Video",
+          "link": "https://www.youtube.com/watch?v=p65AHm9MX80",
+          "verified": true
+        },
+        5: {
+          "title": "Algorithms: Recursion --- Video",
+          "link": "https://youtu.be/KEEKn7Me-ms",
+          "verified": true
+        },
+        6: {
+          "title": "Algorithms: Bubble Sort --- Video",
+          "link": "https://youtu.be/6Gv8vg0kcHc",
+          "verified": true
+        },
+        7: {
+          "title": "Algorithms: Merge Sort --- Video",
+          "link": "https://youtu.be/KF2j-9iSf4Q",
+          "verified": true
+        },
+        8: {
+          "title": "Algorithms: Quicksort --- Video",
+          "link": "https://youtu.be/SLauY6PpjW4",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 4,
+      "title": "Big O Notation",
+      "links": {
+        0: {
+          "title": "Introduction to Big O Notation and Time Complexity (Data Structures & Algorithms #7) --- Video",
+          "link": "https://www.youtube.com/watch?v=D6xkbGLQesk",
+          "verified": true
+        },
+        1: {
+          "title": "Harvard CS50 --- Asymptotic Notation --- Video",
+          "link": "https://www.youtube.com/watch?v=iOq5kSKqeR4",
+          "verified": true
+        },
+        2: {
+          "title": "A Gentle Introduction to Algorithm Complexity Analysis --- Post",
+          "link": "http://discrete.gr/complexity/",
+          "verified": true
+        },
+        3: {
+          "title": "Cheat sheet --- Post",
+          "link": "http://bigocheatsheet.com/",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 2,
+      "title": "String Manipulation",
+      "links": {
+        0: {
+          "title": "Coding Interview Question and Answer: Longest Consecutive Characters --- Video",
+          "link": "https://www.youtube.com/watch?v=qRNB8CV3_LU",
+          "verified": true
+        },
+        1: {
+          "title": "Sedgewick --- Substring Search --- Video",
+          "link": "https://www.coursera.org/learn/algorithms-part2/home/week/4",
+          "verified": true
+        }
+      }
+    },
+    6: {
+      "total_links": 5,
+      "title": "Dynamic Programming",
+      "links": {
+        0: {
+          "title": "Dynamic Programming (Think Like a Programmer) --- Video",
+          "link": "https://www.youtube.com/watch?v=iv_yHjmkv4I",
+          "verified": true
+        },
+        1: {
+          "title": "Algorithms: Memoization and Dynamic Programming --- Video",
+          "link": "https://www.youtube.com/watch?v=P8Xa2BitN3I&t=13s",
+          "verified": true
+        },
+        2: {
+          "title": "6.006: Dynamic Programming I: Fibonacci, Shortest Paths --- Video",
+          "link": "https://www.youtube.com/watch?v=OQ5jsbhAv_M&t=7s",
+          "verified": true
+        },
+        3: {
+          "title": "6.006: Dynamic Programming II: Text Justification, Blackjack --- Video",
+          "link": "https://www.youtube.com/watch?v=ENyox7kNKeY&t=4s",
+          "verified": true
+        },
+        4: {
+          "title": "Dynamic Programming --- Post",
+          "link": "https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/",
+          "verified": true
+        }
+      }
+    },
+    7: {
+      "total_links": 6,
+      "title": "Interview Problem Walk-throughs",
+      "links": {
+        0: {
+          "title": "Google Coding Interview --- Universal Value Tree Problem --- Video",
+          "link": "https://www.youtube.com/watch?v=7HgsS8bRvjo",
+          "verified": true
+        },
+        1: {
+          "title": "Google Coding Interview Question and Answer #1: First Recurring Character --- Video",
+          "link": "https://www.youtube.com/watch?v=GJdiM-muYqc",
+          "verified": true
+        },
+        2: {
+          "title": "Find min and max element in a binary search tree --- Video",
+          "link": "https://www.youtube.com/watch?v=Ut90klNN264&index=30&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+          "verified": true
+        },
+        3: {
+          "title": "Find height of a binary tree --- Video",
+          "link": "https://www.youtube.com/watch?v=_pnqMz5nrRs&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=31",
+          "verified": true
+        },
+        4: {
+          "title": "Check if a binary tree is binary search tree or not --- Video",
+          "link": "https://www.youtube.com/watch?v=yEwSGhSsT0U&index=35&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+          "verified": true
+        },
+        5: {
+          "title": "What Is Tail Recursion? Why Is It So Bad? --- Video",
+          "link": "https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad",
+          "verified": true
+        }
+      }
+    },
+    8: {
+      "total_links": 16,
+      "title": "Post-Study Problems - Part 1",
+      "isDescription": true,
+      "description": "Now that you have studied for a bit, and watched a few videos, let\"s try some more problems!",
+      "links": {
+        0: {
+          "title": "Bigger Is Greater",
+          "link": "https://www.hackerrank.com/challenges/bigger-is-greater/problem",
+          "verified": true
+        },
+        1: {
+          "title": "ZigZag Conversion",
+          "link": "https://leetcode.com/problems/zigzag-conversion/",
+          "verified": true
+        },
+        2: {
+          "link": "https://leetcode.com/problems/reverse-integer/",
+          "verified": true,
+          "title": "Reverse Integer"
+        },
+        3: {
+          "title": "Combination Sum II",
+          "link": "https://leetcode.com/problems/combination-sum-ii/",
+          "verified": true
+        },
+        4: {
+          "title": "Multiply Strings",
+          "link": "https://leetcode.com/problems/multiply-strings/",
+          "verified": true
+        },
+        5: {
+          "title": "Larry\"s Array",
+          "link": "https://www.hackerrank.com/challenges/larrys-array/problem",
+          "verified": true
+        },
+        6: {
+          "title": "Short Palindrome",
+          "link": "https://www.hackerrank.com/challenges/short-palindrome/problem",
+          "verified": true
+        },
+        7: {
+          "title": "Valid Number",
+          "link": "https://leetcode.com/problems/valid-number/",
+          "verified": true
+        },
+        8: {
+          "title": "Bigger is Greater",
+          "link": "https://www.hackerrank.com/challenges/bigger-is-greater/problem",
+          "verified": true
+        },
+        9: {
+          "title": "The Full Counting Sort",
+          "link": "https://www.hackerrank.com/challenges/countingsort4/problem",
+          "verified": true
+        },
+        10: {
+          "title": "Lily\"s Homework",
+          "link": "https://www.hackerrank.com/challenges/lilys-homework/problem",
+          "verified": true
+        },
+        11: {
+          "title": "Common Child",
+          "link": "https://www.hackerrank.com/challenges/common-child/problem",
+          "verified": true
+        },
+        12: {
+          "title": "Repeated Substring Pattern",
+          "link": "https://leetcode.com/problems/repeated-substring-pattern/",
+          "verified": true
+        },
+        13: {
+          "title": "Remove Element",
+          "link": "https://leetcode.com/problems/remove-element/",
+          "verified": true
+        },
+        14: {
+          "title": "Delete Node in a BST",
+          "link": "https://leetcode.com/problems/delete-node-in-a-bst/",
+          "verified": true
+        },
+        15: {
+          "title": "Split Array into Consecutive Subsequences",
+          "link": "https://leetcode.com/problems/split-array-into-consecutive-subsequences/",
+          "verified": true
+        }
+      }
+    },
+    9: {
+      "total_links": 11,
+      "title": "Post-Study Problems - Part 2",
+      "links": {
+        0: {
+          "title": "Number of Subarrays with Bounded Maximum",
+          "link": "https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum",
+          "verified": true
+        },
+        1: {
+          "title": "Combination Sum IV",
+          "link": "https://leetcode.com/problems/combination-sum-iv",
+          "verified": true
+        },
+        2: {
+          "title": "Best Time to Buy and Sell Stock with Cooldown",
+          "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown",
+          "verified": true
+        },
+        3: {
+          "title": "Longest Repeating Character Replacement",
+          "link": "https://leetcode.com/problems/longest-repeating-character-replacement",
+          "verified": true
+        },
+        4: {
+          "title": "Swap Nodes in Pairs",
+          "link": "https://leetcode.com/problems/swap-nodes-in-pairs",
+          "verified": true
+        },
+        5: {
+          "title": "Binary Tree Right Side View",
+          "link": "https://leetcode.com/problems/binary-tree-right-side-view",
+          "verified": true
+        },
+        6: {
+          "title": "Flatten Nested List Iterator",
+          "link": "https://leetcode.com/problems/flatten-nested-list-iterator",
+          "verified": true
+        },
+        7: {
+          "title": "Binary Tree Level Order Traversal",
+          "link": "https://leetcode.com/problems/binary-tree-level-order-traversal",
+          "verified": true
+        },
+        8: {
+          "title": "Binary Search Tree Iterator",
+          "link": "https://leetcode.com/problems/binary-search-tree-iterator",
+          "verified": true
+        },
+        9: {
+          "title": "Maximum Length of Pair Chain",
+          "link": "https://leetcode.com/problems/maximum-length-of-pair-chain",
+          "verified": true
+        },
+        10: {
+          "title": "Split linked List in Parts",
+          "link": "https://leetcode.com/problems/split-linked-list-in-parts",
+          "verified": true
+        }
+      }
+    },
+    10: {
+      "total_links": 11,
+      "title": "Operational Programming Problems",
+      "links": {
+        0: {
+          "title": "Kangaroo Problem",
+          "link": "https://www.hackerrank.com/challenges/kangaroo/problem",
+          "verified": true
+        },
+        1: {
+          "title": "Breaking Records",
+          "link": "https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem",
+          "verified": true
+        },
+        2: {
+          "title": "Find A Stringiter",
+          "link": "https://www.hackerrank.com/challenges/find-a-string/problem",
+          "verified": true
+        },
+        3: {
+          "title": "No Idea!",
+          "link": "https://www.hackerrank.com/challenges/no-idea/problem",
+          "verified": true
+        },
+        4: {
+          "title": "Days of the programmer",
+          "link": "https://www.hackerrank.com/challenges/day-of-the-programmer/problem",
+          "verified": true
+        },
+        5: {
+          "title": "Leaderboard",
+          "link": "https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem",
+          "verified": true
+        },
+        6: {
+          "title": "Word Order",
+          "link": "https://www.hackerrank.com/challenges/word-order/problem",
+          "verified": true
+        },
+        7: {
+          "title": "Sherlock And Squares",
+          "link": "https://www.hackerrank.com/challenges/sherlock-and-squares/problem",
+          "verified": true
+        },
+        8: {
+          "title": "Equalize The Array",
+          "link": "https://www.hackerrank.com/challenges/equality-in-a-array/problem",
+          "verified": true
+        },
+        9: {
+          "title": "Apples And Oranges",
+          "link": "https://www.hackerrank.com/challenges/apple-and-orange/problem",
+          "verified": true
+        },
+        10: {
+          "title": "More Operational Style Questions",
+          "link": "https://www.hackerrank.com/domains/python",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Some companies won\"t ask you algorithm problems. Instead, they might focus more on implementation and operational problems. These are usually more niche and involve practical problems, like looping through data and performing a task of some sort."
+    },
+    11: {
+      "total_links": 5,
+      "title": "System Design Videos",
+      "isDescription": true,
+      "description": "System design questions are crucial questions that show you are more than just a coder. You need to be able to think big picture as an engineer.",
+      "links": {
+        0: {
+          "title": "Parking Lot System --- Video",
+          "link": "https://youtu.be/DSGsa0pu8-k",
+          "verified": true
+        },
+        1: {
+          "title": "Whats App --- Video",
+          "link": "https://www.youtube.com/watch?v=vvhC64hQZMk",
+          "verified": true
+        },
+        2: {
+          "title": "Uber design --- Video",
+          "link": "https://youtu.be/umWABit-wbk",
+          "verified": true
+        },
+        3: {
+          "title": "Instagram --- Video",
+          "link": "https://www.youtube.com/watch?v=QmX2NPkJTKg",
+          "verified": true
+        },
+        4: {
+          "title": "Tinder Service --- Video",
+          "link": "https://www.youtube.com/watch?v=xQnIN9bW0og",
+          "verified": true
+        }
+      }
+    },
+    12: {
+      "total_links": 11,
+      "title": "Operating Systems",
+      "links": {
+        0: {
+          "title": "Commonly Asked Operating Systems Interview Questions",
+          "link": "https://www.geeksforgeeks.org/commonly-asked-operating-systems-interview-questions-set-1/",
+          "verified": true
+        },
+        1: {
+          "title": "What is Translation lookaside buffer?",
+          "link": "https://www.geeksforgeeks.org/operating-system-translation-lookaside-buffer-tlb/",
+          "verified": true
+        },
+        2: {
+          "title": "Why does Round Robin avoid the Priority Inversion Problem?",
+          "link": "https://leetcode.com/discuss/interview-question/operating-system/220604/Why-does-Round-Robin-avoid-the-Priority-Inversion-Problem",
+          "verified": true
+        },
+        3: {
+          "title": "Interrupt Vs System Call---What is \"inode\" in file system?",
+          "link": "https://leetcode.com/discuss/interview-question/operating-system/124838/Interrupt-Vs-System-Call",
+          "verified": true
+        },
+        4: {
+          "title": "Operating System Interview Questions and Answers --- Part I",
+          "link": "https://www.youtube.com/watch?v=b18X4uOKjHs",
+          "verified": true
+        },
+        5: {
+          "title": "What is a kernel --- Gary explains",
+          "link": "https://www.youtube.com/watch?v=mycVSMyShk8",
+          "verified": true
+        },
+        6: {
+          "title": "Round Robin Algorithm Tutorial (CPU Scheduling)",
+          "link": "https://www.youtube.com/watch?v=aWlQYllBZDs",
+          "verified": true
+        },
+        7: {
+          "title": "The Magic of LRU Cache (100 Days of Google Dev) --- Video",
+          "link": "https://www.youtube.com/watch?v=R5ON3iwx78M",
+          "verified": true
+        },
+        8: {
+          "title": "MIT 6.004 L15: The Memory Hierarchy --- Video",
+          "link": "https://www.youtube.com/watch?v=vjYF_fAZI5E&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-&index=24",
+          "verified": true
+        },
+        9: {
+          "title": "Interrupts --- Video",
+          "link": "https://www.youtube.com/watch?v=uFKi2-J-6II&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=3",
+          "verified": true
+        },
+        10: {
+          "title": "Scheduling --- Video",
+          "link": "https://www.youtube.com/watch?v=-Gu5mYdKbu4&index=4&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8",
+          "verified": true
+        }
+      }
+    },
+    13: {
+      "total_links": 4,
+      "title": "Threads",
+      "links": {
+        0: {
+          "title": "User Level thread Vs Kernel Level thread",
+          "link": "https://leetcode.com/discuss/interview-question/operating-system/124631/User-Level-thread-Vs-Kernel-Level-thread",
+          "verified": true
+        },
+        1: {
+          "title": "Intro to Processes & Threads --- Video",
+          "link": "https://www.youtube.com/watch?v=exbKr6fnoUw",
+          "verified": true
+        },
+        2: {
+          "title": "Difference Between Process and Thread --- Georgia Tech --- Advanced Operating Systems --- Video",
+          "link": "https://www.youtube.com/watch?v=O3EyzlZxx3g&t=11s",
+          "verified": true
+        },
+        3: {
+          "title": "Difference between forking and multithreading",
+          "link": "https://leetcode.com/discuss/interview-question/operating-system/125024/Difference-between-forking-and-multithreading",
+          "verified": true
+        }
+      }
+    },
+    14: {
+      "total_links": 6,
+      "title": "Object Oriented",
+      "isDescription": true,
+      "description": "Similar to operating systems, not every interview will ask you about object-oriented programming, but you never know. You want to make sure you remember your basics from your computer 162 course.",
+      "links": {
+        0: {
+          "title": "Java Programming Tutorial --- 49 --- Inheritance --- Video",
+          "link": "https://www.youtube.com/watch?v=9JpNY-XAseg",
+          "verified": true
+        },
+        1: {
+          "title": "Java Programming Tutorial --- 55 --- Introduction to Polymorphism --- Video",
+          "link": "https://www.youtube.com/watch?v=0xw06loTm1k",
+          "verified": true
+        },
+        2: {
+          "title": "Java Programming Tutorial --- 58 --- Abstract and Concrete Classes --- Video",
+          "link": "https://www.youtube.com/watch?v=TyPNvt6Zg8c",
+          "verified": true
+        },
+        3: {
+          "title": "Java Programming Tutorial --- 57 --- Overriding Rules --- Video",
+          "link": "https://www.youtube.com/watch?v=zN9pKULyoj4&t=3s",
+          "verified": true
+        },
+        4: {
+          "title": "Java Programming Tutorial --- 59 --- Class to Hold Objects",
+          "link": "https://www.youtube.com/watch?v=slY5Ag7IjM0",
+          "verified": true
+        },
+        5: {
+          "title": "Object-Oriented Programming --- Video",
+          "link": "https://www.youtube.com/watch?v=lbXsrHGhBAU",
+          "verified": true
+        }
+      }
+    },
+    15: {
+      "total_links": 9,
+      "title": "Design Patterns",
+      "links": {
+        0: {
+          "title": "Factory Design Pattern --- Video",
+          "link": "https://www.youtube.com/watch?v=ub0DXaeV6hA",
+          "verified": true
+        },
+        1: {
+          "title": "Observer Design Pattern --- Video",
+          "link": "https://youtu.be/wiQdrH2YpT4",
+          "verified": true
+        },
+        2: {
+          "title": "Adapter Design Pattern --- Video",
+          "link": "https://www.youtube.com/watch?v=qG286LQM6BU&list=PLF206E906175C7E07&index=13",
+          "verified": true
+        },
+        3: {
+          "title": "Facade Design Pattern --- Video",
+          "link": "https://www.youtube.com/watch?v=B1Y8fcYrz5o&list=PLF206E906175C7E07&index=14",
+          "verified": true
+        },
+        4: {
+          "title": "Chain of Responsibility Design Pattern --- Video",
+          "link": "https://www.youtube.com/watch?v=jDX6x8qmjbA&list=PLF206E906175C7E07&index=22",
+          "verified": true
+        },
+        5: {
+          "title": "Interpreter Design Pattern --- Video",
+          "link": "https://www.youtube.com/watch?v=6CVymSJQuJE&list=PLF206E906175C7E07&index=23",
+          "verified": true
+        },
+        6: {
+          "title": "Singleton Design Pattern Tutorial --- Video",
+          "link": "https://www.youtube.com/watch?v=NZaXM67fxbs&list=PLF206E906175C7E07&index=7",
+          "verified": true
+        },
+        7: {
+          "title": "Chapter 6 (Part 1) --- Patterns (video) --- Video",
+          "link": "https://youtu.be/LAP2A80Ajrg?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO&t=3344",
+          "verified": true
+        },
+        8: {
+          "title": "Head First Design Patterns --- Video",
+          "link": "https://www.amazon.com/Head-First-Design-Patterns-Freeman/dp/0596007124",
+          "verified": true
+        }
+      }
+    },
+    16: {
+      "total_links": 1,
+      "title": "SQL",
+      "isDescription": true,
+      "description": "This is the last section. Many of you probably won\"t be asked that many SQL questions. However, I always think it is good to have in your back pocket.",
+      "links": {
+        0: {
+          "title": "SQL",
+          "link": "https://en.wikipedia.org/wiki/SQL",
+          "verified": true
+        }
+      }
+    },
+    17: {
+      "total_links": 9,
+      "title": "SQL --- Problems",
+      "links": {
+        0: {
+          "title": "Trips and Users",
+          "link": "https://leetcode.com/problems/trips-and-users/",
+          "verified": true
+        },
+        1: {
+          "title": "Human Traffic of Stadium",
+          "link": "https://leetcode.com/problems/human-traffic-of-stadium/",
+          "verified": true
+        },
+        2: {
+          "title": "Department Top Three Salaries",
+          "link": "https://leetcode.com/problems/department-top-three-salaries/",
+          "verified": true
+        },
+        3: {
+          "title": "Exchange Seats",
+          "link": "https://leetcode.com/problems/exchange-seats/",
+          "verified": true
+        },
+        4: {
+          "title": "Hackerrank The Report",
+          "link": "https://www.hackerrank.com/challenges/the-report/problem",
+          "verified": true
+        },
+        5: {
+          "title": "Nth Highest Salary",
+          "link": "https://leetcode.com/problems/nth-highest-salary/",
+          "verified": true
+        },
+        6: {
+          "title": "Symmetric Pairs",
+          "link": "https://www.hackerrank.com/challenges/symmetric-pairs/problem",
+          "verified": true
+        },
+        7: {
+          "title": "OccupationsPlacements",
+          "link": "https://www.hackerrank.com/challenges/placements/problem",
+          "verified": true
+        },
+        8: {
+          "title": "Ollivander\"s Inventory",
+          "link": "https://www.hackerrank.com/challenges/harry-potter-and-wands/problem",
+          "verified": true
+        }
+      }
+    },
+    18: {
+      "total_links": 5,
+      "title": "SQL --- Videos",
+      "links": {
+        0: {
+          "title": "IQ15: 6 SQL Query Interview Questions --- Video",
+          "link": "https://www.youtube.com/watch?v=uAWWhEA57bE",
+          "verified": true
+        },
+        1: {
+          "title": "Learning about ROW_NUMBER and Analytic Functions --- Video",
+          "link": "https://www.youtube.com/watch?v=QFj-hZi8MKk",
+          "verified": true
+        },
+        2: {
+          "title": "Advanced Implementation Of Analytic Functions --- Video",
+          "link": "https://www.youtube.com/watch?v=G3kYPzLWtpo&t=4s",
+          "verified": true
+        },
+        3: {
+          "title": "Advanced Implementation Of Analytic Functions Part 2 --- Video",
+          "link": "https://www.youtube.com/watch?v=XecU6Ieyu-4&t=54s",
+          "verified": true
+        },
+        4: {
+          "title": "Wise Owl SQL Videos --- Video",
+          "link": "https://www.youtube.com/watch?v=2-1XQHAgDsM&list=PL6EDEB03D20332309",
+          "verified": true
+        }
+      }
+    },
+    19: {
+      "total_links": 6,
+      "title": "Post SQL Problems",
+      "links": {
+        0: {
+          "title": "Binary Tree Nodes",
+          "link": "https://www.hackerrank.com/challenges/binary-search-tree-1/problem",
+          "verified": true
+        },
+        1: {
+          "title": "Weather Observation Station 18",
+          "link": "https://www.hackerrank.com/challenges/weather-observation-station-18/problem",
+          "verified": true
+        },
+        2: {
+          "title": "ChallengesPrint Prime Numbers",
+          "link": "https://www.hackerrank.com/challenges/print-prime-numbers/problem",
+          "verified": true
+        },
+        3: {
+          "title": "Big Countries",
+          "link": "https://leetcode.com/problems/big-countries/",
+          "verified": true
+        },
+        4: {
+          "title": "Exchange Seats",
+          "link": "https://leetcode.com/problems/exchange-seats/",
+          "verified": true
+        },
+        5: {
+          "title": "SQL Interview Questions: 3 Tech Screening Exercises (For Data Analysts)",
+          "link": "https://data36.com/sql-interview-questions-tech-screening-data-analysts/",
+          "verified": true
+        }
+      }
+    },
+    20: {
+      "total_links": 8,
+      "title": "Some Interesting resources",
+      "links": {
+        0: {
+          "title": "Connecting To Big Query Using Jupyter Notebook On SaturnCloud Part 2",
+          "link": "https://www.youtube.com/watch?v=O1cBN5gJtdw&t=15s",
+          "verified": true
+        },
+        1: {
+          "title": "Three Books You Should Read As A Data Scientist",
+          "link": "https://www.coriers.com/three-books-you-must-read-if-you-want-a-career-as-a-data-scientist/",
+          "verified": true
+        },
+        2: {
+          "title": "Hadoop Vs Relational Databases",
+          "link": "http://www.acheronanalytics.com/acheron-blog/hadoop-vs-relational-databases",
+          "verified": true
+        },
+        3: {
+          "title": "How Algorithms Can Become Unethical and Biased",
+          "link": "http://www.acheronanalytics.com/acheron-blog/how-do-machines-learn-bias-data-science",
+          "verified": true
+        },
+        4: {
+          "title": "How To Improve Your Data Driven Strategy",
+          "link": "http://www.acheronanalytics.com/acheron-blog/how-to-improve-your-data-driven-strategy",
+          "verified": true
+        },
+        5: {
+          "title": "How To Develop Robust Algorithms",
+          "link": "https://medium.com/better-programming/how-to-develop-a-robust-algorithm-c38e08f32201",
+          "verified": true
+        },
+        6: {
+          "title": "4 Must Have Skills For Data Scientists",
+          "link": "https://www.theseattledataguy.com/4-skills-data-scientist-must-have/",
+          "verified": true
+        },
+        7: {
+          "title": "SQL Best Practices — Designing An ETL Video",
+          "link": "http://www.acheronanalytics.com/acheron-blog/sql-best-practices-designing-an-etl-video",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "Software engineering interviews, like other technical interviews, require plenty of preparation. There are a number of subjects that need to be covered in order to ensure you are ready for back-to-back questions on algorithms, data structures, design, optimization and honestly just an ever growing basket of subjects. So I created a checklist on my last round of interviews that covers many of the popular topics.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "the-interview-study-guide-for-software-engineers-by-benjamin-rogojan--qvf019",
+  "tags": [
+    "programming",
+    "e68e660b-2684-4631-b858-9458f249da3d",
+    "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
+  ],
+  "title": "The Interview Study Guide For Software Engineers (by Benjamin Rogojan)"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 11,
+      "title": "The Basics",
+      "links": {
+        0: {
+          "title": "01 - Welcome",
+          "link": "https://wesbos.com/javascript/01-the-basics/welcome",
+          "verified": true
+        },
+        1: {
+          "title": "02 - Browser, Editor and Terminal Setup",
+          "link": "https://wesbos.com/javascript/01-the-basics/browser-editor-and-terminal-setup",
+          "verified": true
+        },
+        2: {
+          "title": "03 - Running and Loading JavaScript",
+          "link": "https://wesbos.com/javascript/01-the-basics/running-and-loading-js",
+          "verified": true
+        },
+        3: {
+          "title": "04 - Variables and Statements",
+          "link": "https://wesbos.com/javascript/01-the-basics/variables-and-statements",
+          "verified": true
+        },
+        4: {
+          "title": "05 - Code Quality Tooling with Prettier and ESLint",
+          "link": "https://wesbos.com/javascript/01-the-basics/code-quality-tooling-with-prettier-and-eslint",
+          "verified": true
+        },
+        5: {
+          "title": "06 - Types - Introduction",
+          "link": "https://wesbos.com/javascript/01-the-basics/types-introduction",
+          "verified": true
+        },
+        6: {
+          "title": "07 - Types - Strings",
+          "link": "https://wesbos.com/javascript/01-the-basics/types-strings",
+          "verified": true
+        },
+        7: {
+          "title": "08 - Types - Numbers",
+          "link": "https://wesbos.com/javascript/01-the-basics/types-numbers",
+          "verified": true
+        },
+        8: {
+          "title": "09 - Types - Objects",
+          "link": "https://wesbos.com/javascript/01-the-basics/types-objects",
+          "verified": true
+        },
+        9: {
+          "title": "10 - Types - Null and Undefined",
+          "link": "https://wesbos.com/javascript/01-the-basics/types-null-and-undefined",
+          "verified": true
+        },
+        10: {
+          "title": "11 - Types - Booleans and Equality",
+          "link": "https://wesbos.com/javascript/01-the-basics/types-booleans-and-equality",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 5,
+      "title": "Functions",
+      "links": {
+        0: {
+          "title": "12 - Functions - Built-in",
+          "link": "https://wesbos.com/javascript/02-functions/functions-built-in",
+          "verified": true
+        },
+        1: {
+          "title": "13 - Functions - Custom",
+          "link": "https://wesbos.com/javascript/02-functions/functions-custom",
+          "verified": true
+        },
+        2: {
+          "title": "14 - Functions - Parameters and Arguments",
+          "link": "https://wesbos.com/javascript/02-functions/functions-parameters-and-arguments",
+          "verified": true
+        },
+        3: {
+          "title": "15 - Different Ways to Declare Functions",
+          "link": "https://wesbos.com/javascript/02-functions/different-ways-to-declare-functions",
+          "verified": true
+        },
+        4: {
+          "title": "16 - Debugging Tools",
+          "link": "https://wesbos.com/javascript/02-functions/debugging-tools",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 3,
+      "title": "The Tricky Bits",
+      "links": {
+        0: {
+          "title": "17 - Scope",
+          "link": "https://wesbos.com/javascript/03-the-tricky-bits/scope",
+          "verified": true
+        },
+        1: {
+          "title": "18 - Hoisting",
+          "link": "https://wesbos.com/javascript/03-the-tricky-bits/hoisting",
+          "verified": true
+        },
+        2: {
+          "title": "19 - Closures",
+          "link": "https://wesbos.com/javascript/03-the-tricky-bits/closures",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 9,
+      "title": "The DOM",
+      "links": {
+        0: {
+          "title": "20 - Introduction to the DOM",
+          "link": "https://wesbos.com/javascript/04-the-dom/introduction-to-the-dom",
+          "verified": true
+        },
+        1: {
+          "title": "21 - Selecting Elements",
+          "link": "https://wesbos.com/javascript/04-the-dom/selecting-elements",
+          "verified": true
+        },
+        2: {
+          "title": "22 - Element Properties and Methods",
+          "link": "https://wesbos.com/javascript/04-the-dom/element-properties-and-methods",
+          "verified": true
+        },
+        3: {
+          "title": "23 - Working with Classes",
+          "link": "https://wesbos.com/javascript/04-the-dom/working-with-classes",
+          "verified": true
+        },
+        4: {
+          "title": "24 - Built-in and Custom Data Attributes",
+          "link": "https://wesbos.com/javascript/04-the-dom/built-in-and-custom-data-attributes",
+          "verified": true
+        },
+        5: {
+          "title": "25 - Creating HTML",
+          "link": "https://wesbos.com/javascript/04-the-dom/creating-html",
+          "verified": true
+        },
+        6: {
+          "title": "26 - HTML from Strings and XSS",
+          "link": "https://wesbos.com/javascript/04-the-dom/html-from-strings-and-xss",
+          "verified": true
+        },
+        7: {
+          "title": "27 - Traversing and Removing Nodes",
+          "link": "https://wesbos.com/javascript/04-the-dom/traversing-and-removing-nodes",
+          "verified": true
+        },
+        8: {
+          "title": "28 - Cardio",
+          "link": "https://wesbos.com/javascript/04-the-dom/cardio",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 4,
+      "title": "Events",
+      "links": {
+        0: {
+          "title": "29 - Event Listener",
+          "link": "https://wesbos.com/javascript/05-events/event-listener",
+          "verified": true
+        },
+        1: {
+          "title": "30 - Targets, Bubbling, Propagation and Capture",
+          "link": "https://wesbos.com/javascript/05-events/targets-bubbling-propagation-and-capture",
+          "verified": true
+        },
+        2: {
+          "title": "31 - Prevent Default and Form Events",
+          "link": "https://wesbos.com/javascript/05-events/prevent-default-and-form-events",
+          "verified": true
+        },
+        3: {
+          "title": "32 - Accessibility Gotchas and Keyboard Codes",
+          "link": "https://wesbos.com/javascript/05-events/accessibility-gotchas-and-keyboard-codes",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 4,
+      "title": "Serious Practice Exercises",
+      "links": {
+        0: {
+          "title": "33 - Etch-a-Sketch",
+          "link": "https://wesbos.com/javascript/06-serious-practice-exercises/etch-a-sketch",
+          "verified": true
+        },
+        1: {
+          "title": "34 - Click Outside Modal",
+          "link": "https://wesbos.com/javascript/06-serious-practice-exercises/click-outside-modal",
+          "verified": true
+        },
+        2: {
+          "title": "35 - Scroll Events and Intersection Observer",
+          "link": "https://wesbos.com/javascript/06-serious-practice-exercises/scroll-events-and-intersection-observer",
+          "verified": true
+        },
+        3: {
+          "title": "36 - Tabs",
+          "link": "https://wesbos.com/javascript/06-serious-practice-exercises/tabs",
+          "verified": true
+        }
+      }
+    },
+    6: {
+      "total_links": 5,
+      "title": "Logic and Flow Control",
+      "links": {
+        0: {
+          "title": "37 - BEDMAS",
+          "link": "https://wesbos.com/javascript/07-logic-and-flow-control/bedmas",
+          "verified": true
+        },
+        1: {
+          "title": "38 - If Statements, Function Returns, Truthy and Falsy",
+          "link": "https://wesbos.com/javascript/07-logic-and-flow-control/if-statements-function-returns-truthy-falsy",
+          "verified": true
+        },
+        2: {
+          "title": "39 - Coercion, Ternaries and Conditional Abuse",
+          "link": "https://wesbos.com/javascript/07-logic-and-flow-control/coercion-ternaries-and-conditional-abuse",
+          "verified": true
+        },
+        3: {
+          "title": "40 - Case Switch and Animating a Turtle with CSS Variables",
+          "link": "https://wesbos.com/javascript/07-logic-and-flow-control/case-switch-and-animating-a-turtle-with-css-variables",
+          "verified": true
+        },
+        4: {
+          "title": "41 - Intervals and Timers",
+          "link": "https://wesbos.com/javascript/07-logic-and-flow-control/intervals-and-timers",
+          "verified": true
+        }
+      }
+    },
+    7: {
+      "total_links": 7,
+      "title": "Data Types",
+      "links": {
+        0: {
+          "title": "42 - Objects",
+          "link": "https://wesbos.com/javascript/08-data-types/objects",
+          "verified": true
+        },
+        1: {
+          "title": "43 - Object References vs Values",
+          "link": "https://wesbos.com/javascript/08-data-types/object-references-vs-values",
+          "verified": true
+        },
+        2: {
+          "title": "44 - Maps",
+          "link": "https://wesbos.com/javascript/08-data-types/maps",
+          "verified": true
+        },
+        3: {
+          "title": "45 - Arrays",
+          "link": "https://wesbos.com/javascript/08-data-types/arrays",
+          "verified": true
+        },
+        4: {
+          "title": "46 - Array Cardio - Static Methods",
+          "link": "https://wesbos.com/javascript/08-data-types/46-array-cardio-static-methods",
+          "verified": true
+        },
+        5: {
+          "title": "47 - Array Cardio - Instance Methods",
+          "link": "https://wesbos.com/javascript/08-data-types/47-array-cardio-instance-methods",
+          "verified": true
+        },
+        6: {
+          "title": "48 - Array Cardio - Callback Methods and Function Generation",
+          "link": "https://wesbos.com/javascript/08-data-types/48-array-cardio-callback-methods-and-function-generation",
+          "verified": true
+        }
+      }
+    },
+    8: {
+      "total_links": 6,
+      "title": "Loops",
+      "links": {
+        0: {
+          "title": "49 - Looping and Iterating - Array forEach",
+          "link": "https://wesbos.com/javascript/09-gettin-loopy/49-looping-and-iterating-array-foreach",
+          "verified": true
+        },
+        1: {
+          "title": "50 - Looping and Iterating - Mapping",
+          "link": "https://wesbos.com/javascript/09-gettin-loopy/50-looping-and-iterating-mapping",
+          "verified": true
+        },
+        2: {
+          "title": "51 - Looping and Iterating - Filter, Find and Higher-Order Functions",
+          "link": "https://wesbos.com/javascript/09-gettin-loopy/51-looping-and-iterating-filter-find-and-higher-order-functions",
+          "verified": true
+        },
+        3: {
+          "title": "52 - Looping and Iterating - Reduce",
+          "link": "https://wesbos.com/javascript/09-gettin-loopy/52-looping-and-iterating-reduce",
+          "verified": true
+        },
+        4: {
+          "title": "53 - Looping and Iterating - Reduce Exercise",
+          "link": "https://wesbos.com/javascript/09-gettin-loopy/53-looping-and-iterating-reduce-exercise",
+          "verified": true
+        },
+        5: {
+          "title": "54 - Looping and Iterating - for, for in, for of, and while Loops",
+          "link": "https://wesbos.com/javascript/09-gettin-loopy/54-looping-and-iterating-for-for-in-for-off-and-while-loops",
+          "verified": true
+        }
+      }
+    },
+    9: {
+      "total_links": 5,
+      "title": "Harder Practice Exercises",
+      "links": {
+        0: {
+          "link": "https://wesbos.com/javascript/10-harder-practice-exercises/55-face-detection-and-censorship",
+          "verified": true,
+          "title": "55 - Face Detection and Censorship"
+        },
+        1: {
+          "link": "https://wesbos.com/javascript/10-harder-practice-exercises/56-sarcastic-text-generator",
+          "verified": true,
+          "title": "56 - Sarcastic Text Generator"
+        },
+        2: {
+          "link": "https://wesbos.com/javascript/10-harder-practice-exercises/57-shopping-form-with-custom-events-delegation-and-localstorage",
+          "verified": true,
+          "title": "57 - Shopping Form with Custom Events, Delegation and Localstorage"
+        },
+        3: {
+          "link": "https://wesbos.com/javascript/10-harder-practice-exercises/58-building-a-gallery",
+          "verified": true,
+          "title": "58 - Building a Gallery"
+        },
+        4: {
+          "link": "https://wesbos.com/javascript/10-harder-practice-exercises/59-building-a-slider",
+          "verified": true,
+          "title": "59 - Building a Slider"
+        }
+      }
+    },
+    10: {
+      "total_links": 6,
+      "title": "Prototypes, this, new and Inheritance",
+      "links": {
+        0: {
+          "title": "60 - The New Keyword",
+          "link": "https://wesbos.com/javascript/11-prototypes-this-new-and-inheritance/60-the-new-keyword",
+          "verified": true
+        },
+        1: {
+          "title": "61 - The This Keyword",
+          "link": "https://wesbos.com/javascript/11-prototypes-this-new-and-inheritance/61-the-this-keyword",
+          "verified": true
+        },
+        2: {
+          "title": "62 - Prototype Refactor of Gallery Exercise",
+          "link": "https://wesbos.com/javascript/11-prototypes-this-new-and-inheritance/62-prototype-refactor-of-gallery-exercise",
+          "verified": true
+        },
+        3: {
+          "title": "63 - Prototypes and Prototypal Inheritance",
+          "link": "https://wesbos.com/javascript/11-prototypes-this-new-and-inheritance/63-prototypes-and-prototypal-inheritance",
+          "verified": true
+        },
+        4: {
+          "title": "64 - Prototype Refactor of the Slider Exercise",
+          "link": "https://wesbos.com/javascript/11-prototypes-this-new-and-inheritance/64-prototype-refactor-of-the-slider-exercise",
+          "verified": true
+        },
+        5: {
+          "title": "65 - Bind, Call and Apply",
+          "link": "https://wesbos.com/javascript/11-prototypes-this-new-and-inheritance/65-bind-call-and-apply",
+          "verified": true
+        }
+      }
+    },
+    11: {
+      "total_links": 8,
+      "title": "Advanced Flow Control",
+      "links": {
+        0: {
+          "title": "66 - The Event Loop and Callback Hell",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/66-the-event-loop-and-callback-hell",
+          "verified": true
+        },
+        1: {
+          "title": "67 - Promises",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/67-promises",
+          "verified": true
+        },
+        2: {
+          "title": "68 - Promises - Error Handling",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/68-promises-error-handling",
+          "verified": true
+        },
+        3: {
+          "title": "69 - Refactoring Callback Hell to Promise Land",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/69-refactoring-callback-hell-to-promise-land",
+          "verified": true
+        },
+        4: {
+          "title": "70 - Async/Await",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/70-async-await",
+          "verified": true
+        },
+        5: {
+          "title": "71 - Async/Await Error Handling",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/71-async-await-error-handling",
+          "verified": true
+        },
+        6: {
+          "title": "72 - Async/Await Prompt UI",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/72-async-await-prompt-ui",
+          "verified": true
+        },
+        7: {
+          "title": "73 - Async Typer UI - Two Ways",
+          "link": "https://wesbos.com/javascript/12-advanced-flow-control/73-async-typer-ui-two-ways",
+          "verified": true
+        }
+      }
+    },
+    12: {
+      "total_links": 4,
+      "title": "Ajax and Fetching Data",
+      "links": {
+        0: {
+          "title": "74 - AJAX and APIs",
+          "link": "https://wesbos.com/javascript/13-ajax-and-fetching-data/74-ajax-and-apis",
+          "verified": true
+        },
+        1: {
+          "title": "75 - CORS and Recipes",
+          "link": "https://wesbos.com/javascript/13-ajax-and-fetching-data/75-cors-and-recipes",
+          "verified": true
+        },
+        2: {
+          "title": "76 - Dad Jokes",
+          "link": "https://wesbos.com/javascript/13-ajax-and-fetching-data/76-dad-jokes",
+          "verified": true
+        },
+        3: {
+          "title": "77 - Currency Converter",
+          "link": "https://wesbos.com/javascript/13-ajax-and-fetching-data/77-currency-converter",
+          "verified": true
+        }
+      }
+    },
+    13: {
+      "total_links": 6,
+      "title": "ES Modules and Structuring Larger Apps",
+      "links": {
+        0: {
+          "title": "78 - Modules",
+          "link": "https://wesbos.com/javascript/14-es-modules-and-structuring-larger-apps/78-modules",
+          "verified": true
+        },
+        1: {
+          "title": "79 - Currency Module Refactor",
+          "link": "https://wesbos.com/javascript/14-es-modules-and-structuring-larger-apps/79-currency-module-refactor",
+          "verified": true
+        },
+        2: {
+          "title": "80 - Dad Jokes Modules Refactor",
+          "link": "https://wesbos.com/javascript/14-es-modules-and-structuring-larger-apps/80-dad-jokes-modules-refactor",
+          "verified": true
+        },
+        3: {
+          "title": "81 - Bundling and Building with Parcel",
+          "link": "https://wesbos.com/javascript/14-es-modules-and-structuring-larger-apps/81-bundling-and-building-with-parcel",
+          "verified": true
+        },
+        4: {
+          "title": "82 - Using Open-Source npm packages",
+          "link": "https://wesbos.com/javascript/14-es-modules-and-structuring-larger-apps/82-using-open-source-npm-packages",
+          "verified": true
+        },
+        5: {
+          "title": "83 - Security",
+          "link": "https://wesbos.com/javascript/14-es-modules-and-structuring-larger-apps/83-security",
+          "verified": true
+        }
+      }
+    },
+    14: {
+      "total_links": 2,
+      "title": "Final Round of Exercises",
+      "links": {
+        0: {
+          "title": "84 - Web Speech Colours Game",
+          "link": "https://wesbos.com/javascript/15-final-round-of-exercise/84-web-speech-colours-game",
+          "verified": true
+        },
+        1: {
+          "title": "85 - Audio Visualization",
+          "link": "https://wesbos.com/javascript/15-final-round-of-exercise/85-audio-visualization",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "Hey there!! welcome to my favourite Beginner JavaScript Notes + Reference. These notes are a free resource, written by @wesbos (130K YouTube subscriber) to learn JavaScript from zero to expert. These notes are totally free and have been modeled after the content in his Beginner JavaScript course.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": 1,
+  "slugUrl": "free-beginner-javascript-notes-reference--qvap6j",
+  "tags": [
+    "javascript"
+  ],
+  "title": "FREE Beginner JavaScript Notes + Reference."
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 2,
+      "title": "01 - YouTube Videos",
+      "links": {
+        0: {
+          "link": "https://www.youtube.com/watch?v=2CV6nzeyg7s",
+          "verified": true,
+          "title": "Best cold email strategy by Ankur Warikoo"
+        },
+        1: {
+          "link": "https://www.youtube.com/watch?v=2VG1Px105Vc",
+          "verified": true,
+          "title": "How to write a perfect cold email"
+        }
+      }
+    },
+    1: {
+      "total_links": 2,
+      "title": "02 - Google Docs",
+      "links": {
+        0: {
+          "link": "https://docs.google.com/document/d/1fU1s0gI6ZPycmf1zfJji-J2QgEU5UBmkZSGytIpKIw4/edit",
+          "verified": true,
+          "title": "Organised curated list on how to write a good cold email"
+        },
+        1: {
+          "link": "https://docs.google.com/document/d/1D_7S3FAKIrwZI_unKKLiHj1TTqJse2aogSpL9lQfyQA/edit",
+          "verified": true,
+          "title": "Email templates for job search through Alumni Network"
+        }
+      }
+    },
+    2: {
+      "total_links": 1,
+      "title": "03 - Twitter threads",
+      "links": {
+        0: {
+          "link": "https://twitter.com/AlexAndBooks_/status/1341170473586089985",
+          "verified": true,
+          "title": "Ultimate cold email templates : a thread"
+        }
+      }
+    }
+  },
+  "description": "Cold emailing remains one of the most underrated skills in today\"s world. Most people still read their emails. They just very rarely come across good ones and when they do, they almost always reply weather it\"s a job application, business related or anything. Here is my curation of good resources available on the web.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "the-best-cold-email-strategy-in-2021--qvbh1t",
+  "tags": [
+    "cold email tips",
+    "5aaf2253-18af-4390-acf0-48b8bb405223"
+  ],
+  "title": "The best cold email strategy in 2021."
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 1,
+      "title": "Codecademy",
+      "isDescription": true,
+      "description": "Codecademy is one of the best platforms to learn javascript, they provide the completion certificate. 1,686,370 students join this course and it\"s very easy to learn and faculty is very kind and helpful.",
+      "links": {
+        0: {
+          "link": "https://www.codecademy.com/learn/introduction-to-javascript",
+          "verified": true,
+          "title": "Codecademy"
+        }
+      }
+    },
+    1: {
+      "total_links": 1,
+      "title": "Javascript Essentials",
+      "links": {
+        0: {
+          "title": "Javascript Essentials",
+          "link": "https://www.udemy.com/course/javascript-essentials/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Learn all the basics of Javascript including primitive types, arrays, functions, assignment operators, the window object and much more. Also I\"ll provide clear explanations of objects, constructors and arrays in a clear way for anyone to understand. We\"ll also dive into some more detail about how Javascript works and even advanced topics like prototype inheritance, scope, execution context and much more."
+    },
+    2: {
+      "total_links": 1,
+      "title": "Javascript.info",
+      "links": {
+        0: {
+          "title": "Javascript.info",
+          "link": "https://javascript.info/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "The Modern JavaScript Tutorial was created in 2007 by Ilya Kantor, and regularly updated since then. New chapters were added, outdated ones - removed, to stay fresh. The PDF version is about 1300 pages, starting from the beginning, and then to advanced topics. It\"s a book, not a video, as for many people reading is faster. Also, books are easier to update, keep modern :)."
+    },
+    3: {
+      "total_links": 1,
+      "title": "MDN By Mozilla",
+      "isDescription": true,
+      "links": {
+        0: {
+          "title": "MDN By Mozilla",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "verified": true
+        }
+      },
+      "description": "MDN is more of a reference tool. Not really structured for learning by newbies. But it is an excellent resource for folks that already have a decent background with the technologies they are reading about. Yes MDN is the best online resource for learning HTML and CSS."
+    },
+    4: {
+      "total_links": 1,
+      "title": "Javascript 30",
+      "links": {
+        0: {
+          "title": "Javascript 30",
+          "link": "https://javascript30.com/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Javascript 30 is great for showing you some basic ways you can use javascript to create or alter websites. Others are right that there are other things to learn, but practising code and seeing some simple working examples is also very useful."
+    }
+  },
+  "description": "Hello friends, Today we have the top 5 resources that you can use to learn javascript. Javascript is the most popular and flexible programming language on the web. Javascript is used for websites, web app, and more various fields.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE-PAID",
+  "show": true,
+  "slugUrl": "top-5-best-resources-to-learn-javascript-qvew3t",
+  "tags": [
+    "javascript",
+    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc",
+    "e68e660b-2684-4631-b858-9458f249da3d"
+  ],
+  "title": "Top 5 Best Resources To Learn Javascript"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 3,
+      "title": "Easy",
+      "links": {
+        0: {
+          "title": "Design Chess",
+          "link": "https://medium.com/system-designing-interviews/design-a-chess-game-dddd7ba11bc0",
+          "verified": true
+        },
+        1: {
+          "title": "Design Tic-Tac-Toe",
+          "link": "https://medium.com/system-designing-interviews/design-tic-tac-toe-game-1b912bba64cf",
+          "verified": true
+        },
+        2: {
+          "title": "Design Elevator System",
+          "link": "https://medium.com/system-designing-interviews/design-a-elevator-system-fc5832ca0b8b",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 8,
+      "title": "Medium",
+      "links": {
+        0: {
+          "title": "Design Uber",
+          "link": "https://medium.com/@narengowda/uber-system-design-8b2bc95e2cfe",
+          "verified": true
+        },
+        1: {
+          "title": "Design Instagram",
+          "link": "https://medium.com/@dingdingsherrywang/system-design-instagram-4658eeb0423a",
+          "verified": true
+        },
+        2: {
+          "title": "Design Facebook Messenger",
+          "link": "https://medium.com/@eileen.code4fun/design-facebook-messenger-438d76639985",
+          "verified": true
+        },
+        3: {
+          "title": "Design URL Shortener",
+          "link": "https://medium.com/@narengowda/url-shortener-system-design-3db520939a1c",
+          "verified": true
+        },
+        4: {
+          "title": "Design Dropbox / Google Drive",
+          "link": "https://blog.pankajtanwar.in/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service",
+          "verified": true
+        },
+        5: {
+          "title": "Design News Feed System / Quora",
+          "link": "https://medium.com/@bansal_ankur/design-a-news-feed-system-6bf42e9f03fb",
+          "verified": true
+        },
+        6: {
+          "title": "Design Price Surging Service",
+          "link": "https://medium.com/software-system-design/price-surge-during-online-hotel-booking-ff060c33b2b6",
+          "verified": true
+        },
+        7: {
+          "title": "Design AirBnb",
+          "link": "https://medium.com/@nrkapri/system-design-interview-question-design-airbnb-11ac00a1d9b0",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 2,
+      "title": "Hard",
+      "links": {
+        0: {
+          "title": "Design YouTube / Netflix",
+          "link": "https://medium.com/@eileen.code4fun/system-design-interview-mini-youtube-5cae5eedceae",
+          "verified": true
+        },
+        1: {
+          "title": "Design Web Crawler",
+          "link": "https://medium.com/@morefree7/design-a-distributed-web-crawler-f67a8ebb8336",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "In software engineering interview process system design round has become a standard part of the interview. Real-world system design is challenging and complex. System design interview questions are usually open ended discussions.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "system-design-actual-interview-questions-qvbj2c",
+  "tags": [
+    "system design",
+    "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
+  ],
+  "title": "System Design Actual Interview Questions"
+},{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 1,
+      "title": "Head First Python",
+      "isDescription": true,
+      "description": "I’m a big fan of the Head First series. They\"re just awesome books to read through. Head First Python is tremendously helpful for anyone starting out with the language.",
+      "links": {
+        0: {
+          "title": "Head First Python",
+          "link": "https://www.amazon.com/Head-First-Python-Brain-Friendly-Guide-ebook/dp/B01N0GU0OC/ref=sr_1_1?dchild=1&keywords=head+first+python&qid=1586134709&sr=8-1",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 1,
+      "title": "Python Crash Course",
+      "links": {
+        0: {
+          "title": "Python Crash Course",
+          "link": "https://www.amazon.com/Python-Crash-Course-Eric-Matthes-ebook/dp/B07J4521M3/ref=sr_1_3?dchild=1&keywords=python+crash+course&qid=1586134651&sr=8-3",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Python Crash Course is another excellent book for those starting out in their Python journeys. It covers the basics very clearly and breaks down concepts in a very easy to understand manner. There are a good amount of fun exercises and you’re not thrown into them so early on that you feel lost."
+    },
+    2: {
+      "total_links": 1,
+      "title": "Crash Course Cheat Sheets",
+      "links": {
+        0: {
+          "title": "Crash Course Cheat Sheets",
+          "link": "https://ehmatthes.github.io/pcc/cheatsheets/README.html",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Courtesy of No Starch Press, these downloadable pdf cheat sheets are the perfect companion to Python Crash Course. They\"re great resources when you need refreshers, practice, and as quick coding resources"
+    },
+    3: {
+      "total_links": 1,
+      "title": "Learn Python From Scratch",
+      "links": {
+        0: {
+          "title": "Learn Python From Scratch",
+          "link": "https://www.educative.io/courses/learn-python-from-scratch?affiliate_id=5073518643380224",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Educative is a fantastic learning platform I discovered several months back and have started utilizing more frequently. Having been so accustomed to video courses, I was on the fence at first, but the platform is so well put together than it just drew me in."
+    },
+    4: {
+      "total_links": 1,
+      "title": "Invent With Python",
+      "links": {
+        0: {
+          "title": "Invent With Python",
+          "link": "https://inventwithpython.com/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Thanks to Al Sweigart for all of his amazing contributions to the Python community. I’ve purchased his paperback books and still browse through this site for reference and fun projects to take on."
+    },
+    5: {
+      "total_links": 1,
+      "title": "Real Python",
+      "links": {
+        0: {
+          "title": "Real Python",
+          "link": "https://realpython.com/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Real Python has been my go to site lately for tutorials, courses, and especially the quizzes. There is a ton of content on this site with more added frequently"
+    },
+    6: {
+      "total_links": 1,
+      "title": "Complete Python Developer in 2020: Zero To Mastery",
+      "links": {
+        0: {
+          "title": "Complete Python Developer in 2020: Zero To Mastery",
+          "link": "https://www.udemy.com/course/complete-python-developer-zero-to-mastery/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "It’s no secret I have great admiration for Andrei Neagoie. He’s the top tier of online educators in my book. His Python course is just excellent from beginning to end. That being said, there is a ton of content to absorb. This is not a course to be rushed through if you are a Python beginner. Please, please take your time with this course."
+    },
+    7: {
+      "total_links": 1,
+      "title": "Python and Flask Bootcamp",
+      "links": {
+        0: {
+          "title": "Python and Flask Bootcamp",
+          "link": "https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "This course takes you through the fundamentals on HTML, CSS, Bootstrap, and Python before diving into Flask. Once there, you’ll learn how to create virtual environments for your Flask projects, how to create Flask forms, work with SQLite databases, REST APIs, and even Stripe payments. You’ll also learn how to create a blog in Flask and deploy to Heroku"
+    },
+    8: {
+      "total_links": 1,
+      "title": "Python and Django Full Stack Web Developer Bootcamp",
+      "links": {
+        0: {
+          "title": "Python and Django Full Stack Web Developer Bootcamp",
+          "link": "https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Much like his Flask course, this is another great course by Jose Portilla. With over 26,000 students enrolled, Python and Django Full Stack is still one of the best selling courses on Udemy to date."
+    },
+    9: {
+      "total_links": 1,
+      "title": "HackerRank",
+      "links": {
+        0: {
+          "title": "HackerRank",
+          "link": "https://www.hackerrank.com/domains/python",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Finally, if you want to sharpen those Python skills and test your knowledge, sign up to HackerRank. There are vast amounts of practices, competitions, skill certification exams, and even interview preparation tutorials."
+    }
+  },
+  "description": "I started my excursion into Python in the fall of 2019. Since then, I\"ve come across some resources that have really helped me a lot in learning the language. I wanted to take a bit of time to share my most valuable Python resources here for anyone searching for where to begin when diving into Python.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE-PAID",
+  "show": true,
+  "slugUrl": "my-most-valuable-python-resources-by-alex-corvin-qvex18",
+  "tags": [
+    "python"
+  ],
+  "title": "My Most Valuable Python Resources by Alex Corvin"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 1,
+      "title": "Fullstack D3 and Data Visualization",
+      "links": {
+        0: {
+          "title": "Fullstack D3 and Data Visualization",
+          "link": "https://www.newline.co/fullstack-d3",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "This the holy grail of D3. It’s extremely accessible for anyone new to D3 and it’s structured in such an easy to follow manner that I’ve not felt overwhelmed by the content"
+    },
+    1: {
+      "total_links": 1,
+      "title": "Build Data Visualizations with D3.js & Firebase",
+      "links": {
+        0: {
+          "link": "https://www.udemy.com/course/build-data-uis-with-d3-firebase/",
+          "verified": true,
+          "title": "Build Data Visualizations with D3.js & Firebase"
+        }
+      },
+      "isDescription": true,
+      "description": "What can I say of Shaun Pelling that I haven’t already said? His courses and tutorials are top notch and this one is no different."
+    },
+    2: {
+      "total_links": 1,
+      "title": "D3js.org",
+      "links": {
+        0: {
+          "title": "D3js.org",
+          "link": "https://d3js.org/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "When learning any programming language, you can do no wrong in going straight to the source. The documentation for D3 is so well written and provides a ton of examples"
+    },
+    3: {
+      "total_links": 1,
+      "title": "Dashing D3.js",
+      "links": {
+        0: {
+          "title": "Dashing D3.js",
+          "link": "https://www.dashingd3js.com/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Dashing D3 offers subscription based learning from beginner to intermediate level and is currently priced at $14.95 per month. The beginner course offers brief introductions to HTML, CSS, Javascript as well as getting to know SVGs. You’ll not only learn the basics of every type of chart, but also how to interact and animate each one."
+    }
+  },
+  "description": "It\"s probably no secret that I love data. The moment I began researching D3.js, I just knew it was what I wanted to use to represent my data in visualization projects. I\"ve been learning it for the better part of this year and I wanted to share the resources I\"ve found to be just priceless in learning D3.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE-PAID",
+  "show": true,
+  "slugUrl": "my-most-valuable-d3-resources-by-alex-corvin-qvex6o",
+  "tags": [
+    "python",
+    "d3",
+    "e68e660b-2684-4631-b858-9458f249da3d"
+  ],
+  "title": "My Most Valuable D3 Resources by Alex Corvin"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 1,
+      "title": "SQL Bolt",
+      "isDescription": true,
+      "description": "It\"s basically a bunch of interactive lessons that teach you the basics of SQL.",
+      "links": {
+        0: {
+          "title": "SQL Bolt",
+          "link": "https://sqlbolt.com/",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 1,
+      "title": "SQL Zoo",
+      "isDescription": true,
+      "description": "SQL Zoo is a collection of tests that push your SQL knowledge to the limits. The challenges range from easy ones that you can solve in a couple of seconds to hard ones where your brains are pushed to it's limits.",
+      "links": {
+        0: {
+          "link": "https://sqlzoo.net/wiki/Main_Page",
+          "verified": true,
+          "title": "SQL Zoo"
+        }
+      }
+    },
+    2: {
+      "total_links": 1,
+      "title": "Use the Index Luke",
+      "isDescription": true,
+      "links": {
+        0: {
+          "title": "Use the Index Luke",
+          "link": "https://use-the-index-luke.com/",
+          "verified": true
+        }
+      },
+      "description": "After you get the basics of SQL down, you might want to check out \",
+      " Luke!"". It\"s a site that teaches you about writing efficient SQL code."
+    },
+    3: {
+      "total_links": 1,
+      "title": "PostgreSQL Exercises",
+      "links": {
+        0: {
+          "title": "PostgreSQL Exercises",
+          "link": "https://pgexercises.com/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "PostgreSQL is one of the world\"s most popular database management systems. With that in mind, this platform has a bunch of exercises to test your SQL and PostgreSQL knowledge."
+    },
+    4: {
+      "total_links": 1,
+      "title": "Khan Academy",
+      "links": {
+        0: {
+          "title": "Khan Academy",
+          "link": "https://www.khanacademy.org/computing/computer-programming/sql",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "I\"ve used Khan Academy for all sorts of subjects and they never disappoint. This course offered by them covers the basics of SQL to more advanced topics such as JOINS, etc."
+    },
+    5: {
+      "total_links": 1,
+      "title": "Udacity",
+      "links": {
+        0: {
+          "title": "Udacity",
+          "link": "https://www.udacity.com/course/intro-to-relational-databases--ud197",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "If your more of a visual learner, I would recommend checking out Udacity. It covers beginner and intermediate topics. Along with the videos, it also included coding exercises."
+    },
+    6: {
+      "total_links": 1,
+      "title": "SQL for Web Nerds",
+      "isDescription": true,
+      "description": "This is more of an advanced course, it teaches you the gritty details of SQL. It was developed by MIT Professor Philip Greenspun. The site isn\"t flashy, but it offers expert-level content.",
+      "links": {
+        0: {
+          "title": "SQL for Web Nerds",
+          "link": "http://philip.greenspun.com/sql/",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "So, you want to go on the path of SQL? But don\"t know where to start? Well, look no further. I\"ve compiled a list of the best SQL resources I could find on the internet.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "top-7-resources-to-learn-sql-qveuch",
+  "tags": [
+    "sql",
+    "e68e660b-2684-4631-b858-9458f249da3d"
+  ],
+  "title": "Top 7 Resources to Learn SQL"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 1,
+      "title": "Documentation",
+      "links": {
+        0: {
+          "title": "MDN JavaScript Docs.",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript.",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "MDN (Mozilla) JavaScript Reference is the main documentation with examples and other information. It’s great to get in-depth information about individual language functions, methods etc."
+    },
+    1: {
+      "total_links": 2,
+      "title": "Compatibility tables",
+      "isDescription": true,
+      "description": "Since JavaScript is a developing language, new features get added regularly and some of them might not be supported by all browsers or engines. The below sites help you in identifying which features are supported by what browser/engine or version of a browser etc.",
+      "links": {
+        0: {
+          "title": "caniuse.com",
+          "link": "http://caniuse.com/",
+          "verified": true
+        },
+        1: {
+          "title": "kangax.github.io/compat-table",
+          "link": "kangax.github.io/compat-table",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 4,
+      "title": "IDE\"s",
+      "isDescription": true,
+      "description": "Some of my favorite IDE\"s I use for development I have listed below -",
+      "links": {
+        0: {
+          "title": "Atom",
+          "link": "https://atom.io/",
+          "verified": true
+        },
+        1: {
+          "title": "Visual Studio Code",
+          "link": "https://code.visualstudio.com/",
+          "verified": true
+        },
+        2: {
+          "title": "Sublime Text",
+          "link": "http://www.sublimetext.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Notepad ++",
+          "link": "https://notepad-plus-plus.org/",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 10,
+      "title": "Tutorials / Courses",
+      "links": {
+        0: {
+          "title": "MDN JavaScript Docs",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript.",
+          "verified": true
+        },
+        1: {
+          "title": "The Modern Javascript Tutorial",
+          "link": "https://javascript.info/",
+          "verified": true
+        },
+        2: {
+          "title": "Getting Started with JavaScript for Web Development Courses",
+          "link": "https://scotch.io/courses/getting-started-with-javascript-for-web-development",
+          "verified": true
+        },
+        3: {
+          "title": "ES6 - JavaScript Improved",
+          "link": "https://www.udacity.com/course/es6-javascript-improved--ud356",
+          "verified": true
+        },
+        4: {
+          "title": "ES6-features.org",
+          "link": "http://es6-features.org/",
+          "verified": true
+        },
+        5: {
+          "title": "JavaScript Tutorial",
+          "link": "https://www.javascripttutorial.net/",
+          "verified": true
+        },
+        6: {
+          "title": "ES6 Tutorial",
+          "link": "https://www.javascripttutorial.net/es6/",
+          "verified": true
+        },
+        7: {
+          "title": "Intro to ES6",
+          "link": "https://scrimba.com/learn/introtoes6",
+          "verified": true
+        },
+        8: {
+          "title": "Tutorials Point - ES6 for beginners",
+          "link": "https://www.tutorialspoint.com/es6/index.htm",
+          "verified": true
+        },
+        9: {
+          "title": "Learn JavaScript - Full Course for Beginners - Video By freecodecamp.org",
+          "link": "https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 4,
+      "title": "Books",
+      "links": {
+        0: {
+          "title": "Eloquent JavaScript",
+          "link": "https://eloquentjavascript.net/",
+          "verified": true
+        },
+        1: {
+          "title": "Understanding ECMAScript 6",
+          "link": "http://superherojs.com/",
+          "verified": true
+        },
+        2: {
+          "title": "JavaScript the Good Parts",
+          "link": "https://andersonguelphjs.github.io/OReilly_JavaScript_The_Good_Parts_May_2008.pdf",
+          "verified": true
+        },
+        3: {
+          "title": "Speaking JavaScript",
+          "link": "http://speakingjs.com/es5/index.html",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 10,
+      "title": "Learn JavaScript by building small projects",
+      "links": {
+        0: {
+          "title": "30 Day Vanilla JS Coding Challenge",
+          "link": "https://javascript30.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Learn Javascript by building 7 games",
+          "link": "https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/",
+          "verified": true
+        },
+        2: {
+          "title": "24days of christmas",
+          "link": "https://scrimba.com/learn/adventcalendar/welcome-to-24-days-of-javascriptmas-cg2QbehG",
+          "verified": true
+        },
+        3: {
+          "title": "Learn JavaScript",
+          "link": "https://scrimba.com/learn/learnjavascript",
+          "verified": true
+        },
+        4: {
+          "title": "JavaScript Algorithms and Data Structures",
+          "link": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+          "verified": true
+        },
+        5: {
+          "title": "Freecodecamp.org",
+          "link": "https://www.freecodecamp.org/",
+          "verified": true
+        },
+        6: {
+          "title": "Build a Quiz App with HTML, CSS, and JavaScript",
+          "link": "https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/",
+          "verified": true
+        },
+        7: {
+          "title": "Smarter Way to learn JavaScript",
+          "link": "http://www.asmarterwaytolearn.com/js/index-of-exercises.html",
+          "verified": true
+        },
+        8: {
+          "title": "30 Days of JavaScript",
+          "link": "https://github.com/Asabeneh/30-Days-Of-JavaScript",
+          "verified": true
+        },
+        9: {
+          "title": "Learn JavaScript Online",
+          "link": "https://learnjavascript.online/",
+          "verified": true
+        }
+      }
+    },
+    6: {
+      "total_links": 7,
+      "title": "Coding Challenges",
+      "isDescription": true,
+      "description": "One of the ways to learn any kinda programming language in a fun way is to take coding challenges. I love those challenges, I have listed the sites below, some are specific to javascript, while others such as hackerrank, leet code etc let you solve the challenges in the programming language of your choice such as JavaScript or Python or C or C++.",
+      "links": {
+        0: {
+          "title": "Hackerrank",
+          "link": "https://www.hackerrank.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Coding Game",
+          "link": "https://www.codingame.com/",
+          "verified": true
+        },
+        2: {
+          "title": "Leet Code",
+          "link": "https://www.hackerrank.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Coder Byte",
+          "link": "https://coderbyte.com/",
+          "verified": true
+        },
+        4: {
+          "title": "Exercism",
+          "link": "https://exercism.io/my/tracks/javascript",
+          "verified": true
+        },
+        5: {
+          "title": "Elevator Saga",
+          "link": "http://play.elevatorsaga.com/",
+          "verified": true
+        },
+        6: {
+          "title": "Code Wars",
+          "link": "https://www.codewars.com/",
+          "verified": true
+        }
+      }
+    },
+    7: {
+      "total_links": 3,
+      "title": "Coding Ground",
+      "links": {
+        0: {
+          "title": "Codepen",
+          "link": "https://codepen.io/your-work",
+          "verified": true
+        },
+        1: {
+          "title": "Js fiddle",
+          "link": "https://jsfiddle.net/",
+          "verified": true
+        },
+        2: {
+          "title": "Tutorials Point Coding Ground.",
+          "link": "https://www.tutorialspoint.com/codingground.htm",
+          "verified": true
+        }
+      }
+    },
+    8: {
+      "total_links": 6,
+      "title": "Blogs",
+      "links": {
+        0: {
+          "title": "Dmitri Pavlutin",
+          "link": "https://dmitripavlutin.com/all-posts/",
+          "verified": true
+        },
+        1: {
+          "title": "David Walsh",
+          "link": "https://davidwalsh.name/tutorials/javascript",
+          "verified": true
+        },
+        2: {
+          "title": "SuperHero.JS",
+          "link": "http://superherojs.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Medium",
+          "link": "https://medium.com/",
+          "verified": true
+        },
+        4: {
+          "title": "dev.to",
+          "link": "https://dev.to/",
+          "verified": true
+        },
+        5: {
+          "title": "Hashnode",
+          "link": "https://hashnode.com/",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "In recent times few friends reached out to me, asking for links to resources that can help them kickstart into learning JavaScript/ES6. I have curated a list of links which are completely free that will help anyone in their journey towards learning JavaScript.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "getting-started-with-javascript-ultimate-free-resources-by-kritika-pattalam-qvfaus",
+  "tags": [
+    "javascript",
+    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+  ],
+  "title": "Getting Started with JavaScript - Ultimate Free Resources By Kritika Pattalam"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 9,
+      "title": "Illustrations",
+      "links": {
+        0: {
+          "title": "Error 404",
+          "link": "https://error404.fun/",
+          "verified": true
+        },
+        1: {
+          "title": "Blush",
+          "link": "https://blush.design/",
+          "verified": true
+        },
+        2: {
+          "title": "Smash Illustrations",
+          "link": "https://usesmash.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Control",
+          "link": "https://control.rocks/",
+          "verified": true
+        },
+        4: {
+          "title": "DrawKit",
+          "link": "https://www.drawkit.io/#browse-now-button",
+          "verified": true
+        },
+        5: {
+          "title": "Open Doodles",
+          "link": "https://www.opendoodles.com/",
+          "verified": true
+        },
+        6: {
+          "title": "Free Illustrations",
+          "link": "https://freellustrations.com/",
+          "verified": true
+        },
+        7: {
+          "title": "Mixkit",
+          "link": "https://mixkit.co/free-stock-art/",
+          "verified": true
+        },
+        8: {
+          "title": "Delesign",
+          "link": "https://delesign.com/free-designs/graphics/",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 11,
+      "title": "Development",
+      "links": {
+        0: {
+          "title": "Majestic",
+          "link": "https://github.com/Raathigesh/majestic",
+          "verified": true
+        },
+        1: {
+          "title": "Carbon",
+          "link": "https://carbon.now.sh/?bg=rgba(171%2C-184%2C-195%2C-1)&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520pluckDeep%2520%253D%2520key%2520%253D%253E%2520obj%2520%253D%253E%2520key.split(%27.%27).reduce((accum%252C%2520key)%2520%253D%253E%2520accum%255Bkey%255D%252C%2520obj)%250A%250Aconst%2520compose%2520%253D%2520(...fns)%2520%253D%253E%2520res%2520%253D%253E%2520fns.reduce((accum%252C%2520next)%2520%253D%253E%2520next(accum)%252C%2520res)%250A%250Aconst%2520unfold%2520%253D%2520(f%252C%2520seed)%2520%253D%253E%2520%257B%250A%2520%2520const%2520go%2520%253D%2520(f%252C%2520seed%252C%2520acc)%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520const%2520res%2520%253D%2520f(seed)%250A%2520%2520%2520%2520return%2520res%2520%253F%2520go(f%252C%2520res%255B1%255D%252C%2520acc.concat(%255Bres%255B0%255D%255D))%2520%253A%2520acc%250A%2520%2520%257D%250A%2520%2520return%2520go(f%252C%2520seed%252C%2520%255B%255D)%250A%257D",
+          "verified": true
+        },
+        2: {
+          "title": "Squoosh",
+          "link": "https://squoosh.app/",
+          "verified": true
+        },
+        3: {
+          "title": "SVGOMG",
+          "link": "https://jakearchibald.github.io/svgomg/",
+          "verified": true
+        },
+        4: {
+          "title": "Kite",
+          "link": "https://kite.com/",
+          "verified": true
+        },
+        5: {
+          "title": "DevDocs",
+          "link": "https://devdocs.io/css/css_animations",
+          "verified": true
+        },
+        6: {
+          "title": "DevHints",
+          "link": "https://devhints.io/",
+          "verified": true
+        },
+        7: {
+          "title": "Wappalyzer",
+          "link": "https://www.wappalyzer.com/",
+          "verified": true
+        },
+        8: {
+          "title": "iHateRegex",
+          "link": "https://ihateregex.io/",
+          "verified": true
+        },
+        9: {
+          "title": "LottieFiles",
+          "link": "https://lottiefiles.com/",
+          "verified": true
+        },
+        10: {
+          "title": "Shape Divider",
+          "link": "https://www.shapedivider.app/",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 6,
+      "links": {
+        0: {
+          "title": "Animista",
+          "link": "https://animista.net/",
+          "verified": true
+        },
+        1: {
+          "title": "Pattern.css",
+          "link": "https://bansal.io/pattern-css#introduction",
+          "verified": true
+        },
+        2: {
+          "title": "CSSeffectsSnippets",
+          "link": "https://emilkowalski.github.io/css-effects-snippets/",
+          "verified": true
+        },
+        3: {
+          "title": "98.css",
+          "link": "https://jdan.github.io/98.css",
+          "verified": true
+        },
+        4: {
+          "title": "Tailwind",
+          "link": "https://tailwindcomponents.com/",
+          "verified": true
+        },
+        5: {
+          "title": "Tailblocks",
+          "link": "https://mertjf.github.io/tailblocks",
+          "verified": true
+        }
+      },
+      "title": "CSS"
+    },
+    3: {
+      "total_links": 10,
+      "title": "Design",
+      "links": {
+        0: {
+          "title": "colors.lol",
+          "link": "https://colors.lol/",
+          "verified": true
+        },
+        1: {
+          "title": "ColorMind",
+          "link": "http://colormind.io/",
+          "verified": true
+        },
+        2: {
+          "title": "Ucraft Logo Maker",
+          "link": "https://www.ucraft.com/free-logo-maker",
+          "verified": true
+        },
+        3: {
+          "title": "AppMockUp",
+          "link": "https://app-mockup.com/",
+          "verified": true
+        },
+        4: {
+          "title": "Webframe",
+          "link": "https://webframe.xyz/",
+          "verified": true
+        },
+        5: {
+          "title": "FontSpark",
+          "link": "https://fontspark.app/",
+          "verified": true
+        },
+        6: {
+          "title": "HackDesign",
+          "link": "https://hackdesign.org/lessons",
+          "verified": true
+        },
+        7: {
+          "title": "Checklist Design",
+          "link": "https://www.checklist.design/",
+          "verified": true
+        },
+        8: {
+          "title": "Remove BG",
+          "link": "https://www.remove.bg/",
+          "verified": true
+        },
+        9: {
+          "title": "Unscreen",
+          "link": "https://www.unscreen.com/",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 10,
+      "title": "Productivity",
+      "links": {
+        0: {
+          "title": "Sejda",
+          "link": "https://www.sejda.com/",
+          "verified": true
+        },
+        1: {
+          "title": "GetTerms",
+          "link": "https://getterms.io/",
+          "verified": true
+        },
+        2: {
+          "title": "Top Hunts Time Machine",
+          "link": "https://timemachine.betamode.dev/",
+          "verified": true
+        },
+        3: {
+          "title": "Notion",
+          "link": "https://www.notion.so/",
+          "verified": true
+        },
+        4: {
+          "title": "Writty",
+          "link": "https://iamcharlie.design/writty",
+          "verified": true
+        },
+        5: {
+          "title": "Grammarly",
+          "link": "https://www.grammarly.com/",
+          "verified": true
+        },
+        6: {
+          "title": "OpenSource Builders",
+          "link": "https://opensource.builders",
+          "verified": false
+        },
+        7: {
+          "title": "Wave",
+          "link": "https://www.waveapps.com/",
+          "verified": true
+        },
+        8: {
+          "title": "Clockify",
+          "link": "https://clockify.me/",
+          "verified": true
+        },
+        9: {
+          "title": "Untools",
+          "link": "https://untools.co/",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 1,
+      "title": "Extra",
+      "links": {
+        0: {
+          "link": "https://teamtreehouse.com/",
+          "verified": true,
+          "title": "Treehouse"
+        }
+      }
+    }
+  },
+  "description": "Resources are extremely important for a programmer since they can greatly improve productivity while coding. I have been collecting many links throughout months and I wish to share some of them with you. Hopefully, they will be as useful to you as they have been to me. Without further ado here some great free and up-to-date resources!",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "40-high-quality-free-resources-for-web-development-by-jose-felix--qvf12k",
+  "tags": [
+    "frontend",
+    "e68e660b-2684-4631-b858-9458f249da3d",
+    "f5857ce0-73c5-44fd-a932-a5a5e6a63606"
+  ],
+  "title": "40+ High-Quality Free Resources for Web Development (by Jose Felix)"
+},{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 1,
+      "title": "Developer roles",
+      "links": {
+        0: {
+          "link": "https://dev.to/evanplaice/comment/i9k7",
+          "verified": true,
+          "title": "Explain Developer Roles like I am 5."
+        }
+      }
+    },
+    1: {
+      "total_links": 4,
+      "title": "Networking",
+      "links": {
+        0: {
+          "link": "https://dev.to/wulymammoth/comment/127gi",
+          "verified": true,
+          "title": "Explain DNS like I am 5."
+        },
+        1: {
+          "title": "Explain TCP like I am 5.",
+          "link": "https://dev.to/georgeoffley/comment/ehm",
+          "verified": true
+        },
+        2: {
+          "title": "Explain WebSockets like I am 5.",
+          "link": "https://dev.to/buzzingbuzzer/comment/g0g",
+          "verified": true
+        },
+        3: {
+          "title": "Explain GraphQL like I am 5.",
+          "link": "https://dev.to/ben/comment/hdi",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 2,
+      "title": "Programming",
+      "links": {
+        0: {
+          "title": "What is Programming?",
+          "link": "https://dev.to/dansherpa/comment/hh25",
+          "verified": true
+        },
+        1: {
+          "title": "What is a programming language?",
+          "link": "https://dev.to/sebbdk/comment/hfil",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 6,
+      "title": "Some common technical stuff",
+      "links": {
+        0: {
+          "title": "Explain GitHub like I am 5.",
+          "link": "https://dev.to/javascripterika/comment/3jei",
+          "verified": true
+        },
+        1: {
+          "link": "https://dev.to/socratesdz/comment/62mf",
+          "verified": true,
+          "title": "Explain recursion like I am 5."
+        },
+        2: {
+          "title": "Explain dependency injection like I am 5.",
+          "link": "https://stackoverflow.com/questions/1638919/how-to-explain-dependency-injection-to-a-5-year-old/1638961#1638961",
+          "verified": true
+        },
+        3: {
+          "title": "Explain Optionals like I am 5.",
+          "link": "https://dev.to/evanoman/comment/3395",
+          "verified": true
+        },
+        4: {
+          "link": "https://dev.to/triplejdev/comment/9e0g",
+          "verified": true,
+          "title": "Explain Promises like I am 5."
+        },
+        5: {
+          "link": "https://dev.to/johnmunsch/comment/nmjk",
+          "verified": true,
+          "title": "Explain Async-Await like I am 5."
+        }
+      }
+    },
+    4: {
+      "total_links": 2,
+      "title": "Methodologies",
+      "links": {
+        0: {
+          "link": "https://dev.to/bizzy237/comment/4444",
+          "verified": true,
+          "title": "Explain Opensource like I am 5."
+        },
+        1: {
+          "link": "https://dev.to/krukru/comment/14a0f",
+          "verified": true,
+          "title": "Explain Smoke Testing like I am 5."
+        }
+      }
+    },
+    5: {
+      "total_links": 3,
+      "title": "Frameworks",
+      "links": {
+        0: {
+          "link": "https://dev.to/aminnairi/comment/hbbp",
+          "verified": true,
+          "title": "Explain VueJs like I am 5."
+        },
+        1: {
+          "link": "https://dev.to/matthewbdaly/comment/ha19",
+          "verified": true,
+          "title": "Explain ReactJs like I am 5."
+        },
+        2: {
+          "link": "https://dev.to/rkichenama/comment/oi6",
+          "verified": true,
+          "title": "Explain Redux like I am 5."
+        }
+      }
+    },
+    6: {
+      "total_links": 4,
+      "title": "DevOps",
+      "links": {
+        0: {
+          "link": "https://dev.to/bertilmuth/comment/3ghf",
+          "verified": true,
+          "title": "What is DevOps?"
+        },
+        1: {
+          "link": "https://dev.to/derek/comment/bjlp",
+          "verified": true,
+          "title": "Explain CI/CD like I am 5."
+        },
+        2: {
+          "link": "https://dev.to/sergiodxa/comment/f7l",
+          "verified": true,
+          "title": "Explain containers like I am 5."
+        },
+        3: {
+          "link": "https://dev.to/miguelmota/comment/filh",
+          "verified": true,
+          "title": "Docker & Kubernetes"
+        }
+      }
+    }
+  },
+  "description": "If you can\"t explain it simply, you don\"t understand it well enough -- Albert Einstein. Technical topics are some times hard to understand. If we can relate it with some real life example, if becomes super easy. Jean Michel has compiled for you some incredibly pedagogical answers from which a five year old can understand. Specifically he selected answers that were enlightening yet concise, and that explained with words only - no code.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "-best-of-explainlikeiamfive-qvdd9c",
+  "tags": [
+    "explain like i am 5",
+    "e68e660b-2684-4631-b858-9458f249da3d",
+    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+  ],
+  "title": "💥 Best of #explainLikeIamFive"
+},{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 10,
+      "title": "Online Classes",
+      "links": {
+        0: {
+          "title": "Khan Academy",
+          "link": "https://www.khanacademy.org/",
+          "verified": true
+        },
+        1: {
+          "title": "Ruby Monk",
+          "link": "https://rubymonk.com/",
+          "verified": true
+        },
+        2: {
+          "title": "Code Academy",
+          "link": "https://www.codecademy.com/",
+          "verified": true
+        },
+        3: {
+          "link": "https://www.freecodecamp.com/challenges/introducing-else-if-statements",
+          "verified": true,
+          "title": "FreeCodeCamp"
+        },
+        4: {
+          "title": "CodeWars",
+          "link": "https://www.codewars.com/",
+          "verified": true
+        },
+        5: {
+          "title": "Railsforzombies.org",
+          "link": "http://railsforzombies.org/",
+          "verified": true
+        },
+        6: {
+          "title": "CodeBar",
+          "link": "https://codebar.io/",
+          "verified": true
+        },
+        7: {
+          "title": "Railsgirls",
+          "link": "http://railsgirls.com/",
+          "verified": true
+        },
+        8: {
+          "title": "Udemy",
+          "link": "https://www.udemy.com/",
+          "verified": true
+        },
+        9: {
+          "title": "Coursera",
+          "link": "https://www.coursera.org/",
+          "verified": true
+        }
+      },
+      "isDescription": true,
+      "description": "Their online courses offer tons of subjects (as their front page says, “You can learn anything”), including many on computer programming. Topics taught: JS, HTML/CSS, SQL, much more."
+    },
+    1: {
+      "total_links": 1,
+      "title": "Networking & Events",
+      "isDescription": true,
+      "description": "A good way for you to start learning to code is going to events & conferences. Here are some offline things you can do:- \n\n1. Find a Mentor\n2. Local Meetups\n3. Hackathons\n4. Hubs & Coworking spaces\n5. Internships",
+      "links": {
+        0: {
+          "title": "linkedin",
+          "link": "https://linkedin.com/",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 12,
+      "title": "Online Communities",
+      "links": {
+        0: {
+          "title": "Github",
+          "link": "http://github.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Gitter",
+          "link": "https://gitter.im/",
+          "verified": true
+        },
+        2: {
+          "title": "Stack Overflow",
+          "link": "https://stackoverflow.com/",
+          "verified": true
+        },
+        3: {
+          "title": "Stack Exchange",
+          "link": "https://stackexchange.com/",
+          "verified": true
+        },
+        4: {
+          "title": "Twitter",
+          "link": "https://twitter.com/",
+          "verified": true
+        },
+        5: {
+          "title": "Web Design at Reddit",
+          "link": "https://www.reddit.com/r/web_design",
+          "verified": true
+        },
+        6: {
+          "title": "Hacker News",
+          "link": "https://news.ycombinator.com/",
+          "verified": true
+        },
+        7: {
+          "title": "Designer News",
+          "link": "http://designernews.co/",
+          "verified": true
+        },
+        8: {
+          "link": "http://producthunt.com/",
+          "verified": true,
+          "title": "Producthunt"
+        },
+        9: {
+          "title": "Dribbble",
+          "link": "http://dribbble.com/",
+          "verified": true
+        },
+        10: {
+          "title": "Behance",
+          "link": "http://behance.net/",
+          "verified": true
+        },
+        11: {
+          "title": "Quora",
+          "link": "http://quora.com/",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 6,
+      "title": "Books",
+      "isDescription": true,
+      "description": "Don’t forget to read. Read about what a sprint means, what a lean startup is, how to make lean development.",
+      "links": {
+        0: {
+          "title": "Clean Code",
+          "link": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
+          "verified": true
+        },
+        1: {
+          "title": "Soft Skills: The software developer’s life manual",
+          "link": "https://www.amazon.com/gp/product/1617292397",
+          "verified": true
+        },
+        2: {
+          "title": "The Art of Computer Programming",
+          "link": "https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043",
+          "verified": true
+        },
+        3: {
+          "title": "Programming Pearls",
+          "link": "https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880",
+          "verified": true
+        },
+        4: {
+          "title": "Code Complete",
+          "link": "https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670",
+          "verified": true
+        },
+        5: {
+          "title": "Coders at work",
+          "link": "https://www.amazon.com/Coders-Work-Reflections-Craft-Programming/dp/1430219483",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 5,
+      "title": "Books for personal development & business to help you in building products",
+      "links": {
+        0: {
+          "title": "Drive",
+          "link": "https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805",
+          "verified": true
+        },
+        1: {
+          "title": "The Lean Startup",
+          "link": "https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898",
+          "verified": true
+        },
+        2: {
+          "title": "Zero to One",
+          "link": "https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296",
+          "verified": true
+        },
+        3: {
+          "title": "Tribes",
+          "link": "https://www.amazon.com/Tribes-We-Need-You-Lead/dp/1491514736",
+          "verified": true
+        },
+        4: {
+          "title": "Blue Ocean",
+          "link": "https://www.amazon.com/Blue-Ocean-Strategy-Uncontested-Competition/dp/1591396190",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 5,
+      "title": "Youtube Channels",
+      "isDescription": true,
+      "description": "With many awesome online resources, especially video tutorials, learning to code has never been easier.",
+      "links": {
+        0: {
+          "title": "Treehouse",
+          "link": "https://www.youtube.com/user/gotreehouse",
+          "verified": true
+        },
+        1: {
+          "title": "Learncode.Academy",
+          "link": "https://www.youtube.com/user/learncodeacademy",
+          "verified": true
+        },
+        2: {
+          "title": "Google Developers",
+          "link": "https://www.youtube.com/user/GoogleDevelopers",
+          "verified": true
+        },
+        3: {
+          "title": "Android Developers",
+          "link": "https://www.youtube.com/user/androiddevelopers",
+          "verified": true
+        },
+        4: {
+          "title": "The Coding Train",
+          "link": "https://www.youtube.com/user/shiffman",
+          "verified": true
+        }
+      }
+    },
+    6: {
+      "total_links": 3,
+      "title": "Ted Talks",
+      "isDescription": true,
+      "description": "Here is a a collection of TED Talks (and more) on the topic of programming:",
+      "links": {
+        0: {
+          "title": "Code: The next universal language",
+          "link": "https://www.ted.com/playlists/369/code_the_next_universal_langu",
+          "verified": true
+        },
+        1: {
+          "title": "Internet origin stories",
+          "link": "https://www.ted.com/playlists/365/internet_origin_stories",
+          "verified": true
+        },
+        2: {
+          "title": "Programming Collection",
+          "link": "https://www.ted.com/topics/programming",
+          "verified": true
+        }
+      }
+    },
+    7: {
+      "total_links": 3,
+      "title": "Open-Source Projects",
+      "isDescription": true,
+      "description": "When you don’t know where to start, open-source projects are a great way to begin. Searching for open-source projects is great because you’ll have to opportunity to interact with huge developers and learn how to write code in the right way.",
+      "links": {
+        0: {
+          "title": "Code Triage",
+          "link": "https://www.codetriage.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Ava",
+          "link": "https://github.com/avajs/ava",
+          "verified": true
+        },
+        2: {
+          "title": "Contributor Covenant",
+          "link": "http://contributor-covenant.org/",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "Learning to code has slowly become a valuable asset. Regardless of your profession, understanding coding and technology is a valuable asset. So, with that in mind, let’s run through 50 of the best resources when learning to code, by Pavel Malos.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": 1,
+  "slugUrl": "50-best-resources-when-learning-to-code-qvapel",
+  "tags": [
+    "general coding",
+    "e68e660b-2684-4631-b858-9458f249da3d"
+  ],
+  "title": "50 Best Resources When Learning to Code!"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 11,
+      "title": "Basics",
+      "links": {
+        0: {
+          "title": "System Design Cheatsheet · GitHub",
+          "link": "https://gist.github.com/vasanthk/485d1c25737e8e72759f",
+          "verified": true
+        },
+        1: {
+          "title": "System Design Primer",
+          "link": "https://github.com/donnemartin/system-design-primer",
+          "verified": true
+        },
+        2: {
+          "title": "How to Succeed in a System Design Interview",
+          "link": "https://blog.pramp.com/how-to-succeed-in-a-system-design-interview-27b35de0df26",
+          "verified": true
+        },
+        3: {
+          "title": "Approach a System Design Interview",
+          "link": "https://medium.com/system-designing-interviews/approach-a-system-design-interview-f3594e243730",
+          "verified": true
+        },
+        4: {
+          "title": "System Design, Chapter 2: Sharding",
+          "link": "https://medium.com/system-design-blog/database-sharding-69f3f4bd96db",
+          "verified": true
+        },
+        5: {
+          "title": "System Design, Chapter 3: Load Balancing",
+          "link": "https://medium.com/system-design-blog/load-balancing-and-load-balancer-8bf3e1343c5c",
+          "verified": true
+        },
+        6: {
+          "title": "System Design, Chapter 4: Caching",
+          "link": "https://medium.com/system-design-blog/what-is-caching-1492abb92143",
+          "verified": true
+        },
+        7: {
+          "title": "System Design, Chapter 5: Indexes in Databases",
+          "link": "https://blog.pankajtanwar.in/how-database-indexing-actually-works-internally",
+          "verified": true
+        },
+        8: {
+          "title": "System Design, Chapter 6: Proxies",
+          "link": "https://blog.pankajtanwar.in/proxy-vs-reverse-proxy-using-a-real-life-example",
+          "verified": true
+        },
+        9: {
+          "title": "System Design, Chapter 7: Consistant Hashing",
+          "link": "https://medium.com/system-design-blog/consistent-hashing-b9134c8a9062",
+          "verified": true
+        },
+        10: {
+          "title": "System Designs",
+          "link": "https://github.com/eileen-code4fun/SystemDesignInterviews",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 8,
+      "title": "Milestone Research Papers",
+      "links": {
+        0: {
+          "title": "The Google File System",
+          "link": "https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf",
+          "verified": true
+        },
+        1: {
+          "title": "Dynamo: Amazon\"s Highly Available Key-value Store",
+          "link": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf",
+          "verified": true
+        },
+        2: {
+          "title": "MapReduce: Simplified Data Processing on Large Clusters",
+          "link": "https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf",
+          "verified": true
+        },
+        3: {
+          "title": "TAO: Facebook\"s Distributed Data Store for the Social Graph",
+          "link": "https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf",
+          "verified": true
+        },
+        4: {
+          "title": "Kafka: a Distributed Messaging System for Log Processing",
+          "link": "http://notes.stephenholiday.com/Kafka.pdf",
+          "verified": true
+        },
+        5: {
+          "title": "Bigtable: A Distributed Storage System for Structured Data",
+          "link": "https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf",
+          "verified": true
+        },
+        6: {
+          "title": "Spark: Cluster Computing with Working Sets",
+          "link": "https://www.usenix.org/legacy/event/hotcloud10/tech/full_papers/Zaharia.pdf",
+          "verified": true
+        },
+        7: {
+          "title": "Log Structured Merge Tree",
+          "link": "https://www.cs.umb.edu/~poneil/lsmtree.pdf",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 4,
+      "title": "Popular Datastores",
+      "links": {
+        0: {
+          "title": "Choose the right data store - Azure Application Architecture Guide",
+          "link": "https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview",
+          "verified": true
+        },
+        1: {
+          "title": "Redis vs Aerospike",
+          "link": "https://lynnlangit.com/2015/01/28/lessons-learned-benchmarking-nosql-on-the-aws-cloud-aerospikedb-and-redis/",
+          "verified": true
+        },
+        2: {
+          "title": "Elasticsearch vs MongoDB",
+          "link": "https://medium.com/@ranjeetvimal/elasticsearch-vs-mongodb-631f410cd317#:~:text=MongoDB%20is%20a%20general%20purpose,search%20engine%20backed%20by%20Lucene.&text=In%20practice%2C%20ElasticSearch%20is%20often,queries%2C%20based%20on%20data%20content.",
+          "verified": true
+        },
+        3: {
+          "title": "MongoDB vs CouchDB",
+          "link": "https://blog.scottlogic.com/2014/08/04/mongodb-vs-couchdb.html#:~:text=Both%20scale%20across%20multiple%20nodes,defined%20as%20a%20replica%20set.&text=CouchDB%20uses%20a%20replication%20model%20called%20Eventual%20Consistency.",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 6,
+      "title": "Cassandra",
+      "links": {
+        0: {
+          "title": "Cassandra writes in depth. Surprises you can expect from a… | by Andrzej Ludwikowski",
+          "link": "https://blog.softwaremill.com/cassandra-writes-in-depth-6ea8d7581eb",
+          "verified": true
+        },
+        1: {
+          "title": "Cassandra Data Modelling",
+          "link": "https://cassandra.apache.org/doc/latest/data_modeling/data_modeling_logical.html",
+          "verified": true
+        },
+        2: {
+          "title": "Why Cassandra writes faster than Traditional RDBMS?",
+          "link": "https://www.linkedin.com/pulse/why-cassandra-writes-faster-than-traditional-rdbms-vishal-kharjul/",
+          "verified": true
+        },
+        3: {
+          "title": "When to use Cassandra and when to steer clear",
+          "link": "https://towardsdatascience.com/when-to-use-cassandra-and-when-to-steer-clear-72b7f2cede76",
+          "verified": true
+        },
+        4: {
+          "title": "Log Structured Merge Trees",
+          "link": "http://www.benstopford.com/2015/02/14/log-structured-merge-trees/",
+          "verified": true
+        },
+        5: {
+          "title": "How is data read? | Apache Cassandra 3.0",
+          "link": "https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/dml/dmlAboutReads.html",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 7,
+      "title": "Redis",
+      "links": {
+        0: {
+          "title": "Redis Persistence – Redis",
+          "link": "https://redis.io/topics/persistence",
+          "verified": true
+        },
+        1: {
+          "title": "Goodbye Cache: Redis as a Primary Database",
+          "link": "https://redislabs.com/blog/goodbye-cache-redis-as-a-primary-database/",
+          "verified": true
+        },
+        2: {
+          "title": "Transactions in Redis",
+          "link": "https://redis.io/topics/transactions",
+          "verified": true
+        },
+        3: {
+          "title": "Partitioning: how to split data among multiple Redis instances. – Redis",
+          "link": "https://redis.io/topics/partitioning",
+          "verified": true
+        },
+        4: {
+          "title": "Horizontal scaling in/out techniques for redis cluster",
+          "link": "https://medium.com/@iamvishalkhare/horizontal-scaling-in-out-techniques-for-redis-cluster-dcd75c696c86",
+          "verified": true
+        },
+        5: {
+          "title": "Redis Cluster",
+          "link": "https://redis.io/topics/cluster-tutorial",
+          "verified": true
+        },
+        6: {
+          "title": "Key Problems with Redis Persistence",
+          "link": "http://oldblog.antirez.com/post/a-few-key-problems-in-redis-persistence.html#:~:text=The%20problem%20is%20that%20we,memory%20at%20a%20given%20time.",
+          "verified": true
+        }
+      }
+    },
+    5: {
+      "total_links": 3,
+      "title": "Elasticsearch",
+      "links": {
+        0: {
+          "title": "Elasticsearch from the Top Down",
+          "link": "https://www.elastic.co/blog/found-elasticsearch-top-down",
+          "verified": true
+        },
+        1: {
+          "title": "Uses of Elasticsearch, and Things to Learn",
+          "link": "https://www.elastic.co/blog/found-uses-of-elasticsearch",
+          "verified": true
+        },
+        2: {
+          "title": "Elasticsearch from the Bottom Up, Part 1",
+          "link": "https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up",
+          "verified": true
+        }
+      }
+    },
+    6: {
+      "total_links": 3,
+      "title": "PostgreSql",
+      "links": {
+        0: {
+          "title": "Comparing Data Stores for PostgreSQL - MVCC vs InnoDB",
+          "link": "https://severalnines.com/database-blog/comparing-data-stores-postgresql-mvcc-vs-innodb",
+          "verified": true
+        },
+        1: {
+          "title": "Postgres MVCC",
+          "link": "https://malisper.me/postgres-mvcc/",
+          "verified": true
+        },
+        2: {
+          "title": "PostgreSQL 10: Partitions of partitions!",
+          "link": "https://joaodlf.com/postgresql-10-partitions-of-partitions.html",
+          "verified": true
+        }
+      }
+    },
+    7: {
+      "total_links": 1,
+      "title": "Mongo",
+      "links": {
+        0: {
+          "title": "How To Decide If MongoDB Is Right For You",
+          "link": "https://medium.com/better-programming/mongodb-insights-20e36c8f2fcd",
+          "verified": true
+        }
+      }
+    },
+    8: {
+      "total_links": 26,
+      "title": "Interesting Blogs",
+      "links": {
+        0: {
+          "title": "All Company Blogs !!",
+          "link": "https://github.com/kilimchoi/engineering-blogs",
+          "verified": true
+        },
+        1: {
+          "title": "Building Reliable Reprocessing and Dead Letter Queues with Kafka",
+          "link": "https://eng.uber.com/reliable-reprocessing/",
+          "verified": true
+        },
+        2: {
+          "title": "A Practical Introduction to the Internals of Kafka Storage",
+          "link": "https://medium.com/@durgaswaroop/a-practical-introduction-to-kafka-storage-internals-d5b544f6925f",
+          "verified": true
+        },
+        3: {
+          "title": "How To Design A Scalable Rate Limiting Algorithm",
+          "link": "https://konghq.com/blog/how-to-design-a-scalable-rate-limiting-algorithm/",
+          "verified": true
+        },
+        4: {
+          "title": "Data Compression for Large-Scale Streaming Experimentation | by Netflix Technology Blog",
+          "link": "https://netflixtechblog.com/data-compression-for-large-scale-streaming-experimentation-c20bfab8b9ce",
+          "verified": true
+        },
+        5: {
+          "title": "WhatsApp-Engineering Inside-1. Real Time messaging",
+          "link": "https://medium.com/codingurukul/whatsapp-engineering-inside-1-1ef4845ff784",
+          "verified": true
+        },
+        6: {
+          "title": "WhatsApp-Engineering Inside-2.",
+          "link": "https://medium.com/codingurukul/whatsapp-engineering-inside-2-bdd1ec354748",
+          "verified": true
+        },
+        7: {
+          "title": "NETFLIX system design.",
+          "link": "https://medium.com/swlh/a-design-analysis-of-cloud-based-microservices-architecture-at-netflix-98836b2da45f",
+          "verified": true
+        },
+        8: {
+          "title": "A Design Analysis of Cloud-based Microservices Architecture at Netflix",
+          "link": "https://medium.com/swlh/a-design-analysis-of-cloud-based-microservices-architecture-at-netflix-98836b2da45f",
+          "verified": true
+        },
+        9: {
+          "title": "Microservice Architecture pattern",
+          "link": "https://microservices.io/patterns/microservices.html",
+          "verified": true
+        },
+        10: {
+          "title": "Resiliency: Cache Me If You Can",
+          "link": "https://medium.com/@adhorn/patterns-for-resilient-architecture-part-4-85afa66d6341#:~:text=Request%20coalescing&text=These%20situations%20often%20occur%20during,request%20to%20the%20downstream%20storage.",
+          "verified": true
+        },
+        11: {
+          "title": "Microservices Design Patterns",
+          "link": "https://vslive.com/Blogs/News-and-Tips/2018/02/Go-Fast-by-Going-Micro-Microservices-Design-Patterns-You-Should-Know.aspx#:~:text=Microservices%20design%20patterns%20are%20software,individual%20microservice%20independently%2C%20if%20desired.",
+          "verified": true
+        },
+        12: {
+          "title": "Kafka Message Delivery Semantics",
+          "link": "https://kafka.apache.org/documentation/#semantics",
+          "verified": true
+        },
+        13: {
+          "title": "Replication In Depth - Kafka",
+          "link": "https://aphyr.com/posts/293-jepsen-kafka",
+          "verified": true
+        },
+        14: {
+          "title": "Design Decisions for Scaling Your High Traffic Feeds",
+          "link": "http://highscalability.com/blog/2013/10/28/design-decisions-for-scaling-your-high-traffic-feeds.html",
+          "verified": true
+        },
+        15: {
+          "title": "The Architecture Twitter Uses to Deal with 150M Active and Send Tweets in Under 5 Seconds Users, 300K QPS, a 22 MB/S Firehose,",
+          "link": "http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html",
+          "verified": true
+        },
+        16: {
+          "title": "Instagram Saves Switching to Cassandra from Redis",
+          "link": "https://www.datastax.com/blog/2014/10/facebooks-instagram-making-switch-cassandra-redis-75-insta-savings",
+          "verified": true
+        },
+        17: {
+          "title": "Jepsen Blog",
+          "link": "https://aphyr.com/posts",
+          "verified": true
+        },
+        18: {
+          "title": "Aerospike Developer Blog – Medium",
+          "link": "https://medium.com/aerospike-developer-blog",
+          "verified": true
+        },
+        19: {
+          "title": "Patterns for distributed transactions within a microservices architecture",
+          "link": "https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/",
+          "verified": true
+        },
+        20: {
+          "title": "A Guide to Atomikos",
+          "link": "https://www.baeldung.com/java-atomikos",
+          "verified": true
+        },
+        21: {
+          "title": "How to do distributed locking",
+          "link": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html",
+          "verified": true
+        },
+        22: {
+          "title": "Taming Garbage Collection",
+          "link": "https://product.hubspot.com/blog/g1gc-fundamentals-lessons-from-taming-garbage-collection#HumongousObjects",
+          "verified": true
+        },
+        23: {
+          "title": "Whatsapp Scale Connections per server Tips",
+          "link": "http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html",
+          "verified": true
+        },
+        24: {
+          "title": "Modern Cache",
+          "link": "http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html",
+          "verified": true
+        },
+        25: {
+          "title": "Avoiding double payment in distributed system",
+          "link": "https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb",
+          "verified": true
+        }
+      }
+    },
+    9: {
+      "total_links": 5,
+      "title": "Real World Videos",
+      "links": {
+        0: {
+          "title": "Jeff Dean\"s talk at Stanford",
+          "link": "https://www.youtube.com/watch?v=modXC5IWTJI",
+          "verified": true
+        },
+        1: {
+          "title": "Building Billion user Load Balancer at Facebook",
+          "link": "https://www.youtube.com/watch?v=bxhYNfFeVF4",
+          "verified": true
+        },
+        2: {
+          "title": "Netflix Guide to Microservices",
+          "link": "https://www.youtube.com/watch?v=CZ3wIuvmHeM",
+          "verified": true
+        },
+        3: {
+          "title": "Amazon DynamoDB deep dive",
+          "link": "https://www.youtube.com/watch?v=HaEPXoXVf2k",
+          "verified": true
+        },
+        4: {
+          "title": "Twitter: Timelines at Scale",
+          "link": "https://www.infoq.com/presentations/Twitter-Timeline-Scalability/",
+          "verified": true
+        }
+      }
+    },
+    10: {
+      "total_links": 5,
+      "title": "Advanced Techniques",
+      "links": {
+        0: {
+          "title": "Bloom Filter",
+          "link": "https://medium.com/system-design-blog/bloom-filter-a-probabilistic-data-structure-12e4e5cf0638#:~:text=Bloom%20filter%20is%20a%20probabilistic,of%20applications%20in%20software%20engineering.&text=It%20allows%20for%20membership%20lookups%20in%20constant%20space%20%26%20time.",
+          "verified": true
+        },
+        1: {
+          "title": "Cache Stampede",
+          "link": "https://medium.com/@vaibhav0109/cache-stampede-problem-5eba782a1a4f",
+          "verified": true
+        },
+        2: {
+          "title": "Request Coalescing",
+          "link": "https://wikitech.wikimedia.org/wiki/Varnish#:~:text=In%20case%20a%20request%20from,object%20from%20an%20origin%20server.&text=Once%20the%20response%20is%20fetched,feature%20is%20called%20request%20coalescing.",
+          "verified": true
+        },
+        3: {
+          "title": "Three Tier Caching",
+          "link": "https://blogs.oracle.com/oswald/cache,-cache,-cache-part-2:-architectures",
+          "verified": true
+        },
+        4: {
+          "title": "Consistent Hashing",
+          "link": "https://medium.com/system-design-blog/consistent-hashing-b9134c8a9062",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "System design is a really interesting topic to cover. Here are hand-picked, some of the best content covering everything related to system design from all over the web.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "best-handpicked-system-design-interesting-reads-qvbimi",
+  "tags": [
+    "system design",
+    "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
+  ],
+  "title": "Best handpicked system design - interesting reads"
+},
+{
+  "approved": 1,
+  "author": "1064e558-2262-499c-9c99-e98281474886",
+  "blocks": {
+    0: {
+      "total_links": 2,
+      "title": "Free Icons",
+      "isDescription": true,
+      "description": "Icons are known to express some information while providing good UI. These are used in many websites and as a frontend developer you probably need them in any website you\"ll be making. Here are some free icons resources.",
+      "links": {
+        0: {
+          "title": "Font Awesome",
+          "link": "http://https//fontawesome.com/v4.7/icons",
+          "verified": true
+        },
+        1: {
+          "title": "Bootstrap icons",
+          "link": "http://icons.getbootstrap.com/",
+          "verified": true
+        }
+      }
+    },
+    1: {
+      "total_links": 2,
+      "title": "Free SVG illustration",
+      "isDescription": true,
+      "description": "Svg are essential part of modern websites and we no longer need to create them from scratch using html/css or other design tools like figma.",
+      "links": {
+        0: {
+          "title": "Undraw",
+          "link": "http://undraw.co/",
+          "verified": true
+        },
+        1: {
+          "title": "Freepik",
+          "link": "http://freepik.com/",
+          "verified": true
+        }
+      }
+    },
+    2: {
+      "total_links": 2,
+      "title": "Free High Quality Images",
+      "isDescription": true,
+      "description": "If you are wondering where to get free high quality images for your backgrounds, nature, people etc here are good sources",
+      "links": {
+        0: {
+          "title": "Unsplash",
+          "link": "http://unsplash.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Pexels",
+          "link": "http://pexels.com/",
+          "verified": true
+        }
+      }
+    },
+    3: {
+      "total_links": 2,
+      "title": "Free image resolution compressor",
+      "isDescription": true,
+      "description": "These tools will compress your images to reduce resolution and thus helps better your site\"s performance without affecting image quality.",
+      "links": {
+        0: {
+          "title": "tinyPNG",
+          "link": "http://tinypng.com/",
+          "verified": true
+        },
+        1: {
+          "title": "Img2go",
+          "link": "http://img2go.com/compress-image",
+          "verified": true
+        }
+      }
+    },
+    4: {
+      "total_links": 1,
+      "title": "Remove Background",
+      "links": {
+        0: {
+          "title": "Remove.bg",
+          "link": "http://remove.bg/",
+          "verified": true
+        }
+      }
+    }
+  },
+  "description": "As a frontend developer, you have probably struggled to find images, svgs or icons to add to your application and sometimes the images you have are of high resolution that it takes a lot of time to paint when the website renders thus hindering website\"s performance or couldn\"t find high quality images. Here are five(5) resources which you might need while developing your application.",
+  "resourceLevel": "BEGINNER",
+  "resourceType": "FREE",
+  "show": true,
+  "slugUrl": "5-resources-i-use-as-a-front-end-developer-that-you-probably-need-qvew98",
+  "tags": [
+    "frontend",
+    "f5857ce0-73c5-44fd-a932-a5a5e6a63606",
+    "e68e660b-2684-4631-b858-9458f249da3d",
+    "13f3b796-fb34-43ac-a170-63d85fbe76f7",
+    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+  ],
+  "title": "5 resources I use as a front end developer that you probably need"
+}
+]
