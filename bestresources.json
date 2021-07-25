@@ -3360,8 +3360,7 @@
           "verified": true
         }
       },
-      "description": "After you get the basics of SQL down, you might want to check out \",
-      " Luke!"". It\"s a site that teaches you about writing efficient SQL code."
+      "description": "After you get the basics of SQL down, you might want to check out Luke!. Its a site that teaches you about writing efficient SQL code."
     },
     "3": {
       "total_links": 1,
@@ -4862,7 +4861,7 @@
           "link": "https://medium.com/aerospike-developer-blog",
           "verified": true
         },
-        "19":: {
+        "19": {
           "title": "Patterns for distributed transactions within a microservices architecture",
           "link": "https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/",
           "verified": true
@@ -4872,27 +4871,27 @@
           "link": "https://www.baeldung.com/java-atomikos",
           "verified": true
         },
-        2"1": {
+        "21": {
           "title": "How to do distributed locking",
           "link": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html",
           "verified": true
         },
-        2"2": {
+        "22": {
           "title": "Taming Garbage Collection",
           "link": "https://product.hubspot.com/blog/g1gc-fundamentals-lessons-from-taming-garbage-collection#HumongousObjects",
           "verified": true
         },
-        2"3": {
+        "23": {
           "title": "Whatsapp Scale Connections per server Tips",
           "link": "http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html",
           "verified": true
         },
-        2"4": {
+        "24": {
           "title": "Modern Cache",
           "link": "http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html",
           "verified": true
         },
-        2"5": {
+        "25": {
           "title": "Avoiding double payment in distributed system",
           "link": "https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb",
           "verified": true
