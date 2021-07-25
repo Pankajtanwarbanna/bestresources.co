@@ -893,10 +893,7 @@
   "tags": [
     "full stack",
     "frontend",
-    "backend",
-    "3d3c14b2-c225-489c-b4e5-28a09befb4a1",
-    "f5857ce0-73c5-44fd-a932-a5a5e6a63606",
-    "5c535857-4e5b-4c21-893e-625799c7b05d"
+    "backend"
   ],
   "title": "Full Stack Developer's Roadmap 🗺 (by ender minyard)"
 },
@@ -1220,11 +1217,7 @@
   "slug": "50-free-tools-and-resources-to-create-awesome-user-interfaces-by-davide-pacilio--qvf0jm",
   "tags": [
     "design",
-    "frontend",
-    "f5857ce0-73c5-44fd-a932-a5a5e6a63606",
-    "13f3b796-fb34-43ac-a170-63d85fbe76f7",
-    "e68e660b-2684-4631-b858-9458f249da3d",
-    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+    "frontend"
   ],
   "title": "50+ free tools and resources to create awesome user interfaces (by Davide Pacilio)"
 },
@@ -1397,9 +1390,7 @@
   "slug": "my-secret-design-resources-by-innocentcoder-qvewlj",
   "tags": [
     "frontend",
-    "design",
-    "13f3b796-fb34-43ac-a170-63d85fbe76f7",
-    "f5857ce0-73c5-44fd-a932-a5a5e6a63606"
+    "design"
   ],
   "title": "My Secret Design Resources by @innocentcoder"
 },
@@ -2330,9 +2321,7 @@
   "show": true,
   "slug": "the-interview-study-guide-for-software-engineers-by-benjamin-rogojan--qvf019",
   "tags": [
-    "programming",
-    "e68e660b-2684-4631-b858-9458f249da3d",
-    "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
+    "programming"
   ],
   "title": "The Interview Study Guide For Software Engineers (by Benjamin Rogojan)"
 },
@@ -2920,8 +2909,7 @@
   "show": true,
   "slug": "the-best-cold-email-strategy-in-2021--qvbh1t",
   "tags": [
-    "cold email tips",
-    "5aaf2253-18af-4390-acf0-48b8bb405223"
+    "cold email tips"
   ],
   "title": "The best cold email strategy in 2021."
 },
@@ -3001,9 +2989,7 @@
   "show": true,
   "slug": "top-5-best-resources-to-learn-javascript-qvew3t",
   "tags": [
-    "javascript",
-    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc",
-    "e68e660b-2684-4631-b858-9458f249da3d"
+    "javascript"
   ],
   "title": "Top 5 Best Resources To Learn Javascript"
 },
@@ -3101,8 +3087,7 @@
   "show": true,
   "slug": "system-design-actual-interview-questions-qvbj2c",
   "tags": [
-    "system design",
-    "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
+    "system design"
   ],
   "title": "System Design Actual Interview Questions"
 },{
@@ -3314,8 +3299,7 @@
   "slug": "my-most-valuable-d3-resources-by-alex-corvin-qvex6o",
   "tags": [
     "python",
-    "d3",
-    "e68e660b-2684-4631-b858-9458f249da3d"
+    "d3"
   ],
   "title": "My Most Valuable D3 Resources by Alex Corvin"
 },
@@ -3421,8 +3405,7 @@
   "show": true,
   "slug": "top-7-resources-to-learn-sql-qveuch",
   "tags": [
-    "sql",
-    "e68e660b-2684-4631-b858-9458f249da3d"
+    "sql"
   ],
   "title": "Top 7 Resources to Learn SQL"
 },
@@ -3734,8 +3717,7 @@
   "show": true,
   "slug": "getting-started-with-javascript-ultimate-free-resources-by-kritika-pattalam-qvfaus",
   "tags": [
-    "javascript",
-    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+    "javascript"
   ],
   "title": "Getting Started with JavaScript - Ultimate Free Resources By Kritika Pattalam"
 },
@@ -4021,9 +4003,7 @@
   "show": true,
   "slug": "40-high-quality-free-resources-for-web-development-by-jose-felix--qvf12k",
   "tags": [
-    "frontend",
-    "e68e660b-2684-4631-b858-9458f249da3d",
-    "f5857ce0-73c5-44fd-a932-a5a5e6a63606"
+    "frontend"
   ],
   "title": "40+ High-Quality Free Resources for Web Development (by Jose Felix)"
 },{
@@ -4189,9 +4169,7 @@
   "show": true,
   "slug": "-best-of-explainlikeiamfive-qvdd9c",
   "tags": [
-    "explain like i am 5",
-    "e68e660b-2684-4631-b858-9458f249da3d",
-    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+    "explain like i am 5"
   ],
   "title": "💥 Best of #explainLikeIamFive"
 },{
@@ -4490,8 +4468,7 @@
   "show": 1,
   "slug": "50-best-resources-when-learning-to-code-qvapel",
   "tags": [
-    "general coding",
-    "e68e660b-2684-4631-b858-9458f249da3d"
+    "general coding"
   ],
   "title": "50 Best Resources When Learning to Code!"
 },
@@ -4967,8 +4944,7 @@
   "show": true,
   "slug": "best-handpicked-system-design-interesting-reads-qvbimi",
   "tags": [
-    "system design",
-    "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
+    "system design"
   ],
   "title": "Best handpicked system design - interesting reads"
 },
@@ -5066,11 +5042,7 @@
   "show": true,
   "slug": "5-resources-i-use-as-a-front-end-developer-that-you-probably-need-qvew98",
   "tags": [
-    "frontend",
-    "f5857ce0-73c5-44fd-a932-a5a5e6a63606",
-    "e68e660b-2684-4631-b858-9458f249da3d",
-    "13f3b796-fb34-43ac-a170-63d85fbe76f7",
-    "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
+    "frontend"
   ],
   "title": "5 resources I use as a front end developer that you probably need"
 }
