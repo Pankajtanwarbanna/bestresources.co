@@ -387,10 +387,10 @@
     }
   },
   "description": "Learn everything you need to build any SAAS product in a very organized, ordered, and self-paced learning roadmap based on experience by Abdulrahman Alotaibi (https://superengineer.vercel.app/)",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE-PAID",
   "show": true,
-  "slugUrl": "the-complete-full-stack-engineer-roadmap-qvarro",
+  "slug": "the-complete-full-stack-engineer-roadmap-qvarro",
   "tags": [
     "javascript",
     "react",
@@ -886,10 +886,10 @@
     }
   },
   "description": "It\"s easy to focus on the front end of web development, but what about the back end? Learning about the back end improves your front end skills. Here are some resources for full stack development that you can save for later.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "full-stack-developer-s-roadmap-by-ender-minyard--qvexwi",
+  "slug": "full-stack-developer-s-roadmap-by-ender-minyard--qvexwi",
   "tags": [
     "full stack",
     "frontend",
@@ -1214,10 +1214,10 @@
     }
   },
   "description": "I’m going to share a list of free and very useful resources/tools that I use daily to create users interfaces (websites, landing pages, web applications, etc…) for my clients, and for my projects Cruip and SaaS Landing Page.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "50-free-tools-and-resources-to-create-awesome-user-interfaces-by-davide-pacilio--qvf0jm",
+  "slug": "50-free-tools-and-resources-to-create-awesome-user-interfaces-by-davide-pacilio--qvf0jm",
   "tags": [
     "design",
     "frontend",
@@ -1391,10 +1391,10 @@
   },
 
   "description": "Hey Everyone! Here are some awesome design resources which @innocentcoder uses in day-to-day life.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "my-secret-design-resources-by-innocentcoder-qvewlj",
+  "slug": "my-secret-design-resources-by-innocentcoder-qvewlj",
   "tags": [
     "frontend",
     "design",
@@ -2325,10 +2325,10 @@
     }
   },
   "description": "Software engineering interviews, like other technical interviews, require plenty of preparation. There are a number of subjects that need to be covered in order to ensure you are ready for back-to-back questions on algorithms, data structures, design, optimization and honestly just an ever growing basket of subjects. So I created a checklist on my last round of interviews that covers many of the popular topics.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "the-interview-study-guide-for-software-engineers-by-benjamin-rogojan--qvf019",
+  "slug": "the-interview-study-guide-for-software-engineers-by-benjamin-rogojan--qvf019",
   "tags": [
     "programming",
     "e68e660b-2684-4631-b858-9458f249da3d",
@@ -2857,10 +2857,10 @@
     }
   },
   "description": "Hey there!! welcome to my favourite Beginner JavaScript Notes + Reference. These notes are a free resource, written by @wesbos (130K YouTube subscriber) to learn JavaScript from zero to expert. These notes are totally free and have been modeled after the content in his Beginner JavaScript course.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": 1,
-  "slugUrl": "free-beginner-javascript-notes-reference--qvap6j",
+  "slug": "free-beginner-javascript-notes-reference--qvap6j",
   "tags": [
     "javascript"
   ],
@@ -2915,10 +2915,10 @@
     }
   },
   "description": "Cold emailing remains one of the most underrated skills in today\"s world. Most people still read their emails. They just very rarely come across good ones and when they do, they almost always reply weather it\"s a job application, business related or anything. Here is my curation of good resources available on the web.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "the-best-cold-email-strategy-in-2021--qvbh1t",
+  "slug": "the-best-cold-email-strategy-in-2021--qvbh1t",
   "tags": [
     "cold email tips",
     "5aaf2253-18af-4390-acf0-48b8bb405223"
@@ -2996,10 +2996,10 @@
     }
   },
   "description": "Hello friends, Today we have the top 5 resources that you can use to learn javascript. Javascript is the most popular and flexible programming language on the web. Javascript is used for websites, web app, and more various fields.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE-PAID",
   "show": true,
-  "slugUrl": "top-5-best-resources-to-learn-javascript-qvew3t",
+  "slug": "top-5-best-resources-to-learn-javascript-qvew3t",
   "tags": [
     "javascript",
     "e3a1d1bf-caaa-4b85-9ccd-613436a590fc",
@@ -3096,10 +3096,10 @@
     }
   },
   "description": "In software engineering interview process system design round has become a standard part of the interview. Real-world system design is challenging and complex. System design interview questions are usually open ended discussions.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "system-design-actual-interview-questions-qvbj2c",
+  "slug": "system-design-actual-interview-questions-qvbj2c",
   "tags": [
     "system design",
     "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
@@ -3241,10 +3241,10 @@
     }
   },
   "description": "I started my excursion into Python in the fall of 2019. Since then, I\"ve come across some resources that have really helped me a lot in learning the language. I wanted to take a bit of time to share my most valuable Python resources here for anyone searching for where to begin when diving into Python.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE-PAID",
   "show": true,
-  "slugUrl": "my-most-valuable-python-resources-by-alex-corvin-qvex18",
+  "slug": "my-most-valuable-python-resources-by-alex-corvin-qvex18",
   "tags": [
     "python"
   ],
@@ -3308,10 +3308,10 @@
     }
   },
   "description": "It\"s probably no secret that I love data. The moment I began researching D3.js, I just knew it was what I wanted to use to represent my data in visualization projects. I\"ve been learning it for the better part of this year and I wanted to share the resources I\"ve found to be just priceless in learning D3.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE-PAID",
   "show": true,
-  "slugUrl": "my-most-valuable-d3-resources-by-alex-corvin-qvex6o",
+  "slug": "my-most-valuable-d3-resources-by-alex-corvin-qvex6o",
   "tags": [
     "python",
     "d3",
@@ -3416,10 +3416,10 @@
     }
   },
   "description": "So, you want to go on the path of SQL? But don\"t know where to start? Well, look no further. I\"ve compiled a list of the best SQL resources I could find on the internet.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "top-7-resources-to-learn-sql-qveuch",
+  "slug": "top-7-resources-to-learn-sql-qveuch",
   "tags": [
     "sql",
     "e68e660b-2684-4631-b858-9458f249da3d"
@@ -3729,10 +3729,10 @@
     }
   },
   "description": "In recent times few friends reached out to me, asking for links to resources that can help them kickstart into learning JavaScript/ES6. I have curated a list of links which are completely free that will help anyone in their journey towards learning JavaScript.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "getting-started-with-javascript-ultimate-free-resources-by-kritika-pattalam-qvfaus",
+  "slug": "getting-started-with-javascript-ultimate-free-resources-by-kritika-pattalam-qvfaus",
   "tags": [
     "javascript",
     "e3a1d1bf-caaa-4b85-9ccd-613436a590fc"
@@ -4016,10 +4016,10 @@
     }
   },
   "description": "Resources are extremely important for a programmer since they can greatly improve productivity while coding. I have been collecting many links throughout months and I wish to share some of them with you. Hopefully, they will be as useful to you as they have been to me. Without further ado here some great free and up-to-date resources!",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "40-high-quality-free-resources-for-web-development-by-jose-felix--qvf12k",
+  "slug": "40-high-quality-free-resources-for-web-development-by-jose-felix--qvf12k",
   "tags": [
     "frontend",
     "e68e660b-2684-4631-b858-9458f249da3d",
@@ -4184,10 +4184,10 @@
     }
   },
   "description": "If you can\"t explain it simply, you don\"t understand it well enough -- Albert Einstein. Technical topics are some times hard to understand. If we can relate it with some real life example, if becomes super easy. Jean Michel has compiled for you some incredibly pedagogical answers from which a five year old can understand. Specifically he selected answers that were enlightening yet concise, and that explained with words only - no code.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "-best-of-explainlikeiamfive-qvdd9c",
+  "slug": "-best-of-explainlikeiamfive-qvdd9c",
   "tags": [
     "explain like i am 5",
     "e68e660b-2684-4631-b858-9458f249da3d",
@@ -4485,10 +4485,10 @@
     }
   },
   "description": "Learning to code has slowly become a valuable asset. Regardless of your profession, understanding coding and technology is a valuable asset. So, with that in mind, let’s run through 50 of the best resources when learning to code, by Pavel Malos.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": 1,
-  "slugUrl": "50-best-resources-when-learning-to-code-qvapel",
+  "slug": "50-best-resources-when-learning-to-code-qvapel",
   "tags": [
     "general coding",
     "e68e660b-2684-4631-b858-9458f249da3d"
@@ -4962,10 +4962,10 @@
     }
   },
   "description": "System design is a really interesting topic to cover. Here are hand-picked, some of the best content covering everything related to system design from all over the web.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "best-handpicked-system-design-interesting-reads-qvbimi",
+  "slug": "best-handpicked-system-design-interesting-reads-qvbimi",
   "tags": [
     "system design",
     "3d3c14b2-c225-489c-b4e5-28a09befb4a1"
@@ -5061,10 +5061,10 @@
     }
   },
   "description": "As a frontend developer, you have probably struggled to find images, svgs or icons to add to your application and sometimes the images you have are of high resolution that it takes a lot of time to paint when the website renders thus hindering website\"s performance or couldn\"t find high quality images. Here are five(5) resources which you might need while developing your application.",
-  "resourceLevel": "BEGINNER",
+  "resourceLevel": "BEGINNER","published_at"  : "Jun 26, 2021",      "cover_image"   : "https://bestresources.co/assets/images/bestresources.png",
   "resourceType": "FREE",
   "show": true,
-  "slugUrl": "5-resources-i-use-as-a-front-end-developer-that-you-probably-need-qvew98",
+  "slug": "5-resources-i-use-as-a-front-end-developer-that-you-probably-need-qvew98",
   "tags": [
     "frontend",
     "f5857ce0-73c5-44fd-a932-a5a5e6a63606",
